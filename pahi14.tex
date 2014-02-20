@@ -1,0 +1,523 @@
+\documentclass[a4paper]{llncs}
+
+%\input{../../common/packages.tex}
+
+\usepackage{cli}
+\usepackage{setspace}
+
+\usepackage{latexsym}
+
+
+\usepackage{hyperref}
+\usepackage{longtable}
+\usepackage{subfig}
+\usepackage{color}
+\usepackage[color,all]{xy}
+\usepackage{fancybox}
+\usepackage{breakurl}
+\usepackage{wrapfig}
+\usepackage{mdwlist}
+\usepackage{listings}
+\usepackage{graphicx}
+
+\usepackage{tikz}
+\usepackage{pgf}
+\usepackage{lscape}
+
+\usepackage{epstopdf}
+
+
+\input{rgb}
+
+\graphicspath{{resources/}}
+
+\definecolor{dgreen}{rgb}{0.0,0.47,0.0}
+\newxyColor{dgreen}{0.0 0.47 0.0}{rgb}{}
+
+
+\definecolor{gray}{rgb}{0.9,0.9,0.9}
+
+\lstset{
+  backgroundcolor=\color{gray},
+  breaklines=false,
+  frame=single,
+  framerule=0pt,
+  numbers=left,
+  numbersep=5pt,
+  showspaces=false,
+  showtabs=false,
+  tabsize=4,
+  basicstyle=\ttfamily\small,
+  commentstyle=\ttfamily\itshape,
+  identifierstyle=\ttfamily,
+  numberstyle=\ttfamily\scriptsize
+}
+
+
+\hypersetup{
+  pdftitle={A Metamodeling Approach to the Usability},
+  pdfauthor={Fazle Rabbi},
+  pdfsubject={A Metamodeling Approach to the Usability}
+}
+
+\bibliographystyle{splncs03}
+
+\graphicspath{{resources/}}
+
+
+%For comments
+\newcommandx*{\komment}[2]{//#1: #2\\}
+
+%\doublespacing
+
+\begin{document}
+
+%\selectlanguage{british}
+
+\title{A Metamodeling Approach to the Usability, Correctness, and Adaptability of Workflow Software Systems for Healthcare}
+\titlerunning{A Metamodeling Approach to the Usability, Correctness, and Adaptability of Workflow Software Systems for Healthcare}
+
+%\author{Adrian Rutle\inst{1}}
+%\institute{Aalesund University College\\ \email{adru@hials.no} }
+
+\author{Author1, Author2, Author3 }
+\institute{Institution Name, Country \\
+\email{email1, email2, email3} \\
+}
+
+\maketitle
+
+\begin{abstract}
+
+
+\end{abstract}
+
+
+\section{Introduction}
+
+Rising costs, ageing populations and increased expectations are making the current healthcare systems in the developed world unsustainable.  
+Information technology has the potential to support healthcare but its application to support the continuum of care has not nearly reached its full potential.  
+Barriers include the proliferation of systems—even within one hospital -- which do not support interoperability; the fact that systems must be highly 
+customized to adequately serve local situations, (usually a time consuming, and error prone  process); the fact that change in health care is the only constant as 
+adaptations to deal with such things as new medications, changing protocols  and management strategies are constantly in need of being made; the fact that software engineering 
+itself for such safety critical systems as healthcare needs new strategies to ensure that systems behave correctly in every possible  scenario;  and finally, the fact that 
+the healthcare process itself is often a team process involving many players, including family physicians, nurses, therapists of various kinds, specialists, lab technicians, 
+managers of both hospital and  community based programs, all with different needs from IT and all with different and often limited ability to handle complex technology.  
+The active participation of the patient (and his family) in the management of his own health is becoming a critical issue as the cost of chronic diseases is quickly out pacing 
+the resources that can be directed to healthcare.
+
+MDSE is an emerging and promising methodology for software development, targeting challenges in software engineering relating to productivity, flexibility and reliability of systems.  
+The construction of various kinds of models (eg. blueprints, mockups etc) is a well-known approach in the more traditional engineering fields; these models are used as artefacts to 
+enable engineers to describe designs and validate whether a proposed design has desired qualitative and quantitative properties.  We propose to use MDSE in an analogous manner for 
+the development of reliable and robust workflow software systems supporting the diverse and often safety critical requirements of healthcare process in both primary care and 
+community care environments.  
+
+While the use of executable graphical languages and domain specific modelling languages greatly reduces the possibility of coding errors, these techniques do not follow the 
+metamodelling approach and may lead to impaired links between the workflow model and the generated code.  Many different MDSE technologies automatically generate code from models 
+[ADD Tools, REFERENCES]: these technologies are particularly suited to specifying the structural aspects of software systems; generally, whereas the actual behavior is programmed manually.  
+Some technologies for behavioural modelling in MDSE exist (\cite{OMG}, \cite{FDT}), but current approaches are often at a low level of abstraction and lack domain concepts for 
+specifying behavior \cite{Kindler10}. 
+
+A collaborative group of researchers in Norway and Canada have been working on various issues relating to these problems.  We \cite{RutleWMFHIES12}, \cite{RutleMacCaullEtAl2012ECMFA}, \cite{lamo2011dpf}
+proposed a formal approach to workflow 
+modelling based on the Diagram Predicate Framework (DPF)~\cite{Rutle10}, \cite{RutleRLW12} which provides a formalism of (meta) modelling and model transformations based on category theory and graph 
+transformations (\cite{Barr05}, \cite{DiskinW08}, [Ehrig etal]) We \cite{WangRutleEtAl2012TASE} extended the formal foundation of DPF to define (static) semantics for timed and compensable workflow models and 
+defined the dynamic 
+semantics of models by a transition system where the states are instances and transitions are applications of transformation rules, and showed how to exploit reduction methods and 
+sweepline methods to model check complex workflows \cite{NWPT13}. We developed a domain specific language to expedite workflow system development \cite{FazleMacCaull2012MODELS}, \cite{RabbiM12} 
+and began the development of a 
+user-friendly interface to allow the health practitioner to determine the correctness of behavioral properties of a healthcare workflow protocol \cite{Rutle2013317}.  
+%In this paper we enhance $T_{\Box}$ language and use this domain specific language for diagrammatic workflow modelling language DERF ~\cite{RutleMacCaullEtAl2012ECMFA,RutleWangEtAl2012FHIES}. 
+%We choose DERF as this diagrammatic workflow modelling language is based on category theory and has better foundation. 
+%The paper is organized as follows: In section~\ref{label:data_aware_derf} we present data aware workflow modelling language, 
+%in section~\ref{label:proposal} we present the proposed user interface, 
+%in section~\ref{label:language} we present the new syntax for $T_{\Box}$, 
+%in section~\ref{label:relwork} we present some related work and 
+%in section~\ref{label:conclusion} we conclude the paper with some future direction. 
+
+
+
+
+\section{A Metamodeling Approach to healthcare workflows}
+
+In \cite{CBMS14} we discussed the implementation of a user-friendly tool to aid clinicians and patients in the workflow process implied in a clinical practice guideline with an accompanying 
+module that gives the patient a user friendly interface for self management of lifestyle attributes which caused the patient to be at risk.  The patient can input data for such lifestyle 
+attributes such as, exercise, smoking, intake of fruits and vegetables and record such attributes as weight and blood pressure.  The web-based tool would allow both the patient and the 
+clinician to view summary data on lifestyle parameters between visits [give some pictures here!!] and provide calendar views of past activities, future appointments, etc. 
+
+The PhD thesis of \cite{Baarah} promoted a metamodelling approach to the development of workflow processes in healthcare settings, which incorporated the concept of monitor.  Many healthcare 
+processes involve numerous stakeholders with different requirements, and the user becomes a critical part of the healthcare workflow process – whether it be the physician, a specialist, 
+a lab tech or the patient, in situations where management of lifestyle parameters is a critical component of the process.  We are now researching a metamodelling approach to workflows which 
+incorporates the concepts of stakeholder and monitor and provides user friendly interfaces for a variety of users.  Such processes are “safety critical” and must be adapted to particular 
+clinical setting and changed/updated frequently due to changing guidelines, medications, and patient preferences; thus they serve as an excellent application domain for the development of 
+evolving, adaptable and correct software systems, in general. 
+
+In his thesis, Baarah  \cite{Baarah}, proposed an application framework for care process monitoring that collects and integrates events from event sources, maintains the individual and aggregate state 
+of the care process and populates a metrics datamart to support performance reporting.  He presented a UML-style metamodel for the care process monitoring application that had 3 main components: 
+a process model , a performance model and an enterprise model.  The process model defines the care process in terms of states to be monitored, resources and rules that specify the transition from 
+state to state as events are received from the enterprise model.  The performance model measures how well the goals for the care process are being achieved in terms of metrics computed from 
+the monitored states, and events for the process. Alerts are defined to flag when targets are not being met.  No automated implementation of the metamodel was attempted, correctness of the 
+process was investigated only through the use of  test scripts,  and user interface issues were not considered.  
+
+ 
+In the thesis, Baraach basically structured a workflow system into 3 components: 
+\begin{itemize}
+ \item a workflow component; 
+ \item a monitoring component this will typically send alerts etc. when a critical event occurs; and, 
+ \item a data source component to persist the data that are relevant in the workflow.
+\end{itemize}
+
+We extend this model to include users and user interactions; allowing us to model user interaction as part of the process.  The users may interact with:  
+\begin{itemize}
+ \item part of the workflows
+ \item part of the database
+ \item the monitoring system, that is, users will typically receive alerts from the monitoring system
+\end{itemize}
+
+All interactions occur at specific times. A workflow consists of a network of tasks and specified users are responsible for performing each task. While performing a task a user provides data 
+to the system, typically, this is filling out a standardized web-based form, or some form which provides automatic integration with the appropriate healthcare database.
+
+\section{what is a good name???}
+
+RABBI -- If we look at the workflow you have in the CBMS-Nova we recently submitted, we can make a simple modification to this where we include a sub workflow where the patient is registering 
+his life style information between visits 1 and 2; the tasks should be annotated with a marking to denote the user 
+D – doctor, N – nurse, P- patient, T-technician etc. So in this workflow the patient will be responsible for registering the life style information between visit 1 and 2 and  the doctor will 
+be responsible for the rest of the workflow.
+Both the doctor and the patient should have read access to the lifestyle information.
+The D should have a user interface a bit similar to the one the patient uses i.e. some kind of form, but it can have many more features—eg sending an e-mail to the lab for a lab test.
+
+Based on this we could maybe introduce a task based access model [as described for example in \cite{LeylaM11}] 
+
+For the paper, I think we could incorporate this simple idea with two users of the system and some alerts that get fired in a specific situation. There could be two types of alerts – one, 
+less urgent, for example  to the patient which reminds the patient if he forgets to enter data on some day and another, which we could call an alarm , which is more urgent which is to both 
+the patient and doctor – for example,  if the weight gain over fewer than 5 days exceeds 10 pounds (which is indicating to the doctor that the patient is retaining excessive fluids and the 
+doctor should consult that patient immediately)  
+
+We should also write about how the user is interacting with the system, how is the input given and  the ways data can be read from the system – can talk about developing interfaces that give 
+summary data to the patient and doctor and aggregate information to a manager, The idea to use the calendar to represent the time is nice used to represent  activities already accomplished and 
+future appointments.
+
+We need schematic of the metamodel; an actual simple workflow model and the various user interfaces appropriate to manager, doctor and patient.  
+
+YNGVE – we had discussed 2 users – do we want the manager interface too???
+
+
+\section{Data aware workflow modelling}\label{label:data_aware_derf}
+The syntax and semantics of the workflow modelling language which we use in our approach may be found in ~\cite{RutleMacCaullEtAl2012ECMFA,RutleWangEtAl2012FHIES}. %RutleRabbiEtAl13}. %
+The modelling language is defined using the Diagram Predicate Framework (DPF)~\cite{Rutle10} and implemented using the DPF Workbench~\cite{LamoWangMMR12SCI}. 
+In DPF, a modelling language is given by a metamodel and a diagrammatic predicate signature (see Fig.~\ref{fig:ex_form_workflow_hierarchy}). 
+The metamodel defines the types and the signature defines the predicates that are used to formulate constraints. 
+A metamodel in DPF consists of an underlying graph, and a set of constraints.
+We say that a model conforms to (is an instance of) a metamodel if the model's underlying graph is typed by the metamodel's underlying graph, and if the model satisfies the constraints defined in the metamodel. 
+In DPF, the semantics of a (meta)model is given by the set of its instances. 
+DPF supports a multi-level metamodelling hierarchy, in which a model at any level can be regarded the metamodel for models at the level below it.
+
+
+%\begin{wrapfigure}{r}{90mm}
+\begin{figure}
+  \begin{center}
+    \includegraphics[width=0.7\textwidth]{ex_form_workflow_hierarchy}
+  \end{center}
+  \vspace{-4mm}
+  \caption{Workflow modelling hierarchy: the dashed arrows indicate the types of model elements, the dotted arrows indicate the relation between the signatures and the models}
+  \label{fig:ex_form_workflow_hierarchy}
+  \vspace{-4mm}
+\end{figure}
+%\end{wrapfigure}
+
+In the design of our workflow modelling language we have three modelling levels: M2, M1 and M0 (see Fig.~\ref{fig:ex_form_workflow_hierarchy}). 
+The metamodel of our workflow modelling language (which is at level M2) consists of a node \textspec{Task} and an arrow \textspec{Flow}. 
+Simply put, this means that we can define a set of tasks together with the flow relations between these tasks. 
+As seen in Fig.~\ref{fig:htnoverall}, our workflow models are diagrammatic models describing in which order specific work tasks should be executed. 
+Each task is represented by a box. 
+If there is an edge $T_1 \rightarrow T_2$ starting in task $T_1$ and ending in task $T_2$, then task $T_1$ must be performed before task $T_2$. 
+Special binary constraints on forks (joins) specify splits (respectively, merges) of workflow branches. 
+In fact, joins and forks could be extended in the standard way to arbitrary triples, quadruples, etc.
+We have three kinds of splits: \textpred{[and\_split]}, \textpred{[or\_split]} or \textpred{[xor\_split]}, and three kinds of merges: \textpred{[and\_merge]}, \textpred{[xor\_merge]} 
+or \textpred{[or\_merge]}. 
+The meaning of these constraints are as usual: both branches have to be executed in an \textpred{[and\_split]}; exactly one branch has to be executed in an \textpred{[xor\_split]} 
+and one or two branches have to be executed in an \textpred{[or\_split]}. 
+We use $T_\Box$ code to specify the details of tasks and flow relations at level M1. 
+Task specification writen in $T_ \Box$ include data flow and UI definition. 
+Branching conditions for the flow relations associated with \textpred{[or\_split]} and \textpred{[xor\_split]} may be specified using $T_\Box$ code. 
+Fig.~\ref{fig:htnoverall} shows some composit tasks such as `Visit1', `Visit2', `CBPM' those are abstractions of subworkflows. 
+The subworkflow for `Visit1' composit task is shown in Fig.~\ref{fig:htnoverall}. 
+These abstractions are sometime useful in order to reduce the number of repetation. 
+
+
+
+%Earlier we proposed three predicates \textpred{[enabled]}, \textpred{[running]} and \textpred{[finished]} (where \textpred{[enabled]}, \textpred{[running]} and \textpred{[finished]} denotes that a task instance is enabled, running, and finished, respectively) collected in a signature $\Sigma_1$. 
+
+Given a specific workflow model at level M1 (like the one in Fig.~\ref{fig:ex_form_workflow_hierarchy}) and the predicates \textpred{[running]} and \textpred{[not-running]}  
+(denoting, respectively, that a task instance is running or not running) collected in a signature \sig{\Sigma}[1], we create another modelling language which we use to define \emph{workflow states}, 
+or, equivalently, \emph{instance of a workflow model.} 
+The workflow states are located at level M0. We generate states by applying model transformation rules. 
+
+
+
+
+\section{Proposed User Interface}\label{label:proposal}
+In this section we present the user interface design through a running example. 
+We modeled a Hypertension management workflow from the guideline of clinical pathways \footnote{The Chinook Primary Care Network: \url{http://www.chinookprimarycarenetwork.ab.ca}}. 
+For workflow modeling we used DERF where one can graphically design a workflow model. 
+Fig.~\ref{fig:htnoverall} shows the overall model of the Hypertension Management Workflow. 
+Initially patients' blood pressure is measured at the `Initial BP' Task which may cue the clinical hypertension management procedures if the BP is found to be greater than or equal to $140/90$. 
+If the initial BP is found normal ($<=140/90$), the workflow terminates. 
+In Fig.~\ref{fig:htnoverall} patients' Hypertension is managed through investigation and treatment. 
+The clinical procedure (i.e., `Visit1', `Visit2', and all other subsequest tasks in In Fig.~\ref{fig:htnoverall}) starts at the doctors' office. 
+Patients with high BP have risk of organ failures and/or other chronic illness. 
+During the first visit at doctors' office (`Visit1') BP is measured twice, an initial assessment is done, and an investigation is started with diagnostic tests. 
+`Visit2' is scheduled with less than a month time if high BP is found during `Visit1'; otherwise `Visit2' is scheduled after one month. 
+During `Visit2' BP is measured, diagnosis is performed and followup visits are scheduled. 
+The workflow executes `Ambulatory blood pressure monitoring' (`ABPM') or `Self home blood pressure monitoring (`SHBPM') if they are available otherwise a Clinical BPM is performed which refers to 
+the `CBPM' task in the overall workflow model.
+In the rest of the section we present the new user interface for the execution of the `Visit1' workflow for a particular workflow instance/case. 
+
+
+\begin{figure}
+  \begin{center}
+    \includegraphics[width=0.8\textwidth]{bp.pdf}
+    \caption{Hypertension Management Workflow (Overall)}
+    \label{fig:htnoverall}
+  \end{center}
+\end{figure}
+
+Fig.~\ref{fig:visit310} shows 4 windows named `Workflow Viewer', `Task Execution Viewer', `Lookup Viewer', and `NOVA Browser'. 
+`Workflow Viewer' shows the list of all available tasks on the right side of the window and whenever a task is executed, it shows the task name on a calendar. 
+A task being executed are shown in the `Task Execution Viewer'. Inputs required from the end user are shown in branches and the end user is supposed to select a branch and assign a value to it 
+through the `Lookup Viewer'. The `Lookup Viewer' helps the end user to input information either by showing relevant values from an ontology or by allowing end user to enter information. 
+Once a task is executed, the information are hierarchically displayed in the `NOVA Browser'. %The end user can explore details of a branch from the `NOVA Browser' which helps them to brainstorm while executing a task or afterwords. 
+We introduced `NOVA Browser' in \cite{MacCaullRabbi2011}. Using `NOVA Browser' user may expand a branch to see detailed information, may use the time travel view to traverse backward/forward and 
+view information. the details
+%In the upper window the `Visit1' workflow model is displayed in execution mode; which means the user can see the progress of the workflow for a particular workflow instance/case. 
+Fig.~\ref{fig:visit310} is showing that the user is executing the `Measure BP' task. 
+%The `Workflow Explorer' window shows subnet workflows in tree format; a different color for the subnet workflow in the tree indicates that it contains some enabled tasks. 
+Inside the `Task Execution Viewer' window user provides input to execute the task. 
+This is an alternative way of taking user input instead of using \textit{Forms}. 
+While executing tasks the user has access to historical information, workflow instance; this arrangement provides the user more user-friendly environment to concentrate on care rather than struggling with huge number of \textit{Forms}.
+
+
+\begin{figure}
+  \begin{center}
+    \includegraphics[width=\textwidth]{visit1_new.png}
+    \caption{Hypertension Management Workflow (Visit1)}
+    \label{fig:visit310}
+  \end{center}
+\end{figure}
+
+The `Lookup Viewer' at the bottom left of Fig.~\ref{fig:visit310} provides options allowing the user to select or enter data. 
+This window is connected to an ontology and shows only relavent terminology from an ontology to help user input information while executing a task. 
+Data inserted or selected by the user in the `Lookup Viewer' is reflected in the `Task Execution Viewer' window. 
+When the user is finished entering all input for a task, the task is executed and this updates `NOVA Browser' nodes. 
+Fig.~\ref{fig:visit311} shows how the `NOVA Browser' looks like after executing the `Measure BP' task. 
+
+\begin{figure}
+  \begin{center}
+    \includegraphics[width=\textwidth]{Visit1_1_new.png}
+    \caption{Execution of Measure BP task }
+    \label{fig:visit311}
+  \end{center}
+\end{figure}
+
+
+Information available in the `NOVA Browser' can also be used to annotate as a `cause' for the execution of a task. 
+This is one of the important feature of the proposed user interface design. Most software applications do not capture the cause of executing a task. 
+While executing a task, the user uses his/her domain knowledge, expertise and finds some clue from the available information for a patient's case. 
+This human expertise is crucial for healthcare applications. Recording pre-conditions while executing tasks would help analyzing historical information. 
+Since healthcare professionals have to deal with many cases everyday, it might become very complicated for them to remember exactly under what circumstances they prescribed something or decided 
+to do something for a patient. 
+The way we proposed annotating cause of a task execution should greatly benefit healthcare professionals as they can easily point out and keep records of what motivated/influenced 
+them to make a certain decision. 
+Fig.~\ref{fig:followup} shows the execution of a task from `CBPM' workflow named `Change Threshold'; the patient ``John Smith'' has a chronic kidney disease name `Albuminuria' 
+which is the potential reason for changing the threshold to $130/80$ for subsequent workflow execution. 
+
+
+
+\begin{figure}
+  \begin{center}
+    \includegraphics[width=\textwidth]{visit3_new.png}
+    \caption{Annotating cause for `Change Threshold' Task }
+    \label{fig:followup}
+  \end{center}
+\end{figure}
+
+The reader may have noticed that the `Task Execution Viewer' and the `NOVA Browser' displays data similarly as in mindmap. 
+A mind map is a visual thinking tool that graphically represents ideas and concepts and has been recognized as a brainstorming tool. 
+We designed the windows similarly so that the user may brainstorm with the available information in front of them while executing tasks. 
+
+
+\section{Syntax for $T_{\Box}$}\label{label:language}
+In \cite{FazleMacCaull2012MODELS} \cite{RabbiM12} we presented $T_{\Box}$ for writing task specifications for workflows where 
+action methods written in $T_\Box$ code were transformed into web-services and view methods were transformed into Android user interface. 
+In this paper we present an enhanced version of $T_{\Box}$ in order to support the proposed user interface design. 
+The enhanced version of $T_{\Box}$ provides syntax to create and view nodes and branches in the `Task Execution Viewer'.
+It also provides syntax to write action statements to manipulate the `Lookup Viewer' window upon selection of a node from the `Task Execution Viewer'. 
+In the rest of this section we provide newly added syntax of $T_{\Box}$. Note that a developer such as a programmer is supposed to write task specifications with $T_{\Box}$. 
+The end user such as a healthcare professional does not have to know the $T_{\Box}$ syntax. 
+
+
+A variable in $T_{\Box}$ may be bound with ontology classes, individuals, data properties or object properties. 
+To bind a variable with an ontology class (see Line.2), individual (see Line.3), property (see Line.4) we may use following syntax: 
+
+
+{
+\footnotesize
+\definecolor{verylightgray}{rgb}{1.0,0.95,0.85}
+\lstset{backgroundcolor=\color{verylightgray}}
+\lstset{basicstyle=\ttfamily,identifierstyle=\ttfamily,keywordstyle=\ttfamily}
+\lstset{stringstyle=\ttfamily, columns=fullflexible}
+\begin{lstlisting}[mathescape=ture,frame=tb,captionpos=b,showspaces=false,showstringspaces=false,showtabs=false,tabsize=2, label=t1]
+$\mathtt{\textcolor{OrangeRed1}{ var~} ~vClass,~vIndividual,~vProp~; }$
+$\mathtt{\textcolor{OrangeRed1} {\{B\$} ~vClass ~:= ~BPMeasure ~\textcolor{OrangeRed1}{\$B\}}}$
+$\mathtt{\textcolor{OrangeRed1} {\{B\$} ~vIndividual ~:= ~BPMeasure(``currentBP'') ~\textcolor{OrangeRed1}{\$B\}}}$
+$\mathtt{\textcolor{OrangeRed1} {\{B\$} ~vProp ~:= ~vIndividual.Value ~\textcolor{OrangeRed1}{\$B\}}}$
+\end{lstlisting}
+}
+\normalsize{}
+
+\noindent
+Binding a variable with an individual (or property) means, binds it with an existing ontology individual (or property), rather than creating a new individual (or property). 
+In order to create a new individual (or property) the following syntax with tag `\{C$\$$' may be used: 
+
+{
+\footnotesize
+\definecolor{verylightgray}{rgb}{1.0,0.95,0.85}
+\lstset{backgroundcolor=\color{verylightgray}}
+\lstset{basicstyle=\ttfamily,identifierstyle=\ttfamily,keywordstyle=\ttfamily}
+\lstset{stringstyle=\ttfamily, columns=fullflexible}
+\begin{lstlisting}[mathescape=ture,frame=tb,captionpos=b,showspaces=false,showstringspaces=false,showtabs=false,tabsize=2, label=t1]
+$\mathtt{\textcolor{OrangeRed1}{ var~} ~vNewIndividual~; }$
+$\mathtt{\textcolor{OrangeRed1} {\{C\$} ~vNewIndividual ~:= ~BPMeasure(``previousBP'') ~\textcolor{OrangeRed1}{\$C\}}}$
+$\mathtt{\textcolor{OrangeRed1} {\{C\$} ~Value(vNewIndividual,~``120/80'') ~\textcolor{OrangeRed1}{\$C\}}}$
+\end{lstlisting}
+}
+\normalsize{}
+
+\noindent
+A variable may be displayed in the `Task Execution Viewer' by the following syntax. This syntax assigns a label ``First Name'' to the variable `p' and the label is displayed in the viewer. 
+
+{
+\footnotesize
+\definecolor{verylightgray}{rgb}{1.0,0.95,0.85}
+\lstset{backgroundcolor=\color{verylightgray}}
+\lstset{basicstyle=\ttfamily,identifierstyle=\ttfamily,keywordstyle=\ttfamily}
+\lstset{stringstyle=\ttfamily, columns=fullflexible}
+%\begin{lstlisting}[mathescape=ture,frame=tb,captionpos=b,showspaces=false,showstringspaces=false,showtabs=false,tabsize=2, label=t1]
+$\mathtt{\textcolor{OrangeRed1}{ setInputLabel}~(~p~,~``First Name''~) }$
+%\end{lstlisting}
+}
+\normalsize{}
+
+
+The `Lookup Viewer' is provided to take input from the user. It has four panels: i) class panel, ii) individual panel, iii) data property panel, and iv) object property panel. These panels are used to visualize existing classes, individuals and their properties. One can select, create, or delete new individuals and/or properties of individuals from these panels. 
+One can also programmatically assign data and/or object property facts to an individual using $T_{\Box}$ syntax. 
+To keep the self similar patterns, we introduce the access operator, dot(`.'), for $T_{\Box}$ variables to access properties. 
+The idea is similar to object oriented programming; only here we will be using it for ontology concepts. 
+One can instantiate a variable with an Ontology class and then access its individuals by `.' operator; 
+and then further access the individual's properties by the `.' operator. An example is provided at the end of this section. 
+
+Upon selection of a variable from the `Task Execution Viewer' by the user, its values are displayed in the `Lookup Viewer'. 
+Depending on the value of the variable, child nodes are displayed in the `Task Execution Viewer' in tree structure. 
+If the value assigned to the variable is of type Ontology Class, the selected individuals from the `Lookup Viewer' of that class are displayed as child nodes in the `Task Execution Viewer';
+if the value assigned to the variable is of type Ontology Individual, the properties of that individual are displayed as child nodes in the viewer.
+Properties of an individual node are also displayed in the `Task Execution Viewer' in self similar tree structure format;
+for data properties, the value of the data properties are displaed as child nodes; 
+and for object properties, the individuals are displayed as child nodes. 
+
+In this enhanced version of $T_{\Box}$ syntax, we have included some callback methods: $onSelectIndividual$, $onSelectProperty$, $onCreateIndividual$, $onCreateProperty$, $onDeleteIndividual$, $onDeleteProperty$. 
+A variable may be registered with one or more callback methods. 
+Whenever an appropriate event happens, the corresponding callback method registered to the variables are invoked. 
+One can perform some operations inside the callback methods by writing $T_{\Box}$ code; if a variable is manipulated from a callback method, its UI is also updated in the ``Task Execution Viewer''. The following code fragment shows an example:
+
+{
+\footnotesize
+\definecolor{verylightgray}{rgb}{1.0,0.95,0.85}
+\lstset{backgroundcolor=\color{verylightgray}}
+\lstset{basicstyle=\ttfamily,identifierstyle=\ttfamily,keywordstyle=\ttfamily}
+\lstset{stringstyle=\ttfamily, columns=fullflexible}
+\begin{lstlisting}[mathescape=ture,frame=tb,captionpos=b,showspaces=false,showstringspaces=false,showtabs=false,tabsize=2, label=t1]
+$\mathtt{\textcolor{OrangeRed1}{ var}~~weight,~height,~bmi; }$
+$\mathtt{\textcolor{OrangeRed1}{ \{R\$ }~Patient(?p),~BMI(?p,~?bmi)~\rightarrow select(?p,?bmi) \textcolor{OrangeRed1}{\$R\} }  }$
+$\mathtt{\textcolor{OrangeRed1}{ \{B\$ }~height~:=~c.Height  \textcolor{OrangeRed1}{\$B\} }  }$
+$\mathtt{\textcolor{OrangeRed1}{ \{B\$ }~Weight~:=~c.Weight  \textcolor{OrangeRed1}{\$B\} }  }$
+$\mathtt{\textcolor{OrangeRed1}{ setInputLabel}~(~height~,~``Height''~); }$
+$\mathtt{\textcolor{OrangeRed1}{ setInputLabel}~(~weight~,~``Weight''~); }$
+$\mathtt{height.\textcolor{OrangeRed1}{onCreateProperty}~(heightValue)\{ }$
+$\mathtt{bmi~=(weight / (height * height) ) * 703; \} }$
+$\mathtt{weight.\textcolor{OrangeRed1}{onCreateProperty}~(weightValue)\{ }$
+$\mathtt{bmi~=(weight / (height * height) ) * 703; \} }$
+\end{lstlisting}
+}
+\normalsize{}
+
+
+
+
+From Line.2 an ontology query is performed for a `Patient' individual with its `BMI' property. 
+The variable $height$, $weight$ are bound with the `height' and `Weight' property of individual $p$ from Line.3. 
+The callback function associated to the $height$ and $weight$ variable will be invoked if a property is added from the ``Lookup Viewer''. 
+The newly added property fact, $heightValue$ and/or $weightValue$, are then used to calculate the $bmi$ value. This update will be reflected to the node associated with the variable. 
+
+
+\section{Integration with other applications}\label{label:phm}
+In this section we present the possibility of integrating DERF workflows with other applications by an example healthcare application. 
+We developed a `Personal health monitor' smart phone application that patients can use at home. 
+The purpose of the application is to assist patients keeping their health record such as blood pressure record, body mass index, hours of exercise, dietary, etc. 
+and monitor their performance with their lifestyle target that was set by the physician from `Hypertension management workflow'. 
+It is required that the `Personal health monitor' application interacts with the `Hypertension management workflow' presented in section~\ref{label:proposal}. 
+The integration has been accomplished by a task named `SHBPM' (see Fig.~\ref{fig:htnoverall}) from the `Hypertension management workflow'. 
+We wrote an $action$ method for the task `SHBPM' and that exposed a web-service. 
+Through the web-service it is possible for the `Personal health monitor' smart phone application to invoke the task `SHBMP' and submit the data entered by the patient. 
+Fig.~\ref{fig:bp_phm} shows two screenshots from the smart phone application that takes blood pressure input from the patient and displays a graph of their recent blood pressure changes. 
+Fig.~\ref{fig:diet_phm} shows another two screenshots that patient can use to monitor their exercise and eating behavior change. 
+This smart phone appliction can also fetch appointment date from the workflow and reminds patient about the next visit date. 
+
+
+\begin{figure}
+  \begin{center}
+    \includegraphics[width=\textwidth]{bp_phm.png}
+    \caption{Personal health monitor (Blood pressure monitoring)}
+    \label{fig:bp_phm}
+  \end{center}
+\end{figure}
+
+\begin{figure}
+  \begin{center}
+    \includegraphics[width=\textwidth]{diet_phm.png}
+    \caption{Personal health monitor (Exercise and diet pressure monitoring)}
+    \label{fig:diet_phm}
+  \end{center}
+\end{figure}
+
+
+\section{Related Work}\label{label:relwork}
+
+In \cite{ClarkM06} the authors introduced the knowledge representation features of a multi-paradigm programming language called Go$!$ that integrates logic, functional, 
+object oriented and imperative programming styles. In that paper the authors described the Go$!$ language and its use for ontology oriented programming, comparing its expressiveness with OWL. 
+This is related to our work since the authors also proposed a language for building executable ontologies.  
+However the syntax proposed for $T_{\Box}$ is simple and abstract and $T_{\Box}$ provides syntax for control flow and UI design. 
+
+In \cite{BakerEtAl2008} Baker et. al., surveyed a large number of existing workflow systems and listed their features considering different problem aspects. 
+But none of them is following ontology based model driven approach as in $T_{\Box}$. 
+
+Several heath applications have been developed recently based on smart phone systems such as \cite{Chunming99} but they are lacking formal foundations such as workflow language, ontology, etc.
+
+\section{Conclusion}\label{label:conclusion}
+
+Incorporating stakeholders and monitors in the MDSE paradigm is highly innovative, however these features are essential if software systems are to automatically perform the kinds of tasks 
+users are increasingly demanding.  We believe that the metamodeling together with Model Driven Software Engineering principles in general
+(1) can be used as the main artefact in the development process of correct and adaptable workflow software systems  targeting healthcare applications which incorporate monitors for 
+sensitive data parameters and interfaces for a variety of stakeholders, and, moreover, 
+(2) can be manipulated by computer tools to automatically produce a workflow implementation which can be deployed in  healthcare settings, which can easily be  adapted to reflect the 
+numerous customizations and changes required in a healthcare setting due to  requirements and limitations of local settings, updates in protocols, etc.
+The DPF framework is used to implement our ideas.  A demo of a small prototype may be found at: \url{http://www.screencast.com/t/QxG5knxVoO}. 
+
+
+
+\section*{Acknowledgement}\label{label:conclusion}
+We would like to thank Natural Sciences and Engineering Research Council of Canada, Atlantic Canada Opportunities Agency (ACOA) for supporting this research. 
+We are greatful to Miao Huang for his contributions to the Hypertension Workflow Model and Jane Newlands for providing valuable feedbacks to us. 
+
+\bibliography{./literature/bibliography_strings_dpf,./literature/bibliography_cli}{}
+
+\end{document}

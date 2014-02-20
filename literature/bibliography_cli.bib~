@@ -1,0 +1,2493 @@
+% This file was created with JabRef 2.7b.
+% Encoding: UTF-8
+
+%% http://www.chinookprimarycarenetwork.ab.ca/
+
+@article{Rutle2013317,
+title = "A User-friendly Tool for Model Checking Healthcare Workflows ",
+journal = "Procedia Computer Science ",
+volume = "21",
+number = "0",
+pages = "317 - 326",
+year = "2013",
+note = "The 4th International Conference on Emerging Ubiquitous Systems and Pervasive Networks (EUSPN-2013) and the 3rd International Conference on Current and Future Trends of Information and Communication Technologies in Healthcare (ICTH) ",
+issn = "1877-0509",
+author = "Adrian Rutle and Fazle Rabbi and Wendy MacCaull and Yngve Lamo",
+keywords = "Workflow modelling",
+keywords = "User-friendly verification",
+keywords = "Model checking",
+keywords = "Model-driven engineering "
+}
+
+@article{CBMS14,
+	author = {Fazle Rabbi and Wendy MacCaull},
+	title = {Designing User-friendly UIs for the Execution of Clinical Practice Guidelines},
+	journal = {27th International Symposium on Computer Based Medical Systems, 2014, Submitted}
+}
+
+
+@article{NWPT13,
+	author = {Lars Michael Kristensen and Yngve Lamo and Wendy MacCaull and Fazle Rabbi and Adrian Rutle},
+	title = {Exploiting Progress for Memory Efficient Verification of Diagrammatic Workflows},
+	journal = { 25th Nordic Workshop on Programming Theory (2013), Extended Abstract.}
+
+}
+
+
+@article{DiskinW08,
+  author    = {Zinovy Diskin and
+               Uwe Wolter},
+  title     = {A Diagrammatic Logic for Object-Oriented Visual Modeling},
+  journal   = {Electr. Notes Theor. Comput. Sci.},
+  volume    = {203},
+  number    = {6},
+  year      = {2008},
+  pages     = {19-41},
+  ee        = {http://dx.doi.org/10.1016/j.entcs.2008.10.041},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@book{Barr05,
+ editor = {Barr, Michael and Wells, Charles},
+ title = {Category Theory for Computing Science, 2Nd Ed.},
+ year = {1995},
+ isbn = {0-13-323809-1},
+ publisher = {Prentice Hall International (UK) Ltd.},
+ address = {Hertfordshire, UK, UK},
+} 
+
+@article{lamo2011dpf,
+  title={DPF editor: a multi-layer diagrammatic (meta) modelling environment},
+  author={Lamo, Yngve and Wang, Xiaoliang and Mantz, Florian and Bech, {\O}yvind and Rutle, Adrian},
+  journal={Proceedings of SPLST},
+  year={2011}
+}
+
+@inproceedings{RutleWMFHIES12,
+  author    = {Adrian Rutle and
+               Hao Wang and
+               Wendy MacCaull},
+  title     = {A Formal Diagrammatic Approach to Compensable Workflow Modelling},
+  booktitle = {FHIES},
+  year      = {2012},
+  pages     = {194-212},
+  ee        = {http://dx.doi.org/10.1007/978-3-642-39088-3_13},
+  crossref  = {DBLP:conf/fhies/2012},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+@proceedings{DBLP:conf/fhies/2012,
+  editor    = {Jens Weber and
+               Isabelle Perseil},
+  title     = {Foundations of Health Information Engineering and Systems
+               - Second International Symposium, FHIES 2012, Paris, France,
+               August 27-28, 2012. Revised Selected Papers},
+  booktitle = {FHIES},
+  publisher = {Springer},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {7789},
+  year      = {2013},
+  isbn      = {978-3-642-39087-6},
+  ee        = {http://dx.doi.org/10.1007/978-3-642-39088-3},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@article{RutleRLW12,
+  author    = {Adrian Rutle and
+               Alessandro Rossini and
+               Yngve Lamo and
+               Uwe Wolter},
+  title     = {A formal approach to the specification and transformation
+               of constraints in MDE},
+  journal   = {J. Log. Algebr. Program.},
+  volume    = {81},
+  number    = {4},
+  year      = {2012},
+  pages     = {422-457},
+  ee        = {http://dx.doi.org/10.1016/j.jlap.2012.03.006},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@INPROCEEDINGS{Chunming99,
+author={Chunming Gao and Fanyu Kong and Jindong Tan},
+booktitle={Robotics and Biomimetics (ROBIO), 2009 IEEE International Conference on},
+title={HealthAware: Tackling obesity with health aware smart phone systems},
+year={2009},
+pages={1549-1554},
+doi={10.1109/ROBIO.2009.5420399},}
+
+
+@inproceedings {BakerEtAl2008,
+   author = {Barker, Adam and van Hemert, Jano},
+   affiliation = {University of Edinburgh National e-Science Centre United Kingdom},
+   title = {Scientific Workflow: A Survey and Research Directions},
+   booktitle = {Parallel Processing and Applied Mathematics},
+   series = {Lecture Notes in Computer Science},
+   publisher = {Springer Berlin / Heidelberg},
+   isbn = {978-3-540-68105-2},
+   keyword = {Computer Science},
+   pages = {746--753},
+   volume = {4967},   
+   year = {2008}
+}
+
+
+@article{ClarkM06,
+  author    = {Keith L. Clark and
+               Frank G. McCabe},
+  title     = {Ontology oriented programming in {Go}$!$},
+  journal   = {Appl. Intell.},
+  volume    = {24},
+  number    = {3},
+  year      = {2006},
+  pages     = {189-204},
+  ee        = {http://dx.doi.org/10.1007/s10489-006-8511-x},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@INPROCEEDINGS{CTransaction, 
+author={Jing Li and Huibiao Zhu and Geguang Pu and Jifeng He}, 
+booktitle={Engineering Complex Computer Systems, 2007. 12th IEEE International Conference on}, 
+title={A Formal Model for Compensable Transactions}, 
+year={2007}, 
+pages={64-73}, 
+doi={10.1109/ICECCS.2007.8},
+}
+
+
+@standard{wfmc2012xpdl,
+  author = {WFMC},
+  biburl = {http://www.bibsonomy.org/bibtex/2e2f2607b4ed58f82bf43e1acfd57ae26/porta},
+  day = 30,
+  file = {wfmc2012xpdl.pdf:wfmc2012xpdl.pdf:PDF},
+  groups = {public},
+  institution = {Workflow Management Coalition, Lighthouse Point, Florida, USA},
+  keywords = {bpm business management modelling process standard workflow xpdl},
+  month = {August},
+  number = {WFMC-TC-1025},
+  timestamp = {2013-05-31T15:35:53.000+0200},
+  title = {XML Process Definition Language Version 2.2},
+  url = {http://www.xpdl.org/standards/xpdl-2.2/XPDL%202.2%20(2012-08-30).pdf},
+  username = {porta},
+  year = 2012
+}
+
+
+
+
+
+
+@INPROCEEDINGS{Ait-SadouneAmeur2010,
+  author = {Idir A\"{\i}t-Sadoune and Yamine A\"{\i}t Ameur},
+  title = {{Stepwise Design of BPEL Web Services Compositions: An Event B Refinement
+	Based Approach}},
+  booktitle = {SERA},
+  year = {2010},
+  pages = {51-68},
+  bibsource = {DBLP, http://dblp.uni-trier.de},
+  crossref = {DBLP:conf/sera/2010s},
+  ee = {http://dx.doi.org/10.1007/978-3-642-13273-5_4}
+}
+
+@inproceedings{Loer2002,
+ author = {Loer, Karsten and Harrison, Michael},
+ title = {Towards Usable and Relevant Model Checking Techniques for the Analysis of Dependable Interactive Systems},
+ booktitle = {Proceedings of the 17th IEEE international conference on Automated software engineering},
+ series = {ASE '02},
+ year = {2002},
+ isbn = {0-7695-1736-6},
+ pages = {223--},
+ acmid = {787010},
+ publisher = {IEEE Computer Society},
+ address = {Washington, DC, USA},
+}
+
+@inproceedings{Dwyer1999,
+ author = {Dwyer, Matthew B. and Avrunin, George S. and Corbett, James C.},
+ title = {Patterns in property specifications for finite-state verification},
+ booktitle = {Proceedings of the 21st international conference on Software engineering},
+ series = {ICSE '99},
+ year = {1999},
+ isbn = {1-58113-074-0},
+ location = {Los Angeles, California, USA},
+ pages = {411--420},
+ numpages = {10},
+ acmid = {302672},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {concurrent systems, finite-state verification, formal specification, patterns},
+} 
+
+@INPROCEEDINGS{Ait-SadouneAmeur2008,
+  author = {Idir A\"{\i}t-Sadoune and Yamine A\"{\i}t Ameur},
+  title = {{Verification and Validation of Web Service Composition Using Event
+	B Method}},
+  booktitle = {ABZ},
+  year = {2008},
+  pages = {339-340},
+  bibsource = {DBLP, http://dblp.uni-trier.de},
+  crossref = {DBLP:conf/asm/2008},
+  ee = {http://dx.doi.org/10.1007/978-3-540-87603-8_28}
+}
+
+@inproceedings{Kindler10,
+ author = {Kindler, Ekkart},
+ title = {Model-based Software Engineering: The Challenges of Modelling Behaviour},
+ booktitle = {Proceedings of the Second International Workshop on Behaviour Modelling: Foundation and Applications},
+ series = {BM-FA '10},
+ year = {2010},
+ isbn = {978-1-60558-961-9},
+ location = {Paris, France},
+ pages = {4:1--4:8},
+ articleno = {4},
+ numpages = {8},
+ url = {http://doi.acm.org/10.1145/1811147.1811151},
+ doi = {10.1145/1811147.1811151},
+ acmid = {1811151},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {behaviour models, domain models, model-based software engineering (MBSE), model-driven architecture (MDA)},
+} 
+
+@MANUAL{FDT,
+	title = {{Fujaba Development Team: The Fujaba Tool Suite}}, 
+	note = {http://www.fujaba.de/}
+}
+
+
+@MANUAL{OMG,
+	title = {{Object Management Group: Semantics of a Foundational Subset for Executable UML Models (FUML) (February 2011)}}, 
+	note = {http://www.omg/spec/FUML/1.0/}
+}
+
+
+@MANUAL{Alloy,
+  title = {{Project Web Site}},
+  author = {{Alloy}},
+  note = {\url{http://alloy.mit.edu/community/}},
+  owner = {aronnax},
+  timestamp = {2009.01.16}
+}
+
+
+@InProceedings{Flender06,
+  author =       "Ch. Flender and Th. Freytag",
+  title =        "Visualizing in the Soundness of Workflow Nets.",
+  booktitle =    "Bericht 267, Tagungsband des 13. Workshops Algorithmen
+                 und Werkzeuge für Petri-Netze, AWPN'06,
+                 FBI-HH-B-267/06",
+  pages =        "47--53",
+  year =         "Sep, 06",
+}
+
+@article{Liu2007,
+ author = {Liu, Y. and M\"{u}ller, S. and Xu, K.},
+ title = {A static compliance-checking framework for business process models},
+ journal = {IBM Syst. J.},
+ issue_date = {April 2007},
+ volume = {46},
+ number = {2},
+ month = apr,
+ year = {2007},
+ issn = {0018-8670},
+ pages = {335--361},
+ numpages = {27},
+ acmid = {1324023},
+ publisher = {IBM Corp.},
+ address = {Riverton, NJ, USA},
+} 
+
+@inproceedings{Aalst1997,
+ author = {Aalst, Wil M. P. van der},
+ title = {Verification of Workflow Nets},
+ booktitle = {Proceedings of the 18th International Conference on Application and Theory of Petri Nets},
+ series = {ICATPN '97},
+ year = {1997},
+ isbn = {3-540-63139-9},
+ pages = {407--426},
+ numpages = {20},
+ acmid = {733919},
+ publisher = {Springer-Verlag},
+ address = {London, UK, UK},
+} 
+
+@inproceedings{DBLP:conf/bpm/AwadW09,
+  author    = {Ahmed Awad and
+               Mathias Weske},
+  title     = {Visualization of Compliance Violation in Business Process
+               Models},
+  booktitle = {Business Process Management Workshops},
+  year      = {2009},
+  pages     = {182-193},
+  crossref  = {DBLP:conf/bpm/2009w},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+@proceedings{DBLP:conf/bpm/2009w,
+  editor    = {Stefanie Rinderle-Ma and
+               Shazia Wasim Sadiq and
+               Frank Leymann},
+  title     = {Business Process Management Workshops, BPM 2009 International
+               Workshops, Ulm, Germany, September 7, 2009. Revised Papers},
+  booktitle = {Business Process Management Workshops},
+  publisher = {Springer},
+  series    = {Lecture Notes in Business Information Processing},
+  volume    = {43},
+  year      = {2010},
+  isbn      = {978-3-642-12185-2},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+
+@incollection{
+year={2010},
+isbn={978-3-642-12185-2},
+booktitle={Business Process Management Workshops},
+volume={43},
+series={Lecture Notes in Business Information Processing},
+editor={Rinderle-Ma, Stefanie and Sadiq, Shazia and Leymann, Frank},
+title={Visualization of Compliance Violation in Business Process Models},
+url={http://dx.doi.org/10.1007/978-3-642-12186-9_17},
+publisher={Springer Berlin Heidelberg},
+author={Awad, Ahmed and Weske, Mathias},
+pages={182-193}
+}
+
+@INCOLLECTION{Ait-SadouneAmeur2010a,
+  author = {Idir A\"{\i}t-Sadoune and Yamine A\"{\i}t Ameur},
+  title = {{A Proof Based Approach for Formal Verification of Transactional
+	BPEL Web Services}},
+  booktitle = {Abstract State Machines, Alloy, B and Z},
+  publisher = {Springer Berlin / Heidelberg},
+  year = {2010},
+  editor = {Frappier, Marc and Glsser, Uwe and Khurshid, Sarfraz and Laleau,
+	Rgine and Reeves, Steve},
+  volume = {5977},
+  series = {Lecture Notes in Computer Science},
+  pages = {405-406},
+  note = {10.1007/978-3-642-11811-1_39},
+  affiliation = {LISI/ENSMA-UP, Tlport 2 -1, avenue Clment Ader, BP 40109, 86961 Futuroscope-Poitiers,
+	France},
+  isbn = {978-3-642-11810-4},
+  keyword = {Computer Science},
+  url = {http://dx.doi.org/10.1007/978-3-642-11811-1_39}
+}
+
+@INPROCEEDINGS{Aalst2003,
+  author = {Wil M. P. van der Aalst},
+  title = {{Business Process Management Demystified: A Tutorial on Models, Systems
+	and Standards for Workflow Management}},
+  booktitle = {Lectures on Concurrency and Petri Nets},
+  year = {2003},
+  editor = {J{\"o}rg Desel and Wolfgang Reisig and Grzegorz Rozenberg},
+  volume = {3098},
+  series = LNCS,
+  pages = {1-65},
+  publisher = SPRINGER,
+  isbn = {3-540-22261-8}
+}
+
+@ARTICLE{Aalst1998,
+  author = {Wil M. P. van der Aalst},
+  title = {{The Application of Petri Nets to Workflow Management}},
+  journal = {Journal of Circuits, Systems, and Computers},
+  year = {1998},
+  volume = {8},
+  pages = {21-66},
+  number = {1},
+  doi = {10.1142/S0218126698000043}
+}
+
+@BOOK{AalstHee2002,
+  title = {{Workflow Management: Models, Methods, and Systems}},
+  publisher = {MIT Press},
+  year = {2002},
+  author = {Wil M. P. van der Aalst and Kees van Hee},
+  isbn = {0-262-01189-1}
+}
+
+@ARTICLE{AalstHeeEtAl2009,
+  author = {Wil M. P. van der Aalst and Kees M. van Hee and Arthur H. M. ter
+	Hofstede and Natalia Sidorova and H. M. W. Verbeek and Marc Voorhoeve
+	and Moe Thandar Wynn},
+  title = {{Soundness of Workflow Nets with Reset Arcs}},
+  journal = {T. Petri Nets and Other Models of Concurrency},
+  year = {2009},
+  volume = {3},
+  pages = {50-70}
+}
+
+@ARTICLE{AalstHofstede2005,
+  author = {Wil M. P. van der Aalst and Arthur H. M. ter Hofstede},
+  title = {{{YAWL}: Yet Another Workflow Language}},
+  journal = {Information Systems},
+  year = {2005},
+  volume = {30},
+  pages = {245--275},
+  number = {4},
+  doi = {10.1016/j.is.2004.02.002},
+  file = {:AalstHofstede2005.pdf:PDF}
+}
+
+@ARTICLE{AalstPesicEtAl2009,
+  author = {Wil M. P. van der Aalst and Maja Pesic and Helen Schonenberg},
+  title = {{Declarative workflows: Balancing between flexibility and support}},
+  journal = {Computer Science - R{\&}D},
+  year = {2009},
+  volume = {23},
+  pages = {99-113},
+  number = {2},
+  doi = {/10.1007/s00450-009-0057-9},
+  file = {:./AalstPesicEtAl2009.pdf:},
+  owner = {arutle},
+  timestamp = {2011.10.05}
+}
+
+@ARTICLE{AlpernSchneider1985,
+  author = {Bowen Alpern and Fred B. Schneider},
+  title = {Defining Liveness},
+  journal = {Inf. Process. Lett.},
+  year = {1985},
+  volume = {21},
+  pages = {181-185},
+  number = {4},
+  ee = {/10.1016/0020-0190(85)90056-0},
+  owner = {hao},
+  timestamp = {2012.02.02}
+}
+
+@ARTICLE{AlurDill1994,
+  author = {Rajeev Alur and David L. Dill},
+  title = {A Theory of Timed Automata},
+  journal = TCS,
+  year = {1994},
+  volume = {126},
+  pages = {183-235},
+  number = {2},
+  doi = {/10.1016/0304-3975(94)90010-8},
+  file = {Slides summarizing Timed Automata:schulte_timed_automata_slides.pdf:PDF;:AlurDill1994.pdf:PDF},
+  owner = {hao},
+  timestamp = {2011.12.14}
+}
+
+@INPROCEEDINGS{AlurHenzinger1992,
+  author = {Rajeev Alur and Thomas A. Henzinger},
+  title = {Logics and Models of Real Time: A Survey},
+  booktitle = {REX 1992: the Real-Time: Theory in Practice},
+  year = {1992},
+  pages = {74--106},
+  publisher = SPRINGER,
+  file = {:AlurHenzinger1992.pdf:PDF}
+}
+
+@INPROCEEDINGS{AwadDeckerEtAl2008,
+  author = {Ahmed Awad and Gero Decker and Mathias Weske},
+  title = {{Efficient Compliance Checking Using BPMN-Q and Temporal Logic}},
+  booktitle = {BPM 2008: 6$^{th}$ International Conference on Business Process Management},
+  year = {2008},
+  volume = {5240},
+  series = LNCS,
+  pages = {326--341},
+  publisher = SPRINGER,
+  doi = {/10.1007/978-3-540-85758-7_24},
+  isbn = {978-3-540-85757-0}
+}
+
+@ARTICLE{BarbutiFrancescoEtAl1999,
+  author = {Roberto Barbuti and Nicoletta De Francesco and Antonella Santone
+	and Gigliola Vaglini},
+  title = {{Selective Mu-Calculus and Formula-Based Equivalence of Transition
+	Systems}},
+  journal = {Journal of Computer and System Sciences},
+  year = {1999},
+  volume = {59},
+  pages = {537 - 556},
+  number = {3},
+  doi = {10.1006/jcss.1999.1660}
+}
+
+@INPROCEEDINGS{BarnatBrimEtAl2010,
+  author = {J. Barnat and L. Brim and M. \v{C}e\v{s}ka and P. Ro\v{c}kai},
+  title = {{DiVinE: Parallel Distributed Model Checker (Tool paper)}},
+  booktitle = {Parallel and Distributed Methods in Verification and High Performance
+	Computational Systems Biology (HiBi/PDMC 2010)},
+  year = {2010},
+  pages = {4--7},
+  publisher = {IEEE}
+}
+
+@INPROCEEDINGS{BarnatBrimEtAl2007,
+  author = {Jiri Barnat and Lubos Brim and Petr Rockai},
+  title = {{Scalable Multi-core LTL Model-Checking}},
+  booktitle = {SPIN 2007: 14$^{th}$ International Workshop on Model Checking Software},
+  year = {2007},
+  editor = {Dragan Bosnacki and Stefan Edelkamp},
+  volume = {4595},
+  series = LNCS,
+  pages = {187-203},
+  publisher = SPRINGER,
+  doi = {/10.1007/978-3-540-73370-6_13},
+  isbn = {978-3-540-73369-0}
+}
+
+@INPROCEEDINGS{Becker2008,
+  author = {Steffen Becker},
+  title = {Coupled model transformations},
+  booktitle = {WOSP 2008: 7$^{th}$ international workshop on Software and performance},
+  year = {2008},
+  pages = {103--114},
+  publisher = {ACM},
+  doi = {10.1145/1383559.1383573}
+}
+
+@INPROCEEDINGS{BeeriEyalEtAl2007,
+  author = {Catriel Beeri and Anat Eyal and Tova Milo and Alon Pilberg},
+  title = {{Query-based monitoring of BPEL business processes}},
+  booktitle = {SIGMOD 2007: International Conference on Management of Data},
+  year = {2007},
+  pages = {1122--1124},
+  publisher = {ACM},
+  acmid = {1247628},
+  doi = {/10.1145/1247480.1247628},
+  isbn = {978-1-59593-686-8}
+}
+
+@ARTICLE{BelliniMattoliniEtAl2000,
+  author = {P. Bellini and R. Mattolini and P. Nesi},
+  title = {Temporal logics for real-time system specification},
+  journal = ACMCSUR,
+  year = {2000},
+  volume = {32},
+  pages = {12--42},
+  month = {March},
+  doi = {10.1145/349194.349197},
+  issue = {1},
+  publisher = {ACM}
+}
+
+@INPROCEEDINGS{BengtssonLarsenEtAl1995,
+  author = {Johan Bengtsson and Kim G. Larsen and Fredrik Larsson and Paul Pettersson
+	and Wang Yi},
+  title = {{{\sc Uppaal} a Tool Suite for Automatic Verification of Real Time
+	Systems}},
+  booktitle = {Workshop on Verification and Control of Hybrid Systems III},
+  year = {1995},
+  volume = {1066},
+  series = LNCS,
+  pages = {232--243},
+  publisher = SPRINGER
+}
+
+@ARTICLE{BerthomieuDiaz1991,
+  author = {Bernard Berthomieu and Michel Diaz},
+  title = {{Modeling and Verification of Time Dependent Systems Using Time Petri
+	Nets}},
+  journal = IEEETSE,
+  year = {1991},
+  volume = {17},
+  pages = {259--273},
+  doi = {/10.1109/32.75415},
+  issue = {3},
+  publisher = IEEECS
+}
+
+@INPROCEEDINGS{BerthomieuVernadat2006,
+  author = {Bernard Berthomieu and Francois Vernadat},
+  title = {{Time Petri Nets Analysis with TINA}},
+  booktitle = {3$^{rd}$ International Conference on the Quantitative Evaluation
+	of Systems},
+  year = {2006},
+  pages = {123--124},
+  publisher = IEEECS,
+  doi = {10.1109/QEST.2006.56}
+}
+
+@ARTICLE{BertoliniLiuEtAl2011,
+  author = {Cristiano Bertolini and Zhiming Liu and Martin Sch{\"a}f and and
+	Volker Stolz},
+  title = {{Towards a Formal Integrated Model of Collaborative Healthcare Workflows}},
+  journal = {UNU-IIST Report No. 450},
+  year = {2011},
+  month = {June}
+}
+
+@INPROCEEDINGS{BocchiLaneveEtAl2003,
+  author = {Laura Bocchi and Cosimo Laneve and Gianluigi Zavattaro},
+  title = {A Calculus for Long-Running Transactions},
+  booktitle = {FMOODS 2003: 6$^{th}$ IFIP WG 6.1 International Conference on Formal
+	Methods for Open Object-Based Distributed Systems},
+  year = {2003},
+  editor = {Elie Najm and Uwe Nestmann and Perdita Stevens},
+  volume = {2884},
+  series = LNCS,
+  pages = {124-138},
+  publisher = SPRINGER,
+  doi = {/10.1007/978-3-540-39958-2_9},
+  file = {:BocchiLaneveEtAl2003.pdf:PDF},
+  owner = {hao},
+  timestamp = {2012.01.16}
+}
+
+@ARTICLE{BroadfieldBanerjeeEtAl2005,
+  author = {L. Broadfield and S. Banerjee and H. Jewers and A.J. Pollett and
+	J. Simpson},
+  title = {{Guidelines for the Management of Cancer-Related Pain in Adults}},
+  journal = {Supportive Care Cancer Site Team, Cancer Care Nova Scotia},
+  year = {2005}
+}
+
+@INPROCEEDINGS{BruniButlerEtAl2005,
+  author = {Roberto Bruni and Michael J. Butler and Carla Ferreira and C. A.
+	R. Hoare and Hern{\'a}n C. Melgratti and Ugo Montanari},
+  title = {{Comparing Two Approaches to Compensable Flow Composition}},
+  booktitle = CONCUR05,
+  year = {2005},
+  editor = {Mart\'{\i}n Abadi and Luca de Alfaro},
+  volume = {3653},
+  series = LNCS,
+  pages = {383--397},
+  publisher = SPRINGER,
+  doi = {10.1007/11539452_30},
+  file = {:BruniButlerEtAl2005.pdf:PDF},
+  isbn = {3-540-28309-9},
+  masid = {1849198}
+}
+
+@INPROCEEDINGS{BruniMelgrattiEtAl2005,
+  author = {Bruni, Roberto and Melgratti, Hern{\'a}n and Montanari, Ugo},
+  title = {{Theoretical Foundations for Compensations in Flow Composition Languages}},
+  booktitle = POPL05,
+  year = {2005},
+  pages = {209--220},
+  publisher = {ACM},
+  doi = {10.1145/1040305.1040323},
+  file = {:BruniMelgrattiEtAl2005.pdf:PDF}
+}
+
+@ARTICLE{Bryant1986,
+  author = {Randal E. Bryant},
+  title = {{Graph-Based Algorithms for Boolean Function Manipulation}},
+  journal = IEEETC,
+  year = {1986},
+  volume = {35},
+  pages = {677--691},
+  doi = {10.1109/TC.1986.1676819},
+  publisher = IEEECS
+}
+
+@INPROCEEDINGS{BruningGogollaEtAl2010,
+  author = {Jens Br{\"u}ning and Martin Gogolla and Peter Forbrig},
+  title = {{Modeling and Formally Checking Workflow Properties Using UML and
+	OCL}},
+  booktitle = BIR10,
+  year = {2010},
+  volume = {64},
+  series = LNBIP,
+  pages = {130-145},
+  publisher = SPRINGER,
+  doi = {/10.1007/978-3-642-16101-8_11},
+  file = {:./BruningGogollaEtAl2010.pdf:},
+  isbn = {978-3-642-16100-1},
+  owner = {arutle},
+  timestamp = {2011.10.05}
+}
+
+@ARTICLE{BruningWolff2009,
+  author = {Jens Br{\"u}ning and Andreas Wolff},
+  title = {{Declarative Models for Business Processes and UI Generation using
+	OCL}},
+  journal = ECEASST,
+  year = {2009},
+  volume = {24},
+  file = {:BruningWolff2009.pdf:PDF}
+}
+
+@INPROCEEDINGS{BurmesterGieseEtAl2005,
+  author = {Sven Burmester and Holger Giese and Wilhelm Sch{\"a}fer},
+  title = {Model-Driven Architecture for Hard Real-Time Systems: From Platform
+	Independent Models to Code},
+  booktitle = {ECMDA-FA},
+  year = {2005},
+  editor = {Alan Hartman and David Kreische},
+  volume = {3748},
+  series = LNCS,
+  pages = {25-40},
+  publisher = SPRINGER,
+  doi = {10.1007/11581741_4},
+  file = {:BurmesterGieseEtAl2005.pdf:PDF}
+}
+
+@INPROCEEDINGS{ButlerHoareEtAl2004,
+  author = {Michael J. Butler and C. A. R. Hoare and Carla Ferreira},
+  title = {A Trace Semantics for Long-Running Transactions},
+  booktitle = {25 Years Communicating Sequential Processes},
+  year = {2004},
+  editor = {Ali E. Abdallah and Cliff B. Jones and Jeff W. Sanders},
+  volume = {3525},
+  series = LNCS,
+  pages = {133-150},
+  publisher = SPRINGER,
+  doi = {/10.1007/11423348_8},
+  file = {:ButlerHoareEtAl2004.pdf:PDF}
+}
+
+@BOOK{Buzan1996,
+  title = {{The Mind Map Book}},
+  publisher = {Penguin Books},
+  year = {1996},
+  author = {Tony Buzan}
+}
+
+@INPROCEEDINGS{CamposClarkeEtAl1995,
+  author = {Sérgio Vale Aguiar Campos and Edmund M. Clarke and Wilfredo R. Marrero
+	and Marius Minea},
+  title = {Timing analysis of industrial real-time systems},
+  booktitle = {WIFT 1995: 1$^{st}$ Workshop on Industrial-Strength Formal Specification
+	Techniques},
+  year = {1995},
+  pages = {97},
+  publisher = IEEECS,
+  file = {:CamposClarkeEtAl1995.pdf:PDF}
+}
+
+@INCOLLECTION{CastroMaibaum2009,
+  author = {Pablo F. Castro and Tom Maibaum},
+  title = {{Reasoning about System-Degradation and Fault-Recovery with Deontic
+	Logic}},
+  booktitle = {Methods, Models and Tools for Fault Tolerance},
+  publisher = SPRINGER,
+  year = {2009},
+  editor = BUTLERETAL5454,
+  volume = {5454},
+  series = LNCS,
+  pages = {25-43},
+  doi = {/10.1007/978-3-642-00867-2_2},
+  file = {:./CastroMaibaum2009.pdf:},
+  isbn = {978-3-642-00866-5},
+  owner = {arutle},
+  timestamp = {2011.12.13}
+}
+
+@ARTICLE{CattaniKwiatkowska2005,
+  author = {Stefano Cattani and Marta Z. Kwiatkowska},
+  title = {A refinement-based process algebra for timed automata},
+  journal = FAC,
+  year = {2005},
+  volume = {17},
+  pages = {138-159},
+  number = {2},
+  doi = {/10.1007/s00165-005-0064-y},
+  file = {:CattaniKwiatkowska2005.pdf:PDF},
+  owner = {hao},
+  timestamp = {2011.12.20}
+}
+
+@INPROCEEDINGS{ChangWang1986,
+  author = {Carl K. Chang and Huiyu Wang},
+  title = {{A Slicing Algorithm of Concurrency Modeling Based on Petri Nets}},
+  booktitle = {ICPP 1986: International Conference on Parallel Processing},
+  year = {1986},
+  pages = {789--792},
+  publisher = IEEECS
+}
+
+@INPROCEEDINGS{ChenLiu2010,
+  author = {Zhenbang Chen and Zhiming Liu},
+  title = {{An Extended cCSP with Stable Failures Semantics}},
+  booktitle = {ICTAC 2010: 7$^{th}$ International Colloquium on Theoretical Aspects
+	of Computing},
+  year = {2010},
+  volume = {6255},
+  series = LNCS,
+  pages = {121-136},
+  publisher = SPRINGER,
+  doi = {/10.1007/978-3-642-14808-8_9}
+}
+
+@ARTICLE{ChenLiuEtAl,
+  author = {Zhenbang Chen and Zhiming Liu and Ji Wang},
+  title = {{Failure-Divergence Semantics and Refinement of Long Running Transactions}},
+  journal = TCS,
+  year = {To appear},
+  file = {draft version:ChenLiuEtAl.pdf:PDF},
+  owner = {hao},
+  timestamp = {2012.10.03}
+}
+
+@INPROCEEDINGS{ChenLiuEtAl2011,
+  author = {Zhenbang Chen and Zhiming Liu and Ji Wang},
+  title = {{Failure-Divergence Refinement of Compensating Communicating Processes}},
+  booktitle = {FM 2011: 17$^{th}$ International Symposium on Formal Methods},
+  year = {2011},
+  volume = {6664},
+  series = LNCS,
+  pages = {262-277},
+  publisher = Springer,
+  doi = {10.1007/978-3-642-21437-0_21},
+  file = {:ChenLiuEtAl2011.pdf:PDF}
+}
+
+@INPROCEEDINGS{ChouPeled1996,
+  author = {Ching-Tsun Chou and Doron Peled},
+  title = {{Formal Verification of a Partial-Order Reduction Technique for Model
+	Checking}},
+  booktitle = {TACAS 1996: 2$^nd$ International Workshop on Tools and Algorithms
+	for Construction and Analysis of Systems},
+  year = {1996},
+  volume = {1055},
+  series = LNCS,
+  pages = {241-257},
+  publisher = SPRINGER
+}
+
+@INPROCEEDINGS{ClarkeGrumbergEtAl1996,
+  author = {E. Clarke and O. Grumberg and D. Long},
+  title = {{Model Checking}},
+  booktitle = {NATO Advanced Study Institute on Deductive Program Design},
+  year = {1996},
+  pages = {305--349},
+  publisher = SPRINGER
+}
+
+@INPROCEEDINGS{ClarkeEmerson1981,
+  author = {Edmund M. Clarke and E. Allen Emerson},
+  title = {{Design and Synthesis of Synchronization Skeletons Using Branching-Time
+	Temporal Logic}},
+  booktitle = {Logics of Programs},
+  year = {1981},
+  volume = {131},
+  series = LNCS,
+  pages = {52-71},
+  publisher = SPRINGER
+}
+
+@ARTICLE{ClarkeEmersonEtAl1986,
+  author = {Edmund M. Clarke and E. Allen Emerson and A. Prasad Sistla},
+  title = {{Automatic Verification of Finite-State Concurrent Systems Using
+	Temporal Logic Specifications}},
+  journal = {ACM Trans. Program. Lang. Syst.},
+  year = {1986},
+  volume = {8},
+  pages = {244-263},
+  number = {2},
+  doi = {10.1145/5397.5399},
+  publisher = ACM
+}
+
+@INPROCEEDINGS{ClarkeFujitaEtAl1999,
+  author = {Edmund M. Clarke and Masahiro Fujita and Sreeranga P. Rajan and Thomas
+	W. Reps and Subash Shankar and Tim Teitelbaum},
+  title = {{Program Slicing of Hardware Description Languages}},
+  booktitle = {CHARME 1999: 10$^{th}$ IFIP WG 10.5 Advanced Research Working Conference
+	on Correct Hardware Design and Verification Methods},
+  year = {1999},
+  pages = {298--312},
+  publisher = SPRINGER
+}
+
+@BOOK{ClarkeGrumbergEtAl1999,
+  title = {{Model Checking}},
+  publisher = {The MIT Press},
+  year = {1999},
+  author = {Edmund M. Clarke and Orna Grumberg and Doron A. Peled}
+}
+
+@INPROCEEDINGS{DamasLambeauEtAl2009,
+  author = {Christophe Damas and Bernard Lambeau and Francois Roucoux and Axel
+	van Lamsweerde},
+  title = {Analyzing critical process models through behavior model synthesis},
+  booktitle = {ICSE 2009},
+  pages = {441-451},
+  publisher = IEEECS,
+  doi = {/10.1109/ICSE.2009.5070543},
+  file = {:DamasLambeauEtAl2009.pdf:PDF},
+  owner = {hao},
+  timestamp = {2012.07.25}
+}
+
+@ARTICLE{DijkmanDumasEtAl2O08,
+  author = {Remco M. Dijkman and Marlon Dumas and Chun Ouyang},
+  title = {Semantics and analysis of business process models in BPMN},
+  journal = {Information {\&} Software Technology},
+  year = {2008},
+  volume = {50},
+  pages = {1281-1294},
+  number = {12},
+  ee = {10.1016/j.infsof.2008.02.006}
+}
+
+@INPROCEEDINGS{Dill1990,
+  author = {D. L. Dill },
+  title = {Timing assumptions and verification of finite-state concurrent systems},
+  booktitle = {International workshop on Automatic verification methods for finite
+	state systems},
+  year = {1990},
+  pages = {197--212},
+  publisher = SPRINGER,
+  file = {:Dill1990.pdf:PDF},
+  owner = {hao},
+  timestamp = {2011.12.27}
+}
+
+@INPROCEEDINGS{DongenAalstEtAl2005,
+  author = {Boudewijn F. van Dongen and Wil M. P. van der Aalst and H. M. W.
+	Verbeek},
+  title = {{Verification of EPCs: Using Reduction Rules and Petri Nets}},
+  booktitle = {CAiSE 2005: 17$^th$ International Conference on Advanced Information
+	Systems Engineering},
+  year = {2005},
+  volume = {3520},
+  series = LNCS,
+  pages = {372-386},
+  publisher = SPRINGER,
+  doi = {/10.1007/11431855_26}
+}
+
+@INPROCEEDINGS{DwyerAvruninEtAl1999,
+  author = {Matthew B. Dwyer and George S. Avrunin and James C. Corbett},
+  title = {Patterns in property specifications for finite-state verification},
+  booktitle = {ICSE 1999: 21$^{st}$ international conference on Software engineering},
+  year = {1999},
+  pages = {411--420},
+  publisher = {ACM},
+  doi = {10.1145/302405.302672},
+  file = {:DwyerAvruninEtAl1999.pdf:PDF}
+}
+
+@INPROCEEDINGS{EngelsSoltenbornEtAl2007,
+  author = {Gregor Engels and Christian Soltenborn and Heike Wehrheim},
+  title = {{Analysis of UML activities using dynamic meta modeling}},
+  booktitle = {FMOODS 2007: 9$^{th}$ IFIP WG 6.1 International Conference on Formal
+	Methods for Open Object-Based Distributed Systems},
+  year = {2007},
+  pages = {76--90},
+  publisher = SPRINGER,
+  file = {:EngelsSoltenbornEtAl2007.pdf:PDF}
+}
+
+@INPROCEEDINGS{EvangelistaHaddadEtAl2005,
+  author = {Sami Evangelista and Serge Haddad and Jean-Fran\c{c}ois Pradat-Peyre},
+  title = {{Syntactical Colored Petri Nets Reductions}},
+  booktitle = {ATVA 2005: 3$^{rd}$ International Symposium on Automated Technology
+	for Verification and Analysis},
+  year = {2005},
+  volume = {3707},
+  series = LNCS,
+  pages = {202-216},
+  publisher = SPRINGER,
+  doi = {10.1007/11562948_17},
+  isbn = {3-540-29209-8}
+}
+
+@ARTICLE{EvangelistaHaddadEtAl2004,
+  author = {Sami Evangelista and Serge Haddad and Jean-Fran\c{c}ois Pradat-Peyre},
+  title = {{Colored Petri Nets Reductions for Concurrent Software Validation}},
+  journal = {Technical report},
+  year = {2004},
+  booktitle = {CEDRIC, CNAM, Paris}
+}
+
+@INPROCEEDINGS{FazleMacCaullEtAl2012,
+  author = {Rabbi Fazle and Wendy MacCaull and Hao Wang and Adrian Rutle},
+  title = {{A Model Slicing Method for Workflow Verification}},
+  booktitle = FESCA12,
+  year = {To appear},
+  publisher = ELSEVIER,
+  --note = {9$^{th}$ International Workshop on Formal Engineering approaches to
+	Software Components and Architectures, Satellite event of ETAPS},
+  --volume = {To appear},
+  journal = ENTCS,
+  owner = {arutle},
+  timestamp = {2012.04.11}
+}
+
+@ARTICLE{FerrisBalfourEtAl2002,
+  author = {Frank D. Ferris and Heather M. Balfour and Karen Bowen and Justine
+	Farley and Marsha Hardwick and Claude Lamontagne and Marilyn Lundy
+	and Ann Syme and Pamela J. West},
+  title = {{A Model to Guide Hospice Palliative Care}},
+  year = {2002},
+  publisher = {Canadian Hospice Palliative Care Association}
+}
+
+@ARTICLE{FuriaMandrioliEtAl2010,
+  author = {Carlo A. Furia and Dino Mandrioli and Angelo Morzenti and Matteo
+	Rossi},
+  title = {Modeling time in computing: A taxonomy and a comparative survey},
+  journal = ACMCSUR,
+  year = {2010},
+  volume = {42},
+  pages = {6:1--6:59},
+  month = {March},
+  articleno = {6},
+  doi = {10.1145/1667062.1667063},
+  file = {:FuriaMandrioliEtAl2010.pdf:PDF},
+  issue = {2},
+  publisher = {ACM}
+}
+
+@INPROCEEDINGS{FuriaPradellaEtAl2008,
+  author = {Carlo A. Furia and Matteo Pradella and Matteo Rossi},
+  title = {Practical Automated Partial Verification of Multi-paradigm Real-Time
+	Models},
+  booktitle = {ICFEM 2008: 10$^{th}$ International Conference on Formal Methods
+	and Software Engineering},
+  year = {2008},
+  volume = {5256},
+  series = LNCS,
+  pages = {298--317},
+  publisher = SPRINGER,
+  doi = {10.1007/978-3-540-88194-0_19},
+  file = {:FuriaPradellaEtAl2008.pdf:PDF},
+  numpages = {20}
+}
+
+@ARTICLE{Garcia-MolinaSalem1987,
+  author = {Hector Garcia-Molina and Kenneth Salem},
+  title = {{Sagas}},
+  journal = {SIGMOD Rec.},
+  year = {1987},
+  volume = {16},
+  pages = {249--259},
+  doi = {/10.1145/38714.38742},
+  issn = {0163-5808},
+  issue = {3},
+  publisher = {ACM}
+}
+
+@ARTICLE{GhamarianDemolEtAl2011,
+  author = {Amir Ghamarian and Maarten de Mol and Arend Rensink and Eduardo Zambon
+	and Maria Zimakova},
+  title = {{Modelling and analysis using GROOVE}},
+  journal = STTT,
+  year = {2011},
+  pages = {1-26},
+  doi = {10.1007/s10009-011-0186-x},
+  file = {:GhamarianDemolEtAl2011.pdf:PDF},
+  issn = {1433-2779},
+  owner = {arutle},
+  publisher = SPRINGER,
+  timestamp = {2011.12.16}
+}
+
+@INPROCEEDINGS{GieseTichyEtAl2003,
+  author = {Holger Giese and Matthias Tichy and Sven Burmester and Stephan Flake},
+  title = {Towards the compositional verification of real-time UML designs},
+  year = {2003},
+  pages = {38-47},
+  publisher = {ACM},
+  doi = {10.1145/940071.940078},
+  file = {:GieseTichyEtAl2003.pdf:PDF}
+}
+
+@INPROCEEDINGS{Godefroid1991,
+  author = {Patrice Godefroid},
+  title = {{Using partial orders to improve automatic verification methods}},
+  booktitle = {CAV 1990: the 2$^{nd}$ International Workshop on Computer Aided Verification},
+  year = {1991},
+  volume = {531},
+  series = LNCS,
+  pages = {176-185},
+  publisher = SPRINGER,
+  doi = {/10.1007/BFb0023731}
+}
+
+@INPROCEEDINGS{GodefroidPirottin1993,
+  author = {Patrice Godefroid and Didier Pirottin},
+  title = {{Refining Dependencies Improves Partial-Order Verification Methods}},
+  booktitle = {CAV 1993: 5$^th$ International Conference on Computer Aided Verification},
+  year = {1993},
+  volume = {697},
+  series = LNCS,
+  pages = {438-449},
+  publisher = SPRINGER
+}
+
+@ARTICLE{HarelRumpe2004,
+  author = {David Harel and Bernhard Rumpe},
+  title = {Meaningful Modeling: What's the Semantics of "Semantics"?},
+  journal = IEEEC,
+  year = {2004},
+  volume = {37},
+  pages = {64-72},
+  number = {10},
+  ee = {http://csdl.computer.org/comp/mags/co/2004/10/rx064abs.htm},
+  file = {:HarelRumpe2004.pdf:PDF}
+}
+
+@ARTICLE{HatcliffDwyerEtAl2000,
+  author = {John Hatcliff and Matthew B. Dwyer and Hongjun Zheng},
+  title = {{Slicing Software for Model Construction}},
+  journal = {Higher Order and Symbolic Computation},
+  year = {2000},
+  volume = {13},
+  pages = {315--353},
+  doi = {10.1023/A:1026599015809},
+  issue = {4},
+  publisher = {Kluwer Academic Publishers}
+}
+
+@INPROCEEDINGS{He2008,
+  author = {Jifeng He},
+  title = {{Modelling Coordination and Compensation}},
+  booktitle = {ISoLA 2008: 3$^rd$ International Symposium on Leveraging Applications
+	of Formal Methods, Verification and Validation},
+  year = {2008},
+  volume = {17},
+  series = {Communications in Computer and Information Science},
+  pages = {15-36},
+  publisher = SPRINGER,
+  doi = {10.1007/978-3-540-88479-8_3}
+}
+
+@INPROCEEDINGS{jifeng2007,
+  author = {Jifeng He},
+  title = {{Compensable Programs}},
+  booktitle = {Formal Methods and Hybrid Real-Time Systems},
+  year = {2007},
+  volume = {4700},
+  series = LNCS,
+  pages = {349-363},
+  publisher = SPRINGER,
+  doi = {/10.1007/978-3-540-75221-9_15}
+}
+
+@TECHREPORT{HeinzemannHenkler2011,
+  author = {C. Heinzemann AND S. Henkler},
+  title = {Timed Story Driven Modeling},
+  institution = {Software Engineering Group, Heinz Nixdorf Institute},
+  year = {2011},
+  file = {:HeinzemannHenkler2011.pdf:PDF},
+  owner = {hao},
+  timestamp = {2012.02.07}
+}
+
+@ARTICLE{Henzinger1992,
+  author = {Thomas A. Henzinger},
+  title = {Sooner is Safer Than Later},
+  journal = {Inf. Process. Lett.},
+  year = {1992},
+  volume = {43},
+  pages = {135-141},
+  number = {3},
+  ee = {/10.1016/0020-0190(92)90005-G},
+  owner = {hao},
+  timestamp = {2012.02.12}
+}
+
+@INPROCEEDINGS{HenzingerKopkeEtAl1995,
+  author = {Thomas A. Henzinger and Peter W. Kopke and Anuj Puri and Pravin Varaiya},
+  title = {What's decidable about hybrid automata?},
+  booktitle = {STOC 1995: 27$^{th}$ annual ACM symposium on Theory of computing},
+  year = {1995},
+  pages = {373--382},
+  publisher = ACM,
+  doi = {/10.1145/225058.225162},
+  file = {:HenzingerKopkeEtAl1995.pdf:PDF},
+  owner = {hao},
+  timestamp = {2011.12.27}
+}
+
+@INPROCEEDINGS{HenzingerMannaEtAl1992,
+  author = {Thomas A. Henzinger and Zohar Manna and Amir Pnueli},
+  title = {What Good Are Digital Clocks?},
+  booktitle = {ICALP 1992: 19$^{th}$ International Colloquium on Automata, Languages
+	and Programming},
+  year = {1992},
+  volume = {623},
+  series = LNCS,
+  pages = {545--558},
+  publisher = SPRINGER,
+  file = {Longer technical report version:HenzingerMannaEtAl1992_long.pdf:PDF;:HenzingerMannaEtAl1992.pdf:PDF},
+  url = {10.1007/3-540-55719-9_103}
+}
+
+@INPROCEEDINGS{HerrmannsdoerferRatiuEtAl2009,
+  author = {Markus Herrmannsdoerfer and Daniel Ratiu and Guido Wachsmuth},
+  title = {Language Evolution in Practice: The History of GMF},
+  booktitle = {SLE 2009: 2$^{nd}$ International Conference on Software Language
+	Engineering},
+  year = {2009},
+  editor = {Mark van den Brand and Dragan Gasevic and Jeff Gray},
+  volume = {5969},
+  series = LNCS,
+  pages = {3-22},
+  publisher = SPRINGER,
+  doi = {10.1007/978-3-642-12107-4_3}
+}
+
+@ARTICLE{Hoare1978,
+  author = {C. A. R. Hoare},
+  title = {{Communicating sequential processes}},
+  journal = {Commun. ACM},
+  year = {1978},
+  volume = {21},
+  pages = {666--677},
+  doi = {10.1145/359576.359585},
+  issue = {8},
+  numpages = {12},
+  publisher = ACM
+}
+
+@MISC{wfmc1995,
+  author = {David Hollingsworth},
+  title = {{The Workflow Reference Model}},
+  howpublished = {Workflow Management Coalition},
+  year = {1995}
+}
+
+@INPROCEEDINGS{HoltKlein1999,
+  author = {Alexander Holt and Ewan Klein},
+  title = {A semantically-derived subset of English for hardware verification},
+  booktitle = {ACL 1999: 37$^{th}$ annual meeting of the Association for Computational
+	Linguistics on Computational Linguistics},
+  year = {1999},
+  pages = {451--456},
+  publisher = {Association for Computational Linguistics},
+  doi = {/10.3115/1034678.1034747},
+  file = {:HoltKlein1999.pdf:PDF}
+}
+
+@ARTICLE{Holzmann1997,
+  author = {Gerard J. Holzmann},
+  title = {{The Model Checker {SPIN}}},
+  journal = IEEETSE,
+  year = {1997},
+  volume = {23},
+  pages = {279-295},
+  number = {5},
+  publisher = IEEECS
+}
+
+@MANUAL{IBMBeaEtAl2003,
+  title = {{Business Process Execution Language for Web Services Version 1.1}},
+  author = {IBM and Bea and Microsoft and SAP and Siebel},
+  year = {2003}
+}
+
+@ARTICLE{IpDill1996,
+  author = {C. Norris Ip and David L. Dill},
+  title = {{Better Verification Through Symmetry}},
+  journal = {Formal Methods System Design},
+  year = {1996},
+  volume = {9},
+  pages = {41--75},
+  doi = {10.1007/BF00625968},
+  issue = {1-2},
+  publisher = {Kluwer Academic Publishers}
+}
+
+@INCOLLECTION{KatzPeled1989,
+  author = {Shmuel Katz and Doron Peled},
+  title = {{An Efficient Verification Method for Parallel and Distributed Programs}},
+  booktitle = {Linear Time, Branching Time and Partial Order in Logics and Models
+	for Concurrency},
+  publisher = SPRINGER,
+  year = {1989},
+  volume = {354},
+  series = LNCS,
+  pages = {489-507}
+}
+
+@ARTICLE{Kindler2009,
+  author = {Ekkart Kindler},
+  title = {Model-Based Software Engineering and Process-Aware Information Systems},
+  journal = {Transactions on Petri Nets and Other Models of Concurrency II, Special
+	Issue on Concurrency in Process-Aware Information Systems},
+  year = {2009},
+  volume = {2},
+  pages = {27-45},
+  doi = {10.1007/978-3-642-00899-3_2},
+  editor = {Kurt Jensen and Wil M. P. van der Aalst},
+  publisher = SPRINGER,
+  series = LNCS
+}
+
+@INPROCEEDINGS{Kindler2011,
+  author = {Ekkart Kindler},
+  title = {Integrating behaviour in software models: an event coordination notation
+	-- concepts and prototype},
+  booktitle = BMFA11,
+  year = {2011},
+  pages = {41--48},
+  publisher = {ACM},
+  doi = {10.1145/1993956.1993962}
+}
+
+@INPROCEEDINGS{Kindler2010,
+  author = {Ekkart Kindler},
+  title = {Model-based software engineering: the challenges of modelling behaviour},
+  booktitle = BMFA10,
+  year = {2010},
+  pages = {4:1--4:8},
+  publisher = {ACM},
+  articleno = {4},
+  doi = {10.1145/1811147.1811151}
+}
+
+@INPROCEEDINGS{KnupleschLyEtAl2010,
+  author = {Knuplesch, David and Ly, Linh Thao and Rinderle-Ma, Stefanie and
+	Pfeifer, Holger and Dadam, Peter},
+  title = {{On enabling data-aware compliance checking of business process models}},
+  booktitle = {ER 2010: 29$^{th}$ International Conference on Conceptual Modeling},
+  year = {2010},
+  volume = {6412},
+  series = LNCS,
+  pages = {332--346},
+  publisher = SPRINGER,
+  doi = {/10.1007/978-3-642-16373-9_24}
+}
+
+@INPROCEEDINGS{KokashKrauseEtAl2010,
+  author = {Natallia Kokash and Christian Krause and Erik P. de Vink},
+  title = {{Time and Data-Aware Analysis of Graphical Service Models in Reo}},
+  booktitle = {SEFM 2010: 8$^{th}$ IEEE International Conference on Software Engineering
+	and Formal Methods},
+  year = {2010},
+  pages = {125-134},
+  publisher = IEEECS,
+  doi = {10.1109/SEFM.2010.26}
+}
+
+@INPROCEEDINGS{KonradCampbellEtAl2004,
+  author = {Sascha Konrad and Laura A. Campbell and Betty H. C. Cheng},
+  title = {Automated Analysis of Timing Information in UML Diagrams},
+  booktitle = {ASE 2004: 19$^{th}$ IEEE international conference on Automated Software
+	Engineering},
+  year = {2004},
+  pages = {350--353},
+  publisher = IEEECS,
+  doi = {10.1109/ASE.2004.14}
+}
+
+@INPROCEEDINGS{KonradCheng2005,
+  author = {Sascha Konrad and Betty H. C. Cheng},
+  title = {Real-time specification patterns},
+  booktitle = {ICSE 2005: 27$^{th}$ international conference on Software engineering},
+  year = {2005},
+  pages = {372--381},
+  publisher = ACM,
+  doi = {10.1145/1062455.1062526},
+  file = {:KonradCheng2005.pdf:PDF}
+}
+
+@ARTICLE{KonradChengEtAl2004,
+  author = {Sascha Konrad and Betty H. C. Cheng and Laura A. Campbell},
+  title = {Object Analysis Patterns for Embedded Systems},
+  journal = IEEETSE,
+  year = {2004},
+  volume = {30},
+  pages = {970--992},
+  month = {December},
+  doi = {10.1109/TSE.2004.102},
+  file = {:KonradChengEtAl2004.pdf:PDF},
+  issue = {12},
+  numpages = {23},
+  publisher = IEEECS
+}
+
+@ARTICLE{Kripke1963,
+  author = {Saul Aaron Kripke},
+  title = {{A Semantical Analysis of Modal Logic {I}: Normal Modal Propositional
+	Calculi}},
+  journal = {Zeitschrift f{\"u}r Mathematische Logik und Grundlagen der Mathematik},
+  year = {1963},
+  volume = {9},
+  pages = {67--96}
+}
+
+@ARTICLE{Kuster2004,
+  author = {Jochen M. K{\"u}ster},
+  title = {{Towards Inconsistency Handling of Object-Oriented Behavioral Models}},
+  journal = ENTCS,
+  year = {2004},
+  volume = {109},
+  pages = {57 - 69},
+  note = {Proceedings of the Workshop GT-VMT},
+  doi = {10.1016/j.entcs.2004.02.056},
+  issn = {1571-0661}
+}
+
+@INPROCEEDINGS{Lamport2005,
+  author = {Leslie Lamport},
+  title = {{Real-Time Model Checking Is Really Simple}},
+  booktitle = {CHARME 2005: 13$^{th}$ IFIP WG 10.5 Advanced Research Working Conference
+	on Correct Hardware Design and Verification Methods},
+  year = {2005},
+  volume = {3725},
+  series = LNCS,
+  pages = {162-175},
+  publisher = SPRINGER,
+  doi = {/10.1007/11560548_14},
+  file = {:Lamport2005.pdf:PDF}
+}
+
+@ARTICLE{Lamport1977,
+  author = {Leslie Lamport},
+  title = {Proving the Correctness of Multiprocess Programs},
+  journal = IEEETSE,
+  year = {1977},
+  volume = {3},
+  pages = {125-143},
+  number = {2},
+  doi = {/10.1109/TSE.1977.229904},
+  owner = {hao},
+  timestamp = {2012.02.02}
+}
+
+@INPROCEEDINGS{LapadulaPuglieseEtAl2008,
+  author = {Alessandro Lapadula and Rosario Pugliese and Francesco Tiezzi},
+  title = {{Specifying and Analysing SOC Applications with COWS}},
+  booktitle = CGM,
+  year = {2008},
+  editor = {Pierpaolo Degano and Rocco De Nicola and Jos{\'e} Meseguer},
+  volume = {5065},
+  series = LNCS,
+  pages = {701-720},
+  publisher = {Springer},
+  doi = {/10.1007/978-3-540-68679-8_43},
+  file = {:LapadulaPuglieseEtAl2008.pdf:PDF},
+  isbn = {978-3-540-68676-7},
+  owner = {arutle},
+  timestamp = {2012.03.07}
+}
+
+@ARTICLE{LeavensLeinoEtAl2007,
+  author = {Gary T. Leavens and K. Rustan M. Leino and Peter Muller},
+  title = {{Specification and Verification Challenges for Sequential Object-oriented
+	Programs}},
+  journal = FAC,
+  year = {2007},
+  volume = {19},
+  pages = {159--189},
+  doi = {10.1007/s00165-007-0026-7},
+  issue = {2},
+  publisher = SPRINGER
+}
+
+@INPROCEEDINGS{LeylaMashiyatEtAl2009,
+  author = {Nazia Leyla and Ahmed Mashiyat and Hao Wang and Wendy MacCaull},
+  title = {{Workflow Verification with DiVinE}},
+  booktitle = {PDMC 2009: Parallel and Distributed Methods in verifiCation},
+  year = {2009}
+}
+
+@INPROCEEDINGS{LiZhuEtAl2008,
+  author = {Jing Li and Huibiao Zhu and Jifeng He},
+  title = {{Specifying and Verifying Web Transactions}},
+  booktitle = {FORTE 2008: 28$^{th}$ IFIP WG 6.1 international conference on Formal
+	Techniques for Networked and Distributed Systems},
+  year = {2008},
+  volume = {5048},
+  series = LNCS,
+  pages = {149--168},
+  publisher = SPRINGER,
+  doi = {/10.1007/978-3-540-68855-6_10}
+}
+
+@INPROCEEDINGS{LiZhuEtAl2007b,
+  author = {Jing Li and Huibiao Zhu and Jifeng He},
+  title = {{Algebraic Semantics for Compensable Transactions}},
+  booktitle = {ICTAC 2007: 4$^{th}$ International Conference on Theoretical Aspects
+	of Computing},
+  year = {2007},
+  volume = {4711},
+  series = LNCS,
+  pages = {306--321},
+  publisher = SPRINGER
+}
+
+@ARTICLE{LiZhuEtAl2007,
+  author = {Jing Li and Huibiao Zhu and Geguang Pu and Jifeng He},
+  title = {{Looking into Compensable Transactions}},
+  journal = {SEW 2007: 31$^{st}$ Annual IEEE / NASA Software Engineering Workshop},
+  year = {2007},
+  pages = {154-166},
+  doi = {10.1109/SEW.2007.100},
+  publisher = IEEECS
+}
+
+@INPROCEEDINGS{LiZhuEtAl2007c,
+  author = {Jing Li and Huibiao Zhu and Geguang Pu and Jifeng He},
+  title = {{A Formal Model for Compensable Transactions}},
+  booktitle = {ICECCS 2007: 12$^{th}$ IEEE International Conference on Engineering
+	Complex Computer Systems},
+  year = {2007},
+  pages = {64--73},
+  publisher = IEEECS,
+  doi = {10.1109/ICECCS.2007.8}
+}
+
+@ARTICLE{LiSong2005,
+  author = {Shuyou Li and Binheng Song},
+  title = {{Normalized workflow net ({NWF-net}): Its definition and properties}},
+  journal = {Future Gener. Comput. Syst.},
+  year = {2005},
+  volume = {21},
+  pages = {1004--1014},
+  doi = {/10.1016/j.future.2005.02.003},
+  issue = {7},
+  publisher = ELSEVIER
+}
+
+@INPROCEEDINGS{LimeRoxEtAl2009,
+  author = {Didier Lime and Olivier H. Roux and Charlotte Seidner and Louis-Marie
+	Traonouez},
+  title = {{Romeo: A Parametric Model-Checker for Petri Nets with Stopwatches}},
+  booktitle = {TACAS 2009: 15$^{th}$ International Conference on Tools and Algorithms
+	for the Construction and Analysis of Systems},
+  year = {2009},
+  volume = {5505},
+  series = LNCS,
+  pages = {54--57},
+  publisher = SPRINGER,
+  doi = {/10.1007/978-3-642-00768-2_6}
+}
+
+@ARTICLE{LlorensOliverEtAl2008,
+  author = {M. Llorens and J. Oliver and J. Silva and S. Tamarit and G. Vidal},
+  title = {{Dynamic Slicing Techniques for Petri Nets}},
+  journal = ENTCS,
+  year = {2008},
+  volume = {223},
+  pages = {153 - 165},
+  note = {Proceedings of the Second Workshop on Reachability Problems in Computational
+	Models (RP 2008)},
+  doi = {DOI: 10.1016/j.entcs.2008.12.037}
+}
+
+@BOOK{Louden1997,
+  title = {{Compiler Construction: Principles and Practice}},
+  publisher = {Course Technology},
+  year = {1997},
+  author = {Kenneth C. Louden},
+  isbn = {0534939724}
+}
+
+@INPROCEEDINGS{Lammel2004,
+  author = {Ralf L{\"a}mmel},
+  title = {{Coupled Software Transformations (Extended Abstract)}},
+  booktitle = {{1$^{st}$ International Workshop on Software Evolution Transformations}},
+  year = {2004},
+  month = {November}
+}
+
+@INPROCEEDINGS{LammelLohmann2001,
+  author = {Ralf L{\"a}mmel and Wolfgang Lohmann},
+  title = {Format Evolution},
+  booktitle = {RETIS 2001: Re-Technologies for Information Systems},
+  year = {2001},
+  volume = {155},
+  series = {book@oct.at},
+  pages = {113-134},
+  publisher = {OCG}
+}
+
+@INPROCEEDINGS{MacCaullRabbi2011,
+  author = {Wendy MacCaull and Fazle Rabbi},
+  title = {{{NOVA} Workflow: A Workflow Management Tool Targeting Health Services
+	Delivery}},
+  booktitle = {FHIES 2011: International Symposium on Foundations of Health Information
+	Engineering and Systems},
+  year = {2011}
+}
+
+@INPROCEEDINGS{MashiyatRabbiEtAl2011,
+  author = {Ahmed Shah Mashiyat and Fazle Rabbi and Wendy MacCaull},
+  title = {{Modeling and Verifying Timed Compensable Workflows and an Application
+	to Health Care}},
+  booktitle = FMICS11,
+  year = {2011},
+  volume = {6959},
+  series = LNCS,
+  pages = {244-259},
+  publisher = SPRINGER,
+  file = {:./MashiyatRabbiEtAl2011.pdf:PDF}
+}
+
+@INPROCEEDINGS{MashiyatRabbiEtAl2010,
+  author = {Ahmed Shah Mashiyat and Fazle Rabbi and Hao Wang and Wendy MacCaull},
+  title = {{An Automated Translator for Model Checking Time Constrained Workflow
+	Systems}},
+  booktitle = FMICS10,
+  year = {2010},
+  volume = {6371},
+  series = LNCS,
+  pages = {99-114},
+  publisher = SPRINGER,
+  doi = {10.1007/978-3-642-15898-8_7},
+  file = {:./MashiyatRabbiEtAl2010.pdf:PDF}
+}
+
+@INPROCEEDINGS{McUmberCheng2001,
+  author = {William E. McUmber and Betty H. C. Cheng},
+  title = {A general framework for formalizing UML with formal languages},
+  booktitle = {ICSE 2001: 23$^{rd}$ International Conference on Software Engineering},
+  year = {2001},
+  pages = {433--442},
+  publisher = IEEECS,
+  file = {:McUmberCheng2001.pdf:PDF}
+}
+
+@ARTICLE{Mendling2007,
+  author = {Jan Mendling},
+  title = {{On the Detection and Prediction of Errors in {EPC} Business Process
+	Models}},
+  journal = {EMISA Forum},
+  year = {2007},
+  volume = {27},
+  pages = {52-59},
+  number = {2}
+}
+
+@INPROCEEDINGS{MillettTeitelbaum1998,
+  author = {Lynette I. Millett and Tim Teitelbaum},
+  title = {{Slicing {Promela} and its Applications to Model Checking, Simulation,
+	and Protocol Understanding}},
+  booktitle = {SPIN 1998: 4$^{th}$ International SPIN Workshop},
+  year = {1998},
+  pages = {75--83}
+}
+
+@BOOK{Milner1982,
+  title = {{A Calculus of Communicating Systems}},
+  publisher = SPRINGER,
+  year = {1982},
+  author = {Robin Milner}
+}
+
+@INPROCEEDINGS{MorenoVallsEtAl2005,
+  author = {A. Moreno and A. Valls and D. Ria{\~n}o},
+  title = {{PalliaSys: agent-based proactive monitoring of palliative patients}},
+  booktitle = {IWPAAMS},
+  year = {2005},
+  journal = {The 2$^{nd}$ Workshop on Agents Applied in Health Care}
+}
+
+@ARTICLE{MoserRamakrishnaEtAl1997,
+  author = {L. E. Moser and Y. S. Ramakrishna and G. Kutty and P. M. Melliar-Smith
+	and L. K. Dillon},
+  title = {A graphical environment for the design of concurrent real-time systems},
+  journal = {ACM Trans. Softw. Eng. Methodol.},
+  year = {1997},
+  volume = {6},
+  pages = {31--79},
+  month = {January},
+  doi = {10.1145/237432.237438},
+  file = {:MoserRamakrishnaEtAl1997.pdf:PDF},
+  issue = {1},
+  publisher = {ACM}
+}
+
+@INPROCEEDINGS{MuehlenRosemann2000,
+  author = {Michael zur Muehlen and Michael Rosemann},
+  title = {{Workflow-Based Process Monitoring and Controlling - Technical and
+	Organizational Issues}},
+  booktitle = {HICSS 2000: 33$^{rd}$ Hawaii International Conference on System Science},
+  year = {2000},
+  pages = {1--10},
+  publisher = IEEECS
+}
+
+@ARTICLE{Murata1989,
+  author = {Tadao Murata },
+  title = {{Petri nets: Properties, Analysis, and Applications.}},
+  journal = {Proceedings of the IEEE},
+  year = {1989},
+  volume = {77},
+  pages = {541-580},
+  number = {4}
+}
+
+@INPROCEEDINGS{NarahariViswanadham1985,
+  author = {Y. Narahari and Nukala Viswanadham},
+  title = {{On the invariants of coloured Petri nets}},
+  booktitle = {6$^th$ European Workshop on Applications and Theory in Petri Nets
+	Advances},
+  year = {1986},
+  volume = {222},
+  series = LNCS,
+  pages = {330-345},
+  publisher = SPRINGER,
+  doi = {/10.1007/BFb0016219}
+}
+
+@MISC{bpel,
+  author = {OASIS},
+  title = {Web Services Business Process Execution Language Version 2.0},
+  year = {2007},
+  note = {\url{http://docs.oasis-open.org/wsbpel/2.0/OS/wsbpel-v2.0-OS.html}}
+}
+
+@INPROCEEDINGS{OdenbrettVietEtAl2010,
+  author = {Maximilian R. Odenbrett and Viet Yen Nguyen and Thomas Noll},
+  title = {{Slicing {AADL} Specifications for Model Checking}},
+  booktitle = {NFM 2010: 2$^{nd}$ NASA Formal Methods Symposium},
+  year = {2010},
+  pages = {217-221},
+  publisher = {NASA Conference Proceedings}
+}
+
+@MISC{bpmn,
+  author = {OMG},
+  title = {{Business Process Model and Notation (BPMN) Version 2.0}},
+  month = {January},
+  year = {2011},
+  note = {\url{http://www.omg.org/spec/BPMN/2.0/}}
+}
+
+@ARTICLE{OttensooserFekete2012,
+  author = {Avner Ottensooser and Alan Fekete and Hajo A. Reijers and Jan Mendling
+	and Con Menictas},
+  title = {Making sense of business process descriptions: An experimental comparison
+	of graphical and textual notations},
+  journal = {Journal of Systems and Software},
+  year = {2012},
+  volume = {85},
+  pages = {596-606},
+  number = {3},
+  ee = {10.1016/j.jss.2011.09.023}
+}
+
+@INPROCEEDINGS{OuyangDumasEtAl2006,
+  author = {Chun Ouyang and Marlon Dumas and Arthur H. M. ter Hofstede and Wil
+	M. P. van der Aalst},
+  title = {{From BPMN Process Models to BPEL Web Services}},
+  booktitle = {ICWS},
+  year = {2006},
+  pages = {285-292},
+  publisher = IEEECS,
+  doi = {10.1109/ICWS.2006.67}
+}
+
+@INPROCEEDINGS{Peled1998,
+  author = {Doron Peled},
+  title = {Ten Years of Partial Order Reduction},
+  booktitle = {CAV 1998: the 10$^{th}$ International Conference on Computer Aided
+	Verification},
+  year = {1998},
+  volume = {1427},
+  series = LNCS,
+  pages = {17--28},
+  publisher = SPRINGER
+}
+
+@INCOLLECTION{Peled1996,
+  author = {Doron Peled},
+  title = {{Partial order reduction: Model-checking using representatives}},
+  booktitle = {Mathematical Foundations of Computer Science 1996},
+  publisher = SPRINGER,
+  year = {1996},
+  volume = {1113},
+  series = LNCS,
+  pages = {93-112}
+}
+
+@INCOLLECTION{Peled1994,
+  author = {Doron Peled},
+  title = {{Combining Partial Order Reductions with on-the-fly Model-Checking}},
+  booktitle = {CAV 1994: 6$^th$ International Conference on Computer Aided Verification},
+  publisher = SPRINGER,
+  year = {1994},
+  volume = {818},
+  series = LNCS,
+  pages = {377-390}
+}
+
+@INPROCEEDINGS{Peled1993,
+  author = {Doron Peled},
+  title = {{All from One, One for All: on Model Checking Using Representatives}},
+  booktitle = {CAV 1993: 5$^th$ International Conference on Computer Aided Verification},
+  year = {1993},
+  volume = {697},
+  series = LNCS,
+  pages = {409-423},
+  publisher = SPRINGER,
+  doi = {/10.1007/3-540-56922-7_34}
+}
+
+@PHDTHESIS{Petri1962,
+  author = {Carl Adam Petri},
+  title = {{Kommunikation mit Automaten}},
+  school = {Institut fur instrumentelle Mathematik},
+  year = {1962},
+  address = {Bonn, Germany}
+}
+
+@ARTICLE{Petrie2009,
+  author = {Charles J. Petrie},
+  title = {The Semantics of "Semantics"},
+  journal = IEEEIC,
+  year = {2009},
+  volume = {13},
+  pages = {94-96},
+  number = {5},
+  doi = {/10.1109/MIC.2009.117},
+  file = {:Petrie2009.pdf:PDF}
+}
+
+@INPROCEEDINGS{Pnueli1977,
+  author = {Amir Pnueli},
+  title = {{The Temporal Logic of Programs}},
+  booktitle = {FOCS},
+  year = {1977},
+  pages = {46-57},
+  publisher = IEEECS
+}
+
+@INCOLLECTION{PriesterjahnTichyEtAl2010,
+  author = {C. Priesterjahn AND M. Tichy AND S. Henkler AND M. Hirsch AND W.
+	Sch{\"a}fer},
+  title = {Fujaba4Eclipse Real-Time Tool Suite},
+  booktitle = {MBEERTS 2010: Model-Based Engineering of Embedded Real-Time Systems},
+  publisher = SPRINGER,
+  year = {2010},
+  volume = {6100},
+  series = LNCS,
+  pages = {309-315},
+  doi = {10.1007/978-3-642-16277-0_12},
+  owner = {hao},
+  timestamp = {2012.02.07}
+}
+
+@INPROCEEDINGS{QueilleSifakis1982,
+  author = {Jean-Pierre Queille and Joseph Sifakis},
+  title = {{Specification and Verification of Concurrent Systems in CESAR}},
+  booktitle = {5$^{th}$ Colloquium on International Symposium on Programming},
+  year = {1982},
+  pages = {337--351},
+  publisher = SPRINGER
+}
+
+@MISC{reductionexperiment,
+  author = {Fazle Rabbi},
+  title = {{Verification of Palliative Workflow}},
+  note = {\url{http://logic.stfx.ca/~software/reductionexp/Casestudy.pdf}}
+}
+
+@MASTERSTHESIS{Rabbi2011,
+  author = {Fazle Rabbi},
+  title = {{Design, Development and Verification of a Compensable Workflow Modeling
+	Language}},
+  school = {Dept. of Math, Stats and CS, StFX University},
+  year = {2011},
+  address = {Canada}
+}
+
+@INPROCEEDINGS{FazleMacCaull2012MODELS,
+  author = {Fazle Rabbi and Wendy MacCaull},
+  title = {{$T_{\Box}$: A Domain Specific Language for Rapid Workflow Development}},
+  booktitle = {MODELS 2012},
+  year = {2012},
+  series = LNCS,
+  pages = {36-52},
+  publisher = SPRINGER,
+  doi = {/10.1007/978-3-642-33666-9_4}
+}
+
+@INPROCEEDINGS{RabbiMashiyatEtAl2011,
+  author = {Fazle Rabbi and Ahmed S. Mashiyat and Wendy MacCaull},
+  title = {Model checking workflow monitors and its application to a pain management
+	process},
+  booktitle = FHIES11,
+  year = {2011},
+  pages = {110-127},
+  note = {\url{http://www.iist.unu.edu/ICTAC/FHIES2011/Files/fhies2011_8_17.pdf}},
+  owner = {arutle},
+  timestamp = {2012.01.18}
+}
+
+@INPROCEEDINGS{RabbiWangEtAl2010a,
+  author = {Fazle Rabbi and Hao Wang and Wendy MacCaull},
+  title = {{YAWL2DVE: An Automated Translator for Workflow Verification}},
+  booktitle = {SSIRI 2010: 4$^{th}$ International Conference on Secure Software
+	Integration and Reliability Improvement},
+  year = {2010},
+  pages = {53-59},
+  publisher = IEEECS,
+  doi = {10.1109/SSIRI.2010.31}
+}
+
+@INPROCEEDINGS{RabbiWangEtAl2010b,
+  author = {Fazle Rabbi and Hao Wang and Wendy MacCaull},
+  title = {{Compensable Workflow Nets}},
+  booktitle = ICFEM10,
+  year = {2010},
+  volume = {6447},
+  series = LNCS,
+  pages = {122-137},
+  publisher = SPRINGER,
+  doi = {/10.1007/978-3-642-16901-4_10}
+}
+
+@INPROCEEDINGS{Rakow2008,
+  author = {Astrid Rakow},
+  title = {{Slicing Petri Nets with an Application to Workflow Verification}},
+  booktitle = {SOFSEM 2008: 34$^{th}$ Conference on Current Trends in Theory and
+	Practice of Computer Science},
+  year = {2008},
+  volume = {4910},
+  series = LNCS,
+  pages = {436--447},
+  publisher = SPRINGER
+}
+
+@INPROCEEDINGS{ReichertRinderleEtAl2007,
+  author = {M.U. Reichert and S.B. Rinderle and U. Kreher and H. Acker and M.
+	Lauer and P. Dadam},
+  title = {{ADEPT2 - Next Generation Process Management Technology}},
+  booktitle = {4$^{th}$ Heidelberg Innovation Forum},
+  year = {2007},
+  publisher = {D.punkt Verlag}
+}
+
+@ARTICLE{RosemannMuehlen1998,
+  author = {Michael Rosemann and Michael zur Muehlen},
+  title = {{Evaluation of Workflow Management Systems - A Meta Model Approach}},
+  journal = {Australasian Journal of Information Systems},
+  year = {1998},
+  volume = {6},
+  number = {1},
+  file = {:RosemannMuehlen1998.pdf:PDF}
+}
+
+@INPROCEEDINGS{RuanMacCaull2010,
+  author = {Ji Ruan and Wendy MacCaull},
+  title = {{Data-Aware Monitoring For Healthcare Workflows Using Formal Methods}},
+  booktitle = {KR4HC 2010: 2$^{nd}$ Workshop Knowledge Representation for Health
+	Care},
+  year = {2010},
+  pages = {51--60}
+}
+
+
+@PHDTHESIS{Rutle10,
+  author = {Adrian Rutle},
+  title = {{Diagram Predicate Framework: A Formal Approach to MDE}},
+  school = {Department of Informatics, University of Bergen},
+  year = {2010},
+  address = {Norway},
+  file = {:./Rutle10.pdf:},
+  isbn = {978-82-308-1650-9},
+  owner = {aru},
+  timestamp = {2010.08.10}
+}
+
+@INBOOK{Diskin05,
+  chapter = {Mathematics of Generic Specifications for Model Management I and
+  II},
+  pages = {351-366},
+  title = {{Encyclopedia of Database Technologies and Applications}},
+  publisher = {Information Science Reference},
+  year = {2005},
+  author = {Zinovy Diskin},
+  file = {:./Diskin05.pdf:},
+  owner = {aru},
+  timestamp = {2008.10.02}
+}
+
+@INCOLLECTION{LamoWangMMR12SCI,
+  author = {Yngve Lamo and Xiaoliang Wang and Florian Mantz and Wendy MacCaull
+  and Adrian Rutle},
+  title = {{DPF Workbench: A Diagrammatic Multi-Layer Domain Specific (Meta-)Modelling
+  Environment}},
+  booktitle = {Computer and Information Science},
+  publisher = SPRINGER,
+  year = {2012},
+  editor = {Lee Roger},
+  volume = {429},
+  series = {Studies in Computer Intelligence},
+  pages = {37-52},
+  owner = {aru},
+  timestamp = {2012.06.02}
+}
+@INPROCEEDINGS{RutleMacCaullEtAl2012ECMFA,
+  author = {Adrian Rutle and Wendy MacCaull and Hao Wang and Yngve Lamo},
+  title = {{A Metamodelling Approach to Behavioural Modelling}},
+  booktitle = BMFA12,
+  year = {2012},
+  pages = {5:1-5:10},
+  publisher = ACM,
+  acmid = {2325281},
+  isbn = {978-1-4503-1187-8},
+  owner = {arutle},
+  timestamp = {2012.05.27}
+}
+
+@INCOLLECTION{RutleWangEtAl2012FHIES,
+  author = {Adrian Rutle and Hao Wang and Wendy MacCaull},
+  title = {{A Formal Diagrammatic Approach to Compensable Workflow Modelling}},
+  booktitle = {Foundations of Health Informatics Engineering and Systems},
+  publisher = {Springer Berlin Heidelberg},
+  year = {2013},
+  editor = {Liu, Zhiming and Wassyng, Alan},
+  volume = {7789},
+  series = {Lecture Notes in Computer Science},
+  pages = {194--212},
+  owner = {adrian},
+  timestamp = {2012.12.21}
+}
+
+@INCOLLECTION{RutleWangEtAl2012BPM,
+  author = {Adrian Rutle and Hao Wang and Wendy MacCaull},
+  title = {A Formal Diagrammatic Approach to Compensable Workflow Modelling},
+  booktitle = {Business Process Management},
+  publisher = SPRINGER,
+  year = {Submitted},
+  series = LNCS,
+  owner = {arutle},
+  timestamp = {2012.04.11}
+}
+
+@ARTICLE{SadiqOrlowska2000,
+  author = {Wasim Sadiq and Maria E. Orlowska},
+  title = {{Analyzing Process Models Using Graph Reduction Techniques}},
+  journal = {Inf. Syst.},
+  year = {2000},
+  volume = {25},
+  pages = {117-134},
+  number = {2},
+  doi = {10.1016/S0306-4379(00)00012-0}
+}
+
+@INPROCEEDINGS{SadiqOrlowska1999,
+  author = {Wasim Sadiq and Maria E. Orlowska},
+  title = {{Applying Graph Reduction Techniques for Identifying Structural Conflicts
+	in Process Models}},
+  booktitle = {CAiSE 1999: 11$^{th}$ International Conference on Advanced Information
+	Systems Engineering},
+  year = {1999},
+  volume = {1626},
+  series = LNCS,
+  pages = {195--209},
+  publisher = SPRINGER
+}
+
+@ARTICLE{SchulzLoweEtAl2011,
+  author = {Christoph Schulz and Michael L{\"o}we and Harald K{\"o}nig},
+  title = {A categorical framework for the transformation of object-oriented
+	systems: Models and data},
+  journal = {J. Symb. Comput.},
+  year = {2011},
+  volume = {46},
+  pages = {316-337},
+  number = {3},
+  doi = {/10.1016/j.jsc.2010.09.010}
+}
+
+@INPROCEEDINGS{Shepherd2007,
+  author = {Michael A. Shepherd},
+  title = {{Challenges in Health Informatics}},
+  booktitle = {HICSS},
+  year = {2007},
+  pages = {135},
+  publisher = IEEECS
+}
+
+@INPROCEEDINGS{SimmondsBen-DavidEtAl2010,
+  author = {Jocelyn Simmonds and Shoham Ben-David and Marsha Chechik},
+  title = {{Guided Recovery for Web Service Applications}},
+  booktitle = {FSE 2010: ACM SIGSOFT International Symposium on Foundations of Software
+	Engineering},
+  year = {2010},
+  pages = {247--256},
+  publisher = ACM,
+  doi = {/10.1145/1882291.1882328}
+}
+
+@INPROCEEDINGS{SimmondsChechik2010,
+  author = {Jocelyn Simmonds and Marsha Chechik},
+  title = {{RuMoR: Monitoring and Recovery for BPEL Applications}},
+  booktitle = {ASE 2010: 25$^{th}$ IEEE/ACM International Conference on Automated
+	Software Engineering},
+  year = {2010},
+  pages = {345-346},
+  publisher = ACM,
+  doi = {10.1145/1858996.1859068}
+}
+
+@INPROCEEDINGS{SloaneHoldsworth1996,
+  author = {Anthony M. Sloane and Jason Holdsworth},
+  title = {{Beyond Traditional Program Slicing}},
+  booktitle = {ISSTA 1996: International Symposium on Software Testing and Analysis},
+  year = {1996},
+  pages = {180--186},
+  publisher = ACM
+}
+
+@INPROCEEDINGS{SmithAvruninEtAl2002,
+  author = {Rachel L. Smith and George S. Avrunin and Lori A. Clarke and Leon
+	J. Osterweil},
+  title = {PROPEL: an approach supporting property elucidation},
+  booktitle = {ICSE 2002: 24$^{th}$ International Conference on Software Engineering},
+  year = {2002},
+  pages = {11--21},
+  publisher = ACM,
+  doi = {10.1145/581339.581345},
+  file = {:SmithAvruninEtAl2002.pdf:PDF}
+}
+
+@INPROCEEDINGS{SunLiuEtAl2009,
+  author = {Jun Sun and Yang Liu and Jin Song Dong and Xian Zhang},
+  title = {Verifying Stateful Timed CSP Using Implicit Clocks and Zone Abstraction},
+  booktitle = {ICFEM 2009: 11$^{th}$ International Conference on Formal Engineering
+	Methods: Formal Methods and Software Engineering},
+  year = {2009},
+  volume = {5885},
+  series = LNCS,
+  pages = {581--600},
+  publisher = SPRINGER,
+  doi = {/10.1007/978-3-642-10373-5_30},
+  file = {:SunLiuEtAl2009.pdf:PDF},
+  owner = {hao},
+  timestamp = {2011.12.27}
+}
+
+@ARTICLE{Tip1995,
+  author = {Frank Tip},
+  title = {{A Survey of Program Slicing Techniques}},
+  journal = {Journal of Programming Languages},
+  year = {1995},
+  volume = {3},
+  pages = {121--189}
+}
+
+@TECHREPORT{surveyPS,
+  author = {Frank Tip},
+  title = {{A Survey of Program Slicing Techniques}},
+  year = {1994},
+  address = {Amsterdam, The Netherlands, The Netherlands},
+  publisher = {CWI (Centre for Mathematics and Computer Science)},
+  source = {http://www.ncstrl.org:8900/ncstrl/servlet/search?formname=detail\&id=oai%3Ancstrlh%3Aercim_cwi%3Aercim.cwi%2F%2FCS-R9438}
+}
+
+@ARTICLE{Valmari1992,
+  author = {Antti Valmari},
+  title = {{A Stubborn Attack on State Explosion}},
+  journal = {Formal Methods in System Design},
+  year = {1992},
+  volume = {1},
+  pages = {297-322},
+  issn = {0925-9856},
+  issue = {4},
+  publisher = SPRINGER
+}
+
+@INPROCEEDINGS{VaskoDustdar2006,
+  author = {Martin Vasko and Schahram Dustdar},
+  title = {{A View Based Analysis of Workflow Modeling Languages}},
+  booktitle = {14$^{th}$ Euromicro International Conference on Parallel, Distributed,
+	and Network-Based Processing},
+  year = {2006},
+  pages = {293--300},
+  publisher = IEEECS,
+  doi = {10.1109/PDP.2006.17}
+}
+
+@INPROCEEDINGS{WangMacCaull2009,
+  author = {Hao Wang and Wendy MacCaull},
+  title = {{An Efficient Explicit-time Description Method for Timed Model Checking}},
+  booktitle = {PDMC 2009: 8$^{th}$ International Workshop on Parallel and Distributed
+	Methods in verifiCation},
+  year = {2009},
+  volume = {14},
+  series = {EPTCS},
+  pages = {77-91},
+  doi = {10.4204/EPTCS.14}
+}
+
+@INPROCEEDINGS{WangRutleEtAl2012TASE,
+  author = {Hao Wang and Adrian Rutle and Wendy MacCaull},
+  title = {{A Formal Diagrammatic Approach to Timed Workflow Modelling}},
+  booktitle = TASE12,
+  year = {2012},
+  volume = {0},
+  pages = {167-174},
+  publisher = IEEECS,
+  isbn = {978-1-4673-2353-6}
+}
+
+@INPROCEEDINGS{WeberHoffmannEtAl2007,
+  author = {Ingo Weber and J{\"o}rg Hoffmann and Jan Mendling and J{\"o}rg Nitzsche},
+  title = {{Towards a Methodology for Semantic Business Process Modeling and
+	Configuration}},
+  booktitle = {ICSOC Workshops},
+  year = {2007},
+  volume = {4907},
+  series = LNCS,
+  pages = {176-187},
+  publisher = SPRINGER,
+  doi = {10.1007/978-3-540-93851-4_18},
+  file = {:./WeberHoffmannEtAl2007.pdf:}
+}
+
+@MISC{Baarah,
+	author = {Aladdin Hussein Baarah},
+	title = {An application Framework for Monitoring Care Processes},
+	howpublished = {PhD thesis, University of Ottawa, 2013}
+}
+
+
+@MISC{weiser1,
+  author = {Weiser, Mark},
+  title = {{Program slices: formal, psychological, and practical investigations
+	of an automatic program abstraction method}},
+  howpublished = {PhD thesis, University of Michigan, Ann Arbor, 1979}
+}
+
+@ARTICLE{Weiser1984,
+  author = {Mark Weiser},
+  title = {{Program Slicing}},
+  journal = IEEETSE,
+  year = {1984},
+  volume = {10},
+  pages = {352-357},
+  number = {4}
+}
+
+@ARTICLE{Weiser1982,
+  author = {Mark Weiser},
+  title = {{Programmers use Slices when Debugging}},
+  journal = {Commun. ACM},
+  year = {1982},
+  volume = {25},
+  pages = {446--452},
+  doi = {10.1145/358557.358577},
+  issue = {7},
+  publisher = {ACM}
+}
+
+@ARTICLE{Weske1999,
+  author = {Mathias Weske},
+  title = {{Workflow Management Systems : Formal Foundation , Conceptual Design,
+	Implementation Aspects}},
+  year = {1999},
+  note = {\url{http://bpt.hpi.uni-potsdam.de/pub/Public/PaperArchive/habil.pdf}}
+}
+
+@INPROCEEDINGS{WillemsWolperEtAl1996,
+  author = {Bernard Willems and Pierre Wolper and Pierre Wolper},
+  title = {{Partial-Order Methods for Model Checking: From Linear Time to Branching
+	Time}},
+  booktitle = {LICS 1996: 11$^{th}$ Annual IEEE Symposium on Logic in Computer Science},
+  year = {1996},
+  pages = {294--303},
+  publisher = IEEECS
+}
+
+@INPROCEEDINGS{WongGibbons2008,
+  author = {Peter Y. H. Wong and Jeremy Gibbons},
+  title = {{A Process Semantics for BPMN}},
+  booktitle = ICFEM08,
+  year = {2008},
+  volume = {5256},
+  series = LNCS,
+  pages = {355-374},
+  publisher = SPRINGER,
+  doi = {10.1007/978-3-540-88194-0_22},
+  owner = {hao},
+  timestamp = {2012.12.21}
+}
+
+@INPROCEEDINGS{WongGibbons2007,
+  author = {Peter Y. H. Wong and Jeremy Gibbons},
+  title = {{A Process-Algebraic Approach to Workflow Specification and Refinement}},
+  booktitle = SC07,
+  year = {2007},
+  volume = {4829},
+  series = LNCS,
+  publisher = SPRINGER,
+  doi = {10.1007/978-3-540-77351-1_5},
+  file = {:WongGibbons2007.pdf:PDF},
+  owner = {hao},
+  timestamp = {2011.12.16}
+}
+
+@INCOLLECTION{WorahSheth1997,
+  author = {Devashish Worah and Amit P. Sheth},
+  title = {Transactions in Transactional Workflows},
+  booktitle = {Advanced Transaction Models and Architectures},
+  publisher = {Kluwer},
+  year = {1997},
+  pages = {3-34},
+  file = {:WorahSheth1997.pdf:PDF},
+  owner = {hao},
+  timestamp = {2012.01.16}
+}
+
+@ARTICLE{WynnAalstEtAl2009,
+  author = {Moe Thandar Wynn and van der Aalst, W. M. P. and Arthur H. M. Ter
+	Hofstede and David Edmond},
+  title = {{Reduction Rules for YAWL Workflows with Cancellation Regions and
+	OR-Joins}},
+  journal = {Information and Software Technology},
+  year = {2009},
+  volume = {51},
+  pages = {1010--1020},
+  doi = {10.1016/j.infsof.2008.12.002}
+}
+
+@PROCEEDINGS{DBLP:conf/asm/2008,
+  title = {Abstract State Machines, B and Z, First International Conference,
+	ABZ 2008, London, UK, September 16-18, 2008. Proceedings},
+  year = {2008},
+  editor = {Egon B{\"o}rger and Michael J. Butler and Jonathan P. Bowen and Paul
+	Boca},
+  volume = {5238},
+  series = {Lecture Notes in Computer Science},
+  publisher = {Springer},
+  bibsource = {DBLP, http://dblp.uni-trier.de},
+  booktitle = {ABZ},
+  isbn = {978-3-540-87602-1}
+}
+
+@PROCEEDINGS{DBLP:conf/sera/2010s,
+  title = {Software Engineering Research, Management and Applications 2010 [selected
+	papers from the 8th ACIS International Conference on Software Engineering
+	Research, Management and Applications, SERA 2010, Montreal, Canada,
+	May 24-26, 2010]},
+  year = {2010},
+  editor = {Roger Y. Lee and Olga Ormandjieva and Alain Abran and Constantinos
+	Constantinides},
+  volume = {296},
+  series = {Studies in Comput. Intelligence},
+  publisher = {Springer},
+  bibsource = {DBLP, http://dblp.uni-trier.de},
+  booktitle = {SERA (selected papers)},
+  ee = {http://dx.doi.org/10.1007/978-3-642-13273-5},
+  isbn = {978-3-642-13272-8}
+}
+
+@MISC{acenet,
+  title = {{The Atlantic Computational Excellence Network}},
+  note = {\url{http://www.ace-net/ca/}}
+}
+
+@MISC{cli,
+  title = {{Centre for Logic and Information}},
+  note = {\url{http://logic.stfx.ca/}}
+}
+
+@MISC{divine,
+  title = {{{DiVinE} project}},
+  note = {\url{http://divine.fi.muni.cz/}}
+}
+
+@MISC{eclipse,
+  title = {{Eclipse Plugin}},
+  note = {\url{http://www.eclipse.org/articles/Article-Plug-in-architecture/plugin_architecture.html/}}
+}
+
+@MISC{gef,
+  title = {{Graphical Editing Framework}},
+  note = {\url{http://www.eclipse.org/gef/}}
+}
+
+@MISC{hibernate,
+  title = {{Relational Persistence for Java and .NET}},
+  note = {\url{http://hibernate.net/}}
+}
+
+@MISC{novaflow,
+  title = {{NOVA Workflow}},
+  note = {\url{http://logic.stfx.ca/software/nova-workflow/}}
+}
+
+@MISC{spring,
+  title = {{Spring Framework}},
+  note = {\url{http://www.springsource.org/}}
+}
+
+@MISC{wsengineer,
+  title = {{WSEngineer}},
+  note = {\url{http://www.doc.ic.ac.uk/ltsa/eclipse/wsengineer/}}
+}
+
+@ELECTRONIC{bpel2pn,
+  month = {February},
+  year = {2011},
+  title = {{BPEL2PN}},
+  note = {\url{http://www2.informatik.hu-berlin.de/top/bpel2pn/}}
+}
+
+@PROCEEDINGS{DBLP:conf/icse/2009,
+  title = {31st International Conference on Software Engineering, ICSE 2009,
+	May 16-24, 2009, Vancouver, Canada, Proceedings},
+  year = {2009},
+  publisher = {IEEE},
+  bibsource = {DBLP, http://dblp.uni-trier.de},
+  booktitle = {ICSE},
+  isbn = {978-1-4244-3452-7}
+}
+
+@ARTICLE{grandchanllenges2008,
+  title = {{National Academy of Enginnering}},
+  journal = {Grand challenges for engineering},
+  year = {2008},
+  note = {\url{http://www.engineeringchallenges.org/cms/challenges.aspx}}
+}
+
+@inproceedings{LyKRGPRD10,
+  author    = {Linh Thao Ly and
+               David Knuplesch and
+               Stefanie Rinderle-Ma and
+               Kevin G{\"o}ser and
+               Holger Pfeifer and
+               Manfred Reichert and
+               Peter Dadam},
+  title     = {SeaFlows Toolset - Compliance Verification Made Easy for
+               Process-Aware Information Systems},
+  booktitle = {CAiSE Forum},
+  year      = {2010},
+  pages     = {76-91},
+  ee        = {http://dx.doi.org/10.1007/978-3-642-17722-4_6},
+  crossref  = {DBLP:conf/caise/2010fo},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+@proceedings{DBLP:conf/caise/2010fo,
+  editor    = {Pnina Soffer and
+               Erik Proper},
+  title     = {Information Systems Evolution - CAiSE Forum 2010, Hammamet,
+               Tunisia, June 7-9, 2010, Selected Extended Papers},
+  booktitle = {CAiSE Forum},
+  publisher = {Springer},
+  series    = {Lecture Notes in Business Information Processing},
+  volume    = {72},
+  year      = {2011},
+  isbn      = {978-3-642-17721-7},
+  ee        = {http://dx.doi.org/10.1007/978-3-642-17722-4},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+@book{mandelbrot1983fractal,
+  title={The Fractal Geometry of Nature},
+  author={Mandelbrot, B.B.},
+  isbn={9780716711865},
+  lccn={97133578},
+  url={http://books.google.ca/books?id=0R2LkE3N7-oC},
+  year={1983},
+  publisher={Henry Holt and Company}
+}
+@inproceedings{RabbiM12,
+  author    = {Fazle Rabbi and
+               Wendy MacCaull},
+  title     = {Model Driven Workflow Development with ${T_\Box}$ ;},
+  booktitle = {CAiSE Workshops},
+  year      = {2012},
+  pages     = {265-279},
+  ee        = {http://dx.doi.org/10.1007/978-3-642-31069-0_23},
+  crossref  = {DBLP:conf/caise/2012w},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+@proceedings{DBLP:conf/caise/2012w,
+  editor    = {Marko Bajec and
+               Johann Eder},
+  title     = {Advanced Information Systems Engineering Workshops - CAiSE
+               2012 International Workshops, Gdask, Poland, June
+               25-26, 2012. Proceedings},
+  booktitle = {CAiSE Workshops},
+  publisher = {Springer},
+  series    = {Lecture Notes in Business Information Processing},
+  volume    = {112},
+  year      = {2012},
+  isbn      = {978-3-642-31068-3},
+  ee        = {http://dx.doi.org/10.1007/978-3-642-31069-0},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}

@@ -1,0 +1,127 @@
+\begin{thebibliography}{10}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+
+\bibitem{FDT}
+{Fujaba Development Team: The Fujaba Tool Suite}, http://www.fujaba.de/
+
+\bibitem{OMG}
+{Object Management Group: Semantics of a Foundational Subset for Executable UML
+  Models (FUML) (February 2011)}, http://www.omg/spec/FUML/1.0/
+
+\bibitem{Baarah}
+Baarah, A.H.: An application framework for monitoring care processes. PhD
+  thesis, University of Ottawa, 2013
+
+\bibitem{BakerEtAl2008}
+Barker, A., van Hemert, J.: Scientific workflow: A survey and research
+  directions. In: Parallel Processing and Applied Mathematics. Lecture Notes in
+  Computer Science, vol. 4967, pp. 746--753. Springer Berlin / Heidelberg
+  (2008)
+
+\bibitem{Barr05}
+Barr, M., Wells, C. (eds.): Category Theory for Computing Science, 2Nd Ed.
+  Prentice Hall International (UK) Ltd., Hertfordshire, UK, UK (1995)
+
+\bibitem{ClarkM06}
+Clark, K.L., McCabe, F.G.: Ontology oriented programming in {Go}$!$. Appl.
+  Intell.  24(3),  189--204 (2006)
+
+\bibitem{DiskinW08}
+Diskin, Z., Wolter, U.: A diagrammatic logic for object-oriented visual
+  modeling. Electr. Notes Theor. Comput. Sci.  203(6),  19--41 (2008)
+
+\bibitem{Chunming99}
+Gao, C., Kong, F., Tan, J.: Healthaware: Tackling obesity with health aware
+  smart phone systems. In: Robotics and Biomimetics (ROBIO), 2009 IEEE
+  International Conference on. pp. 1549--1554 (2009)
+
+\bibitem{Kindler10}
+Kindler, E.: Model-based software engineering: The challenges of modelling
+  behaviour. In: Proceedings of the Second International Workshop on Behaviour
+  Modelling: Foundation and Applications. pp. 4:1--4:8. BM-FA '10, ACM, New
+  York, NY, USA (2010), \url{http://doi.acm.org/10.1145/1811147.1811151}
+
+\bibitem{NWPT13}
+Kristensen, L.M., Lamo, Y., MacCaull, W., Rabbi, F., Rutle, A.: Exploiting
+  progress for memory efficient verification of diagrammatic workflows. 25th
+  Nordic Workshop on Programming Theory (2013), Extended Abstract.
+
+\bibitem{lamo2011dpf}
+Lamo, Y., Wang, X., Mantz, F., Bech, {\O}., Rutle, A.: Dpf editor: a
+  multi-layer diagrammatic (meta) modelling environment. Proceedings of SPLST
+  (2011)
+
+\bibitem{LamoWangMMR12SCI}
+Lamo, Y., Wang, X., Mantz, F., MacCaull, W., Rutle, A.: {DPF Workbench: A
+  Diagrammatic Multi-Layer Domain Specific (Meta-)Modelling Environment}. In:
+  Roger, L. (ed.) Computer and Information Science, Studies in Computer
+  Intelligence, vol. 429, pp. 37--52. Springer (2012)
+
+\bibitem{LeylaM11}
+Leyla, N., MacCaull, W.: A personalized access control framework for
+  workflow-based health care information. In: Daniel, F., Barkaoui, K.,
+  Dustdar, S. (eds.) Business Process Management Workshops (2). Lecture Notes
+  in Business Information Processing, vol. 100, pp. 273--284. Springer (2011)
+
+\bibitem{MacCaullRabbi2011}
+MacCaull, W., Rabbi, F.: {{NOVA} Workflow: A Workflow Management Tool Targeting
+  Health Services Delivery}. In: FHIES 2011: International Symposium on
+  Foundations of Health Information Engineering and Systems (2011)
+
+\bibitem{CBMS14}
+Rabbi, F., MacCaull, W.: Designing user-friendly uis for the execution of
+  clinical practice guidelines. 27th International Symposium on Computer Based
+  Medical Systems, 2014, Submitted
+
+\bibitem{RabbiM12}
+Rabbi, F., MacCaull, W.: Model driven workflow development with ${T_\Box}$ ;.
+  In: Bajec, M., Eder, J. (eds.) CAiSE Workshops. Lecture Notes in Business
+  Information Processing, vol. 112, pp. 265--279. Springer (2012)
+
+\bibitem{FazleMacCaull2012MODELS}
+Rabbi, F., MacCaull, W.: {$T_{\Box}$: A Domain Specific Language for Rapid
+  Workflow Development}. In: MODELS 2012. pp. 36--52. Lecture Notes in Computer
+  Science, Springer (2012)
+
+\bibitem{Rutle10}
+Rutle, A.: {Diagram Predicate Framework: A Formal Approach to MDE}. Ph.D.
+  thesis, Department of Informatics, University of Bergen, Norway (2010)
+
+\bibitem{RutleMacCaullEtAl2012ECMFA}
+Rutle, A., MacCaull, W., Wang, H., Lamo, Y.: {A Metamodelling Approach to
+  Behavioural Modelling}. In: Proceedings of BM-FA 2012: 4$^{th}$ Workshop on
+  Behavioural Modelling: Foundations and Applications. pp. 5:1--5:10. ACM
+  (2012)
+
+\bibitem{Rutle2013317}
+Rutle, A., Rabbi, F., MacCaull, W., Lamo, Y.: A user-friendly tool for model
+  checking healthcare workflows. Procedia Computer Science  21(0),  317 -- 326
+  (2013), the 4th International Conference on Emerging Ubiquitous Systems and
+  Pervasive Networks (EUSPN-2013) and the 3rd International Conference on
+  Current and Future Trends of Information and Communication Technologies in
+  Healthcare (ICTH)
+
+\bibitem{RutleRLW12}
+Rutle, A., Rossini, A., Lamo, Y., Wolter, U.: A formal approach to the
+  specification and transformation of constraints in mde. J. Log. Algebr.
+  Program.  81(4),  422--457 (2012)
+
+\bibitem{RutleWMFHIES12}
+Rutle, A., Wang, H., MacCaull, W.: A formal diagrammatic approach to
+  compensable workflow modelling. In: Weber, J., Perseil, I. (eds.) FHIES.
+  Lecture Notes in Computer Science, vol. 7789, pp. 194--212. Springer (2012)
+
+\bibitem{RutleWangEtAl2012FHIES}
+Rutle, A., Wang, H., MacCaull, W.: {A Formal Diagrammatic Approach to
+  Compensable Workflow Modelling}. In: Liu, Z., Wassyng, A. (eds.) Foundations
+  of Health Informatics Engineering and Systems, Lecture Notes in Computer
+  Science, vol. 7789, pp. 194--212. Springer Berlin Heidelberg (2013)
+
+\bibitem{WangRutleEtAl2012TASE}
+Wang, H., Rutle, A., MacCaull, W.: {A Formal Diagrammatic Approach to Timed
+  Workflow Modelling}. In: Proceedings of TASE 2012: 6$^{th}$ International
+  Conference on Theoretical Aspects of Software Engineering. vol.~0, pp.
+  167--174. IEEE Computer Society (2012)
+
+\end{thebibliography}

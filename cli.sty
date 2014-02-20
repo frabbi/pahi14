@@ -1,0 +1,190 @@
+\usepackage{xargs}
+
+%tasks
+\newcommandx*{\atask}[2][1,2]{\ensuremath{\tau_{#1}^{#2}}}
+\newcommandx*{\actask}[2][1,2]{\ensuremath{\tau_{c#1}^{#2}}}
+\newcommandx*{\task}[2][1,2]{\ensuremath{T_{#1}^{#2}}}
+\newcommandx*{\ctask}[2][1,2]{\ensuremath{T_{c#1}^{#2}}}
+
+%preconditions, actions, state
+\newcommandx*{\term}[1][1]{\ensuremath{t^{#1}}}
+\newcommandx*{\precond}[1][1]{\ensuremath{\psi_{#1}}}
+\newcommandx*{\action}[1][1]{\ensuremath{\alpha_{#1}}}
+\newcommandx*{\actionb}[1][1]{\ensuremath{\alpha_{#1}^{b}}}
+\newcommandx*{\state}[2][1,2]{\ensuremath{s_{#1}^{#2}}}
+
+%paths
+\newcommandx*{\lpath}[2][1,2]{\ensuremath{\pi_{#1}^{#2}}}
+\newcommandx*{\lpathf}[1][1]{\ensuremath{(\state[0][{#1}] \rightarrow \state[1][{#1}] \rightarrow \state[2][{#1}] \dots)}}
+\newcommandx*{\lpathv}[2][1,2]{\ensuremath{(\state[0][{#2}] \rightarrow \state[1][{#2}] \dots \state[j][{#2}] \xrightarrow{#1} \state[j+1][{#2}] \dots)}}
+\newcommandx*{\lpathvu}[2][1,2]{\ensuremath{(\state[0][{#2}] \rightarrow \state[1][{#2}] \dots \state[j][{#2}] \mid \xrightarrow{#1} \state[j+1][{#2}] \dots)}}
+%\newcommandx*{\lpathf}[4][1=0, 2=e, 3={\textcolor{white}{*}}, 4]{\ensuremath{\pi_{\tiny s_{#1}{\xrightarrow{#3}}s_{#2}}^{#4}}}
+% \newcommandx*{\lpathf}[3][1=0, 2=e, 3]{\ensuremath{\pi^{#3}{(\tiny s_{#1}^{#3}\xrightarrow{\textcolor{white}{*}}s_{#2}^{#3})}}}
+\newcommandx*{\lpathfs}[3][1=0, 2=e, 3]{\ensuremath{\pi^{#3}{(\tiny s_{#1}^{#3}\xrightarrow{*}s_{#2}^{#3})}}}
+
+%operator sets
+\newcommandx*{\opar}[1][1]{\ensuremath{\circ_{A}^{#1}}}
+\newcommandx*{\opcond}[1][1]{\ensuremath{\circ_{C}^{#1}}}
+\newcommandx*{\opprecond}[1][1]{\ensuremath{\circ_{P}^{#1}}}
+\newcommandx*{\optask}[1][1]{\ensuremath{\circ_{T}^{#1}}}
+\newcommandx*{\opctask}[1][1]{\ensuremath{\circ_{T_c}^{#1}}}
+
+%circling
+\newcommandx*{\circled}[1]{\tikz[baseline=(char.base)]{\node[shape=circle,draw,inner sep=0.1pt, minimum size=3.5mm] (char) {\ensuremath{#1}};}}
+
+%operators
+\newcommandx*{\conc}{\ensuremath{\wedge}}
+\newcommandx*{\xor}{\ensuremath{\times}}
+\newcommandx*{\seq}{\ensuremath{\bullet}}
+\newcommandx*{\choice}{\ensuremath{\vee}}
+\newcommandx*{\lloop}[1][1]{\ensuremath{{#1}^{+}}}
+
+%compensable operators
+\newcommandx*{\cconc}{\ensuremath{\circled{\wedge}}}
+\newcommandx*{\cxor}{\ensuremath{\circled{\times}}}
+\newcommandx*{\cseq}{\ensuremath{\circled{\bullet}}}
+\newcommandx*{\cspecul}{\ensuremath{\circled{S}}}
+\newcommandx*{\calt}{\ensuremath{\circled{A}}}
+
+%Stree
+\newcommandx*{\stree}[1][1]{\ensuremath{\lambda^{#1}}}
+\newcommandx*{\steq}{\ensuremath{\sim_{st^\phi}}}
+
+%States
+\newcommandx*{\disabled}{\textspecscript{\textcolor{red}{<D>}}}
+\newcommandx*{\enabled}{\textspecscript{\textcolor{dgreen}{<E>}}}
+\newcommandx*{\running}{\textspecscript{\textcolor{blue}{<R>}}}
+\newcommandx*{\finished}{\textspecscript{\textcolor{black}{<F>}}}
+\newcommandx*{\true}{\textspecscript{\textcolor{black}{<$\top$>}}}
+\newcommandx*{\false}{\textspecscript{\textcolor{black}{<$\bot$>}}}
+\newcommandx*{\noteval}{\textspecscript{\textcolor{black}{<?>}}}
+
+\newcommandx*{\error}{\textspecscript{\textcolor{black}{<G>}}}
+\newcommandx*{\comp}{\textspecscript{\textcolor{black}{<C>}}}
+%\newcommandx*{\compfail}{\textspecscript{\textcolor{black}{<G>}}}
+
+\newcommandx*{\derf}{\textspecscript{<\textcolor{red}{D}|\textcolor{dgreen}{E}|\textcolor{blue}{R}|\textcolor{black}{F}>}}
+\newcommandx*{\der}{\textspecscript{<\textcolor{red}{D}|\textcolor{dgreen}{E}|\textcolor{blue}{R}>}}
+\newcommandx*{\erf}{\textspecscript{<\textcolor{dgreen}{E}|\textcolor{blue}{R}|\textcolor{black}{F}>}}
+\newcommandx*{\df}{\textspecscript{<\textcolor{red}{D}|\textcolor{black}{F}>}}
+\newcommandx*{\fc}{\textspecscript{<\textcolor{black}{F}|\textcolor{black}{C}>}}
+\newcommandx*{\fcerror}{\textspecscript{<\textcolor{black}{F}|\textcolor{black}{C}|\textcolor{black}{G}>}}
+\newcommandx*{\er}{\textspecscript{<\textcolor{dgreen}{E}|\textcolor{blue}{R}>}}
+\newcommandx*{\erfg}{\textspecscript{<\textcolor{dgreen}{E}|\textcolor{blue}{R}|\textcolor{black}{F}|\textcolor{black}{G}>}}
+
+%\renewenvironment{proof}{\vspace*{.5ex}\par\noindent{\textbf{Proof.}}}{\hspace*{\fill$\diamondsuit$}\\}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% graph
+\newcommandx*{\cat}[1]{\mbox{\boldmath\ensuremath{\mathsf{#1}}\unboldmath}}
+\newcommandx*{\nodes}[1]{\ensuremath{#1_0}}
+\newcommandx*{\arrows}[1]{\ensuremath{#1_1}}
+\newcommandx*{\src}[1]{\ensuremath{src^{#1}}}
+\newcommandx*{\trg}[1]{\ensuremath{trg^{#1}}}
+\newcommandx*{\ugraph}[2][2]{\ensuremath{#1_{#2}}}
+\newcommandx*{\textugraph}[1]{\ensuremath{#1}}
+
+% signature
+\newcommandx*{\sig}[2][2]{\ensuremath{#1_{#2}}}
+\newcommandx*{\preds}[2][2]{\ensuremath{\Pi^{\sig{#1}[#2]}}}
+\newcommandx*{\arity}[2][2]{\ensuremath{\alpha^{\sig{#1}[#2]}}}
+\newcommandx*{\sigf}[2][2]{\ensuremath{(\preds{#1}[#2], \arity{#1}[#2])}}
+\newcommandx*{\sem}[2]{\ensuremath{[\![{#1}]\!]^{#2}}}
+% \newcommandx*{\semsig}[1]{\ensuremath{{\mathbb M}^{#1}}}
+\newcommandx*{\textpred}[1]{\texttt{#1}}
+% \newcommandx*{\textpred}[1]{{\small\texttt{#1}}}
+\newcommandx*{\mult}[2]{\textpred{[mult(}\ensuremath{#1,#2}\textpred{)]}}
+\newcommandx*{\condition}[1][1=c]{\textpred{[condition,}\ensuremath{#1}\textpred{]}}
+\newcommandx*{\xorsplit}[1][1=c]{\textpred{[xor\_split,}\ensuremath{#1}\textpred{]}}
+\newcommandx*{\range}[2]{\textpred{[range(}\ensuremath{#1,#2}\textpred{)]}}
+\newcommandx*{\crossrange}[2]{\textpred{[cross-range(}\ensuremath{#1,#2}\textpred{)]}}
+
+% tag signature
+\newcommandx*{\tagsig}[2][2]{\ensuremath{#1_{#2}}}
+\newcommandx*{\tags}[2][2]{\ensuremath{\Theta^{\tagsig{#1}[#2]}}}
+\newcommandx*{\tagsigf}[2][2]{\ensuremath{(\tags{#1}[#2], \arity{#1}[#2])}}
+\newcommandx*{\rename}[2]{\textpred{<rename(}\ensuremath{#1,#2}\textpred{)>}}
+
+% specification
+\newcommandx*{\spec}[2][2]{\ensuremath{\mathfrak#1_{#2}}}
+% \newcommandx*{\aconsts}[2][2]{\ensuremath{C_{#2}}}
+\newcommandx*{\aconsts}[2][2]{\ensuremath{C^{\spec{#1}[#2]}}}
+\newcommandx*{\specf}[4][2,4]{\ensuremath{(\ugraph{#1}[#2], \aconsts{#1}[#2]\!\!:\!\sig{#3}[#4])}}
+\newcommandx*{\textspec}[1]{\textsf{#1}}
+% \newcommandx*{\textspec}[1]{{\small\textsf{#1}}}
+\newcommandx*{\textspecscript}[1]{\scriptsize\textsf{#1}}
+
+% annotated specification
+\newcommandx*{\annots}[2][2]{\ensuremath{P_{#2}}}
+% \newcommandx*{\annots}[2][2]{\ensuremath{P^{\spec{#1}[#2]}}}
+\newcommandx*{\aspecf}[6][2,4,6]{\ensuremath{(\ugraph{#1}[#2], \aconsts{#1}[#2]\!\!:\!\sig{#3}[#4], \annots{#1}[#2]\!\!:\!\sig{#5}[#6])}}
+
+% graph-typed signature
+\newcommandx*{\tsig}[2][2]{\ensuremath{(\sig{#1}[#2], \tmorphsig{#1}[#2])}}
+\newcommandx*{\tmorphsig}[2][2]{\ensuremath{\tau^{\sig{#1}[#2]}}}
+\newcommandx*{\tsigf}[2][2]{\ensuremath{(\sigf{#1}[#2], \tmorphsig{#1}[#2])}}
+
+% graph-typed tag signature
+\newcommandx*{\tmorphtagsig}[2][2]{\ensuremath{\tau^{\tagsig{#1}[#2]}}}
+\newcommandx*{\ttagsigf}[2][2]{\ensuremath{(\tags{#1}[#2], \arity{#1}[#2], \tmorphtagsig{#1}[#2])}}
+
+% graph-typed graph
+\newcommandx*{\tmorph}[1][1]{\ensuremath{\iota^{#1}}}
+\newcommandx*{\tugraph}[2][2]{\ensuremath{(\ugraph{#1}[#2], \tmorph[#2])}}
+
+% specification-conformant graph (instance)
+\newcommandx*{\cugraph}[2][2]{\ensuremath{(\ugraph{#1}[#2], \tmorph[#2])}}
+
+% graph-typed specification
+\newcommandx*{\tspec}[2][2]{\ensuremath{(\spec{#1}[#2], \tmorph[#2])}}
+\newcommandx*{\tspecf}[4][2,4]{\ensuremath{(\specf{#1}[#2]{#3}[#4], \tmorph[#2])}}
+
+% specification-conformant specification
+\newcommandx*{\cspec}[2][2]{\ensuremath{(\spec{#1}[#2], \tmorph[#2])}}
+\newcommandx*{\cspecf}[4][2,4]{\ensuremath{(\specf{#1}[#2]{#3}[#4], \tmorph[#2])}}
+
+% coupled specifications
+\newcommandx*{\cospec}[1][]{\ensuremath{(\spec{#1}[0] \dashrightarrow \spec{#1}[1])}}
+
+% formalism
+\newcommandx*{\form}[2][2]{\ensuremath{\mathcal#1_{#2}}}
+\newcommandx*{\uconsts}[2][2]{\ensuremath{U^{\form{#1}[#2]}}}
+\newcommandx*{\formf}[4][3=2,4=3]{\ensuremath{(\sig{#2}[#3], \spec{#1}[#3], \sig{#2}[#4])}}
+% \newcommandx*{\formf}[4][2]{\ensuremath{(\sig{#3}[2], \spec{#4}[2], \sig{#3}[3])}}
+\newcommandx*{\rformf}[4][2]{\ensuremath{(\sig{#3}[3], \spec{#4}[3], \sig{#3}[3])}}
+
+% double conformant specification
+\newcommandx*{\otmorph}[1][1]{\ensuremath{\omega_{#1}}}
+\newcommandx*{\ltmorph}[1][1]{\ensuremath{\lambda_{#1}}}
+\newcommandx*{\lcugraph}[2][2]{\ensuremath{(\ugraph{#1}[#2], \ltmorph[#2])}}
+\newcommandx*{\lcspec}[2][2]{\ensuremath{(\spec{#1}[#2], \ltmorph[#2])}}
+\newcommandx*{\lcspecf}[4][2,4]{\ensuremath{(\ugraph{#1}[#2], \aconsts{#1}[#2]\!\!:\!\sig{#3}[#4], \ltmorph[#2])}}
+\newcommandx*{\ocugraph}[2][2]{\ensuremath{(\ugraph{#1}[#2], \otmorph[#2])}}
+\newcommandx*{\ocspec}[2][2]{\ensuremath{(\spec{#1}[#2], \otmorph[#2])}}
+\newcommandx*{\ocspecf}[4][2,4]{\ensuremath{(\ugraph{#1}[#2], \aconsts{#1}[#2]\!\!:\!\sig{#3}[#4], \otmorph[#2])}}
+\newcommandx*{\doublespec}[2][2]{\ensuremath{(\spec{#1}[#2], \ltmorph[#2], \otmorph[#2])}}
+\newcommandx*{\doublespecf}[4][2,4]{\ensuremath{(\ugraph{#1}[#2], \aconsts{#1}[#2]\!\!:\!\sig{#3}[#4], \ltmorph[#2], \otmorph[#2])}}
+
+% deep specification
+\newcommandx*{\tagmpot}[1]{\textpred{<multi(}\ensuremath{#1}\textpred{)>}}
+\newcommandx*{\tagspot}[1]{\textpred{<single(}\ensuremath{#1}\textpred{)>}}
+\newcommandx*{\tagpot}[2]{\textpred{<pot(}\ensuremath{#1,#2}\textpred{)>}}
+\newcommandx*{\pot}[2]{\textsf{#1..#2}}
+\newcommandx*{\mpot}[1]{\ensuremath{\blacktriangle\textsf{#1}}}
+\newcommandx*{\spot}[1]{\ensuremath{\triangle\textsf{#1}}}
+\newcommandx*{\subugraph}[3][2,3]{\ensuremath{#1_{#2}^{#3}}}
+\newcommandx*{\subaconsts}[3][2,3]{\ensuremath{C_{#2}^{#3}}}
+% \newcommandx*{\subaconsts}[3][2,3]{\ensuremath{C^{\subspec{#1}[#2][#3]}}}
+\newcommandx*{\subspec}[3][2,3]{\ensuremath{\mathfrak#1_{#2}^{#3}}}
+\newcommandx*{\subspecf}[5][2,3,5]{\ensuremath{(\subugraph{#1}[#2][#3], \subaconsts{#1}[#2][#3]\!\!:\!\sig{#4}[#5])}}
+\newcommandx*{\subotmorph}[2][1,2]{\ensuremath{\omega_{#1}^{#2}}}
+\newcommandx*{\subcugraph}[3][2,3]{\ensuremath{(\subugraph{#1}[#2][#3], \subotmorph[#2][#3])}}
+\newcommandx*{\deepspec}[3][2,3]{\ensuremath{(\spec{#1}[#2], \ltmorph[#2], \subotmorph[#2][#3])}}
+\newcommandx*{\deepspecf}[5][2,3,5]{\ensuremath{(\ugraph{#1}[#2], \aconsts{#1}[#2]\!\!:\!\sig{#4}[#5], \ltmorph[#2], \subotmorph[#2][#3])}}
+% \newcommandx*{\deepspecf}[6][2,4,6]{\ensuremath{(\ugraph{#1}[#2], \aconsts{#1}[#2]\!\!:\!\sig{#3}[#4], \annots{#1}[#2]\!\!:\!\tagsig{#5}[#6], \ltmorph[#2], \otmorph[#2])}}
+\newcommandx*{\deepspecftop}[5][2,3,5]{\ensuremath{(\ugraph{#1}[#2], \aconsts{#1}[#2]\!\!:\!\sig{#4}[#5], \ltmorph[#2])}}
+\newcommandx*{\textspecmpot}[2]{\ensuremath{\scriptsize\textsf{#1}^{\mpot{#2}}}}
+\newcommandx*{\textspecspot}[2]{\ensuremath{\scriptsize\textsf{#1}^{\spot{#2}}}}
+\newcommandx*{\textpredmpot}[2]{\ensuremath{\scriptsize#1^{\mpot{#2}}}}
+\newcommandx*{\textpredspot}[2]{\ensuremath{\scriptsize#1^{\spot{#2}}}}
