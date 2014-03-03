@@ -211,7 +211,7 @@ We need schematic of the metamodel; an actual simple workflow model and the vari
 
 YNGVE – we had discussed 2 users – do we want the manager interface too???
 
-========================================
+
 
 
 The syntax and semantics of the workflow modelling language which we use in our approach may be found in ~\cite{RutleMacCaullEtAl2012ECMFA,RutleWangEtAl2012FHIES}. %RutleRabbiEtAl13}. %
@@ -258,7 +258,7 @@ These abstractions are sometime useful in order to reduce the number of repetati
 
 \begin{figure}
   \begin{center}
-    \includegraphics[width=0.7\textwidth]{bp.pdf}
+    \includegraphics[width=0.8\textwidth]{bp.pdf}
     \caption{Hypertension Management Workflow (Overall)}
     \label{fig:htnoverall}
   \end{center}
@@ -303,7 +303,6 @@ specifications; \\
 \textbf{morphisms:} a morphism in $[gr(\mathfrak{S}_u) \rightarrow gr(\mathfrak{S}_w)]$ is given by a map $ACC: gr(\mathfrak{S}_{u_i}) \rightarrow gr(\mathfrak{S}_{w_i})$ ; \\
 \textbf{composition:} The composition is given by the following commutative square where $ACC_{i+1};\iota_{w} = \iota_{u};ACC_1$; \\
 
-\vspace{-8mm}
 \begin{center}
 \begin{tikzpicture}
   \matrix (m) [matrix of math nodes,row sep=3em,column sep=4em,minimum width=2em]
@@ -321,27 +320,25 @@ specifications; \\
 \noindent
 \textbf{identity:} Identity morphism $id_A^{[gr(\mathfrak{S}_u) \rightarrow gr(\mathfrak{S}_w)]}:$ $A$ $\rightarrow$ $A$. \\
 
-An example interpretation of user access to a DERF workflow model instance is provided in Fig.~\ref{fig:ex_uaccess}. 
+
+
+An example interpretation of user access to a DERF workflow model instance is provided in Fig.~\ref{fig:ex_uaccess}. In this commutative diagram 'Dr. Anne' is an instance of 'Doctor' user type, 
+':Initial Evaluation' is a task instance of 'Initial Evaluation'. Since 'Dr. Anne' has access to the task ':Initial Evaluation' because the user type 'Doctor' has a morphism 
+'$ACC_1:Doctor \rightarrow Initial Evaluation$'. 
 
 
 \begin{figure}
   \begin{center}
-    \includegraphics[width=0.25\textwidth]{access_comm_example}
+    \includegraphics[width=0.3\textwidth]{access_comm_example}
   \end{center} 
   \caption{Example: Interpretation of User access to a DERF workflow model instance}
   \label{fig:ex_uaccess}  
 \end{figure}
 
 
-In this commutative diagram 'Dr. Anne' is an instance of 'Doctor' user type, 
-':Initial Evaluation' is a task instance of 'Initial Evaluation'. Since 'Dr. Anne' has access to the task ':Initial Evaluation' because the user type 'Doctor' has a morphism 
-'$ACC_1:Doctor \rightarrow Initial Evaluation$'. 
-
-
 
 To visualize the user access for a workflow model we propose an user interface in Fig.~\ref{fig:htn_uaccess} where the user nodes (e.g., Doctor, Nurse, Patient) 
-are displayed at the bottom of a workflow model. Selection of a user node from the bottom window highlights all the accessible tasks from the workflow model. 
-In the figure, the user Patient has only access to the 'SHBPM' that has been shown in gray color. 
+are displayed at the bottom of a workflow model. 
 
 
 \begin{figure}
@@ -351,7 +348,6 @@ In the figure, the user Patient has only access to the 'SHBPM' that has been sho
   \caption{Visualization of Hypertension Workflow Model and User Access}
   \label{fig:htn_uaccess}  
 \end{figure}
-
 
 \noindent
 The execution of a DERF Workflow model (i.e., transformation of a DERF instance) gives us a category $\mathfrak{E}$ where \\
@@ -497,6 +493,8 @@ We designed the windows similarly so that the user may brainstorm with the avail
 
 
 
+\section{Integration with other applications}\label{label:phm}
+In this section we present the possibility of integrating DERF workflows with other applications by an example healthcare application. 
 We developed a `Personal health monitor' smart phone application that patients can use at home. 
 The purpose of the application is to assist patients keeping their health record such as blood pressure record, body mass index, hours of exercise, dietary, etc. 
 and monitor their performance with their lifestyle target that was set by the physician from `Hypertension management workflow'. 
