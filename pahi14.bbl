@@ -13,28 +13,13 @@
 Baarah, A.H.: An application framework for monitoring care processes. PhD
   thesis, University of Ottawa, 2013
 
-\bibitem{BakerEtAl2008}
-Barker, A., van Hemert, J.: Scientific workflow: A survey and research
-  directions. In: Parallel Processing and Applied Mathematics. Lecture Notes in
-  Computer Science, vol. 4967, pp. 746--753. Springer Berlin / Heidelberg
-  (2008)
-
 \bibitem{Barr05}
 Barr, M., Wells, C. (eds.): Category Theory for Computing Science, 2Nd Ed.
   Prentice Hall International (UK) Ltd., Hertfordshire, UK, UK (1995)
 
-\bibitem{ClarkM06}
-Clark, K.L., McCabe, F.G.: Ontology oriented programming in {Go}$!$. Appl.
-  Intell.  24(3),  189--204 (2006)
-
 \bibitem{DiskinW08}
 Diskin, Z., Wolter, U.: A diagrammatic logic for object-oriented visual
   modeling. Electr. Notes Theor. Comput. Sci.  203(6),  19--41 (2008)
-
-\bibitem{Chunming99}
-Gao, C., Kong, F., Tan, J.: Healthaware: Tackling obesity with health aware
-  smart phone systems. In: Robotics and Biomimetics (ROBIO), 2009 IEEE
-  International Conference on. pp. 1549--1554 (2009)
 
 \bibitem{Kindler10}
 Kindler, E.: Model-based software engineering: The challenges of modelling
@@ -51,18 +36,6 @@ Kristensen, L.M., Lamo, Y., MacCaull, W., Rabbi, F., Rutle, A.: Exploiting
 Lamo, Y., Wang, X., Mantz, F., Bech, {\O}., Rutle, A.: Dpf editor: a
   multi-layer diagrammatic (meta) modelling environment. Proceedings of SPLST
   (2011)
-
-\bibitem{LamoWangMMR12SCI}
-Lamo, Y., Wang, X., Mantz, F., MacCaull, W., Rutle, A.: {DPF Workbench: A
-  Diagrammatic Multi-Layer Domain Specific (Meta-)Modelling Environment}. In:
-  Roger, L. (ed.) Computer and Information Science, Studies in Computer
-  Intelligence, vol. 429, pp. 37--52. Springer (2012)
-
-\bibitem{LeylaM11}
-Leyla, N., MacCaull, W.: A personalized access control framework for
-  workflow-based health care information. In: Daniel, F., Barkaoui, K.,
-  Dustdar, S. (eds.) Business Process Management Workshops (2). Lecture Notes
-  in Business Information Processing, vol. 100, pp. 273--284. Springer (2011)
 
 \bibitem{MacCaullRabbi2011}
 MacCaull, W., Rabbi, F.: {{NOVA} Workflow: A Workflow Management Tool Targeting

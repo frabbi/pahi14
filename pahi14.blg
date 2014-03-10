@@ -7,45 +7,45 @@ Warning--to sort, need author, organization, or key in OMG
 Warning--to sort, need author, organization, or key in FDT
 Warning--empty year in NWPT13
 Warning--empty year in CBMS14
-You've used 24 entries,
+You've used 19 entries,
             2785 wiz_defined-function locations,
-            1088 strings with 24390 characters,
-and the built_in function-call counts, 13314 in all, are:
-= -- 1091
-> -- 382
-< -- 26
-+ -- 160
-- -- 130
-* -- 817
-:= -- 1654
-add.period$ -- 41
-call.type$ -- 24
-change.case$ -- 155
+            1046 strings with 23191 characters,
+and the built_in function-call counts, 9878 in all, are:
+= -- 799
+> -- 288
+< -- 17
++ -- 122
+- -- 98
+* -- 600
+:= -- 1238
+add.period$ -- 30
+call.type$ -- 19
+change.case$ -- 118
 chr.to.int$ -- 0
-cite$ -- 28
-duplicate$ -- 1211
-empty$ -- 1211
-format.name$ -- 153
-if$ -- 2955
+cite$ -- 23
+duplicate$ -- 904
+empty$ -- 904
+format.name$ -- 115
+if$ -- 2178
 int.to.chr$ -- 0
-int.to.str$ -- 24
-missing$ -- 254
-newline$ -- 77
-num.names$ -- 55
-pop$ -- 477
+int.to.str$ -- 19
+missing$ -- 192
+newline$ -- 62
+num.names$ -- 41
+pop$ -- 369
 preamble$ -- 1
-purify$ -- 108
+purify$ -- 84
 quote$ -- 0
-skip$ -- 392
+skip$ -- 284
 stack$ -- 0
-substring$ -- 711
-swap$ -- 677
-text.length$ -- 26
+substring$ -- 501
+swap$ -- 490
+text.length$ -- 17
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 94
+type$ -- 74
 warning$ -- 4
-while$ -- 101
-width$ -- 26
-write$ -- 249
+while$ -- 73
+width$ -- 21
+write$ -- 193
 (There were 4 warnings)

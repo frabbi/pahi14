@@ -62,9 +62,9 @@
 
 
 \hypersetup{
-  pdftitle={A Metamodeling Approach to the Usability},
+  pdftitle={A Flexible Metamodelling Approach for Healthcare Systems}%A Metamodeling Approach to the Usability},
   pdfauthor={Fazle Rabbi},
-  pdfsubject={A Metamodeling Approach to the Usability}
+  pdfsubject={A Flexible Metamodelling Approach for Healthcare Systems}
 }
 
 \bibliographystyle{splncs03}
@@ -81,8 +81,8 @@
 
 %\selectlanguage{british}
 
-\title{A Metamodeling Approach to the Usability, Correctness, and Adaptability of Workflow Software Systems for Healthcare}
-\titlerunning{A Metamodeling Approach to the Usability, Correctness, and Adaptability of Workflow Software Systems for Healthcare}
+\title{A Flexible Metamodelling Approach for Healthcare Systems} %A Metamodeling Approach to the Usability, Correctness, and Adaptability of Workflow Software Systems for Healthcare}
+\titlerunning{A Flexible Metamodelling Approach for Healthcare Systems}
 
 %\author{Adrian Rutle\inst{1}}
 %\institute{Aalesund University College\\ \email{adru@hials.no} }
@@ -145,7 +145,7 @@ user-friendly interface to allow the health practitioner to determine the correc
 
 
 
-\section{A Metamodeling Approach to healthcare workflows}
+\section{A metamodeling approach to healthcare workflows}
 
 In \cite{CBMS14} we discussed the implementation of a user-friendly tool to aid clinicians and patients in the workflow process implied in a clinical practice guideline with an accompanying 
 module that gives the patient a user friendly interface for self management of lifestyle attributes which caused the patient to be at risk.  The patient can input data for such lifestyle 
@@ -184,105 +184,54 @@ We extend this model to include users and user interactions; allowing us to mode
 All interactions occur at specific times. A workflow consists of a network of tasks and specified users are responsible for performing each task. While performing a task a user provides data 
 to the system, typically, this is filling out a standardized web-based form, or some form which provides automatic integration with the appropriate healthcare database.
 
-\section{what is a good name???}
+\section{Metamodelling of a healthcare system}
+We modeled a Hypertension management workflow from the guideline of clinical pathways \footnote{The Chinook Primary Care Network: \url{http://www.chinookprimarycarenetwork.ab.ca}}. 
+In this section we provide an overview of the system. 
+We propose the use of seperate meta models for the user access, workflow process, monitor, UI view, data source and integrate them by using indexed set (see Fig.~\ref{fig:multimeta}).
+The directed arcs from one meta model to another in Fig.~\ref{fig:multimeta} represent abstract relations between meta models. 
+Using seperate meta models for modeling different aspects of a system gives us the flexibility for remodelling and also makes models more readable. 
 
-RABBI -- If we look at the workflow you have in the CBMS-Nova we recently submitted, we can make a simple modification to this where we include a sub workflow where the patient is registering 
-his life style information between visits 1 and 2; the tasks should be annotated with a marking to denote the user 
-D – doctor, N – nurse, P- patient, T-technician etc. So in this workflow the patient will be responsible for registering the life style information between visit 1 and 2 and  the doctor will 
-be responsible for the rest of the workflow.
-Both the doctor and the patient should have read access to the lifestyle information.
-The D should have a user interface a bit similar to the one the patient uses i.e. some kind of form, but it can have many more features—eg sending an e-mail to the lab for a lab test.
-
-Based on this we could maybe introduce a task based access model [as described for example in \cite{LeylaM11}] 
-
-
-
-
-For the paper, I think we could incorporate this simple idea with two users of the system and some alerts that get fired in a specific situation. There could be two types of alerts – one, 
-less urgent, for example  to the patient which reminds the patient if he forgets to enter data on some day and another, which we could call an alarm , which is more urgent which is to both 
-the patient and doctor – for example,  if the weight gain over fewer than 5 days exceeds 10 pounds (which is indicating to the doctor that the patient is retaining excessive fluids and the 
-doctor should consult that patient immediately)  
-
-We should also write about how the user is interacting with the system, how is the input given and  the ways data can be read from the system – can talk about developing interfaces that give 
-summary data to the patient and doctor and aggregate information to a manager, The idea to use the calendar to represent the time is nice used to represent  activities already accomplished and 
-future appointments.
-
-We need schematic of the metamodel; an actual simple workflow model and the various user interfaces appropriate to manager, doctor and patient.  
-
-YNGVE – we had discussed 2 users – do we want the manager interface too???
-
-
-
-
-The syntax and semantics of the workflow modelling language which we use in our approach may be found in ~\cite{RutleMacCaullEtAl2012ECMFA,RutleWangEtAl2012FHIES}. %RutleRabbiEtAl13}. %
-The modelling language is defined using the Diagram Predicate Framework (DPF)~\cite{Rutle10} and implemented using the DPF Workbench~\cite{LamoWangMMR12SCI}. 
-In DPF, a modelling language is given by a metamodel and a diagrammatic predicate signature (see Fig.~\ref{fig:ex_form_workflow_hierarchy}). 
-The metamodel defines the types and the signature defines the predicates that are used to formulate constraints. 
-A metamodel in DPF consists of an underlying graph, and a set of constraints.
-We say that a model conforms to (is an instance of) a metamodel if the model's underlying graph is typed by the metamodel's underlying graph, and if the model satisfies the constraints defined in the metamodel. 
-In DPF, the semantics of a (meta)model is given by the set of its instances. 
-DPF supports a multi-level metamodelling hierarchy, in which a model at any level can be regarded the metamodel for models at the level below it.
-
-
-%\begin{wrapfigure}{r}{90mm}
 \begin{figure}
   \begin{center}
-    \includegraphics[width=0.7\textwidth]{ex_form_workflow_hierarchy}
-  \end{center}
-  \vspace{-4mm}
-  \caption{Workflow modelling hierarchy: the dashed arrows indicate the types of model elements, the dotted arrows indicate the relation between the signatures and the models}
-  \label{fig:ex_form_workflow_hierarchy}
-  \vspace{-4mm}
+    \includegraphics[width=0.5\textwidth]{multimeta}
+  \end{center} 
+  \caption{Multiple meta modelling hierarchy}
+  \label{fig:multimeta}  
 \end{figure}
-%\end{wrapfigure}
 
-In the design of our workflow modelling language we have three modelling levels: M2, M1 and M0 (see Fig.~\ref{fig:ex_form_workflow_hierarchy}). 
-The metamodel of our workflow modelling language (which is at level M2) consists of a node \textspec{Task} and an arrow \textspec{Flow}. 
-Simply put, this means that we can define a set of tasks together with the flow relations between these tasks. 
-As seen in Fig.~\ref{fig:htnoverall}, our workflow models are diagrammatic models describing in which order specific work tasks should be executed. 
-Each task is represented by a box. 
-If there is an edge $T_1 \rightarrow T_2$ starting in task $T_1$ and ending in task $T_2$, then task $T_1$ must be performed before task $T_2$. 
-Special binary constraints on forks (joins) specify splits (respectively, merges) of workflow branches. 
-In fact, joins and forks could be extended in the standard way to arbitrary triples, quadruples, etc.
-We have three kinds of splits: \textpred{[and\_split]}, \textpred{[or\_split]} or \textpred{[xor\_split]}, and three kinds of merges: \textpred{[and\_merge]}, \textpred{[xor\_merge]} 
-or \textpred{[or\_merge]}. 
-The meaning of these constraints are as usual: both branches have to be executed in an \textpred{[and\_split]}; exactly one branch has to be executed in an \textpred{[xor\_split]} 
-and one or two branches have to be executed in an \textpred{[or\_split]}. 
-We use $T_\Box$ code to specify the details of tasks and flow relations at level M1. 
-Task specification writen in $T_ \Box$ include data flow and UI definition. 
-Branching conditions for the flow relations associated with \textpred{[or\_split]} and \textpred{[xor\_split]} may be specified using $T_\Box$ code. 
-Fig.~\ref{fig:htnoverall} shows some composit tasks such as `Visit1', `CBPM' those are abstractions of subworkflows. 
+
+
+For workflow modeling we used DERF ~\cite{RutleMacCaullEtAl2012ECMFA,RutleWangEtAl2012FHIES} where one can graphically design a workflow model. 
+Fig.~\ref{fig:htnoverall} shows the overall model of the Hypertension Management Workflow. 
+There are some composit tasks such as `Visit1', `CBPM' in the workflow, those are abstractions of subworkflows. 
 The subworkflow for `Visit1' composit task is shown in Fig.~\ref{fig:htnoverall}. 
 These abstractions are sometime useful in order to reduce the number of repetation. 
 
 
 \begin{figure}
   \begin{center}
-    \includegraphics[width=0.8\textwidth]{bp.pdf}
+    \includegraphics[width=0.7\textwidth]{bp.pdf}
     \caption{Hypertension Management Workflow (Overall)}
     \label{fig:htnoverall}
   \end{center}
 \end{figure}
 
-
-%Earlier we proposed three predicates \textpred{[enabled]}, \textpred{[running]} and \textpred{[finished]} (where \textpred{[enabled]}, \textpred{[running]} and \textpred{[finished]} denotes that a task instance is enabled, running, and finished, respectively) collected in a signature $\Sigma_1$. 
-
-Given a specific workflow model at level M1 (like the one in Fig.~\ref{fig:ex_form_workflow_hierarchy}) and the predicates \textpred{[running]} and \textpred{[not-running]}  
-(denoting, respectively, that a task instance is running or not running) collected in a signature \sig{\Sigma}[1], we create another modelling language which we use to define \emph{workflow states}, 
-or, equivalently, \emph{instance of a workflow model.} 
-The workflow states are located at level M0. We generate states by applying model transformation rules. 
-
-We modeled a Hypertension management workflow from the guideline of clinical pathways \footnote{The Chinook Primary Care Network: \url{http://www.chinookprimarycarenetwork.ab.ca}}. 
-For workflow modeling we used DERF where one can graphically design a workflow model. 
-Fig.~\ref{fig:htnoverall} shows the overall model of the Hypertension Management Workflow. 
 Initially patients' blood pressure is measured at the `Initial BP' Task which may cue the clinical hypertension management procedures if the BP is found to be greater than or equal to $140/90$. 
 If the initial BP is found normal ($<=140/90$), the workflow terminates. 
 In Fig.~\ref{fig:htnoverall} patients' Hypertension is managed through investigation and treatment. 
-The clinical procedure (i.e., `Visit1', and all other subsequest tasks in In Fig.~\ref{fig:htnoverall}) starts at the doctors' office. 
+The clinical procedure (i.e., `Visit1', and all other subsequest tasks in Fig.~\ref{fig:htnoverall}) starts at the doctors' office. 
 Patients with high BP have risk of organ failures and/or other chronic illness. 
 During the first visit at doctors' office (`Visit1') BP is measured twice, an initial assessment is done, and an investigation is started with diagnostic tests. 
 The workflow executes `Ambulatory blood pressure monitoring' (`ABPM') or `Self home blood pressure monitoring (`SHBPM') if they are available otherwise a Clinical BPM is performed which refers to 
 the `CBPM' task in the overall workflow model.
+
+
+
+
+
+The user access to a DERF workflow model is defined by an Indexed set. We defined a seperate meta modeling hierarchy for the user model. The left hand side of Fig.~\ref{fig:access} shows two 
+modelling levels $M_2$ and $M_1$ of a user model where $\mathfrak{S}_{u_{2}}$ and $\mathfrak{S}_{u_{1}}$ are the specifications (respectively). 
+The right hand side shows two modelling levels of a DERF workflow model with specifications $\mathfrak{S}_{w_{2}}$ and $\mathfrak{S}_{w_{1}}$. 
 
 
 \begin{figure}
@@ -294,51 +243,9 @@ the `CBPM' task in the overall workflow model.
 \end{figure}
 
 
-The user access to a DERF workflow model is defined by an Indexed set. We defined a seperate meta modeling hierarchy for the user model. The left hand side of Fig.~\ref{fig:access} shows two 
-modelling levels $M_2$ and $M_1$ of a user model where $\mathfrak{S}_{u_{2}}$ and $\mathfrak{S}_{u_{1}}$ are the specifications (respectively). 
-The right hand side shows two modelling levels of a DERF workflow model with specifications $\mathfrak{S}_{w_{2}}$ and $\mathfrak{S}_{w_{1}}$. 
-A user model and a DERF model are integrated by User-Indexed set. We define a category of User-indexed sets as the interpretation category $[gr(\mathfrak{S}_u) \rightarrow gr(\mathfrak{S}_w)]$ where \\
-\textbf{objects:} $gr(\mathfrak{S}_u) \cup gr(\mathfrak{S}_2)$ where $gr(\mathfrak{S}_u)$ and $gr(\mathfrak{S}_w)$ are the underlying graphs of the user model and DERF workflow model 
-specifications; \\
-\textbf{morphisms:} a morphism in $[gr(\mathfrak{S}_u) \rightarrow gr(\mathfrak{S}_w)]$ is given by a map $ACC: gr(\mathfrak{S}_{u_i}) \rightarrow gr(\mathfrak{S}_{w_i})$ ; \\
-\textbf{composition:} The composition is given by the following commutative square where $ACC_{i+1};\iota_{w} = \iota_{u};ACC_1$; \\
-
-\begin{center}
-\begin{tikzpicture}
-  \matrix (m) [matrix of math nodes,row sep=3em,column sep=4em,minimum width=2em]
-  {
-     gr(\mathfrak{S}_{u_i}) & gr(\mathfrak{S}_{w_i}) \\
-     gr(\mathfrak{S}_{u_{i+1}}) & gr(\mathfrak{S}_{w_{i+1}}) \\};
-  \path[-stealth]
-    (m-2-1) edge node [left] {$\iota_u$} (m-1-1)
-    (m-1-1) edge node [above] {$ACC_i$} (m-1-2)
-    (m-2-1) edge node [below] {$ACC_{i+1}$} (m-2-2)
-    (m-2-2) edge node [right] {$\iota_w$} (m-1-2);
-\end{tikzpicture}
-\end{center}
-
-\noindent
-\textbf{identity:} Identity morphism $id_A^{[gr(\mathfrak{S}_u) \rightarrow gr(\mathfrak{S}_w)]}:$ $A$ $\rightarrow$ $A$. \\
-
-
-
-An example interpretation of user access to a DERF workflow model instance is provided in Fig.~\ref{fig:ex_uaccess}. In this commutative diagram 'Dr. Anne' is an instance of 'Doctor' user type, 
-':Initial Evaluation' is a task instance of 'Initial Evaluation'. Since 'Dr. Anne' has access to the task ':Initial Evaluation' because the user type 'Doctor' has a morphism 
-'$ACC_1:Doctor \rightarrow Initial Evaluation$'. 
-
-
-\begin{figure}
-  \begin{center}
-    \includegraphics[width=0.3\textwidth]{access_comm_example}
-  \end{center} 
-  \caption{Example: Interpretation of User access to a DERF workflow model instance}
-  \label{fig:ex_uaccess}  
-\end{figure}
-
-
-
 To visualize the user access for a workflow model we propose an user interface in Fig.~\ref{fig:htn_uaccess} where the user nodes (e.g., Doctor, Nurse, Patient) 
-are displayed at the bottom of a workflow model. 
+are displayed at the bottom of a workflow model. Selection of a user node from the bottom window highlights all the accessible tasks from the workflow model. 
+In the figure, the user Patient has only access to the 'SHBPM' that has been shown in gray color. 
 
 
 \begin{figure}
@@ -349,86 +256,37 @@ are displayed at the bottom of a workflow model.
   \label{fig:htn_uaccess}  
 \end{figure}
 
-\noindent
-The execution of a DERF Workflow model (i.e., transformation of a DERF instance) gives us a category $\mathfrak{E}$ where \\
-\textbf{objects:} $T$ is given by a set of task instances; \\
-\textbf{morphisms:} a morphism in $\mathfrak{E}$ is given by an execution order of task instances $T_1$ $\xrightarrow{f_x}$ $T_2$ where $T_1$, $T_2$ are task instances; \\ 
-\textbf{composition:} For any two morphisms $f_x$ : $T_1$ $\rightarrow$ $T_2$ and $g_x$ : $T_2$ $\rightarrow$ $T_3$ the composition $f_x$;$g_x$: $T_1$ $\rightarrow$ $T_3$ 
-is given by the transitivity of order of execution; \\
-\textbf{identity:} Identity morphism $id_T^\mathfrak{E}:$ $T$ $\rightarrow$ $T$. \\
+While executing 'SHBPM' task the patient registers his life style information. So in this workflow the patient is responsible for registering his life style information 
+and doctors and nurses are responsible for the rest of the workflow.
+Both the doctor and the patient should have access to the lifestyle information.
+Doctors have a user interface a bit similar to the one the patient uses, but it has many more features (e.g., sending an e-mail to the lab for a lab test).
 
-\noindent
-Now we define a date category $\mathfrak{D}$ where \\
-\textbf{objects:} $D$ is given by a set of Date;\\
-\textbf{morphisms:} a morphism in $\mathfrak{D}$ is given by an order of dates $D_1$ $\xrightarrow{d_d}$ $D_2$ where $D_1$ and $D_2$ are dates; \\
-\textbf{composition:} For any two morphisms $d_1$ : $D_1$ $\rightarrow$ $D_2$ and $d_2$ : $D_2$ $\rightarrow$ $D_3$ the composition $d_1$;$d_2$: $D_1$ $\rightarrow$ $D_3$ 
-is given by the transitivity of order of dates; \\
-\textbf{identity:} Identity morphism $id_D^\mathfrak{D}:$ $D$ $\rightarrow$ $D$. \\
-
-\noindent
-The datewise execution of a DERF Workflow model (i.e., transformation of a DERF instance) gives us a category $\mathfrak{ED}$ where \\
-\textbf{objects:} $gr(\mathfrak{E}) \cup gr(\mathfrak{D})$ where $gr(\mathfrak{E})$ is the underlying graph of category $\mathfrak{E}$ and $gr(\mathfrak{D})$ 
-is the underlying graph of category $\mathfrak{D}$; \\
-\textbf{morphisms:} morphisms in $\mathfrak{ED}$ are given by date of execution of task instances: $\phi_t$: $T$ $\rightarrow$ $D$; \\
-\textbf{composition:} The composition is given by the following commutative square where $f_x;\phi_{t2} = \phi_{t1};d_1$; \\
+%Based on this we could maybe introduce a task based access model [as described for example in \cite{LeylaM11}] 
 
 
 \begin{figure}
   \begin{center}
-    \includegraphics[width=0.2\textwidth]{ED_comm}
-  \end{center}   
-  \label{fig:ed_comm}  
+    \includegraphics[width=\textwidth]{monitor}
+  \end{center} 
+  \caption{Meta modelling of Workflow monitor}
+  \label{fig:monitor}  
 \end{figure}
 
-\noindent
-\textbf{identity:} Identity morphism $id_A^\mathfrak{ED}:$ $A$ $\rightarrow$ $A$. \\
+Fig.~\ref{fig:visit310} shows a meta model of workflow monitor having a seperate meta model hierarchy and its association with a DERF workflow meta model and a user access meta model. 
+Tasks from a DERF workflow model can trigger alerts. We have two types of alerts: `Critical Alert' and one less urgent called `Reminder'. 
+The `SHBPM' task triggers a `Data Entry' alert if the patient forgets to enter data on some day. 
+It also triggers a 'Excessive Weight Gain' alert if the patients weight gain over fewer than 5 days exceeds 10 pounds. This firing condition is encoded in the predicate $[Cond-2]$. 
+Different users have different view access to the alerts. In this figure, the doctors are only informed about the `Excessive Weight Gain' alert to indicate that 
+the patient is retaining excessive fluids and the doctor should consult that patient immediately. The patient has view access to the `Data Entry' alert. 
+In DERF workflow a task may have time constraints \cite{WangRutleEtAl2012TASE}. The task `SHBPM' has a time constraint of `0 hour' delay and `24 hours' duration.
+$[Cond-1]$ is a predicate that triggers the `Data Entry' alert if the `24 hours' duration is over and the `SHBPM' task is not executed. 
 
 
-
-\noindent
-Now we can define a slice category $\mathfrak{ED}/\mathfrak{D}$ where \\
-\textbf{objects:} $(T,\phi_t)$ are given by a task $T$ and a morphism $\phi_t:$ $T$ $\rightarrow$ $D$ in $\mathfrak{ED}$; \\
-\textbf{morphisms:} a morphism $f: (T_1, \phi_{t1}) \rightarrow (T_2, \phi_{t2})$ in $\mathfrak{ED/D}$ is given by a commutative triangle in $\mathfrak{ED}$, i.e., by a morphism 
-$f: T_1 \rightarrow T_2$ in $\mathfrak{ED}$ such that $f;s = t$; \\
-
-\begin{figure}
-  \begin{center}
-    \includegraphics[width=0.5\textwidth]{EDD_morphism}
-  \end{center}   
-  \label{fig:edd_morphism}  
-\end{figure}
-
-\noindent
-\textbf{composition:} The composition $f;g: (T_1, \phi_{t1}) \rightarrow (T_3, \phi_{t3})$ of two composition $f: (T_1, \phi_{t1}) \rightarrow (T_2, \phi_{t2})$ and 
-$g: (T_2, \phi_{t2}) \rightarrow (T_3, \phi_{t3})$ in $\mathfrak{ED/D}$ is given by the composite morphism $f;g: T_1 \rightarrow T_3$ in $\mathfrak{ED}$; \\
-
-\begin{figure}
-  \begin{center}
-    \includegraphics[width=0.4\textwidth]{EDD_comp}
-  \end{center}   
-  \label{fig:edd_comp}  
-\end{figure}
-
-\begin{figure}
-  \begin{center}
-    \includegraphics[width=0.3\textwidth]{EDD_comp2}
-  \end{center}   
-  \label{fig:edd_comp2}  
-\end{figure}
-
-\textbf{identity:} Identity morphism $id_T^\mathfrak{ED/D}:$ $(T, \phi_{t})$ $\rightarrow$ $(T, \phi_{t})$. \\
-
-
-
-
-
-We presented a UI to visualize category $\mathfrak{ED/D}$ for certain workflow instance. 
-In the rest of the section we present the new user interface for the execution of the `Visit1' workflow for a particular workflow instance/case. 
-
-
-
+\section{User-friendly user interface}
+We developed a user-friendly user interface to interact with the system. 
 Fig.~\ref{fig:visit310} shows 4 windows named `Workflow Viewer', `Task Execution Viewer', `Lookup Viewer', and `NOVA Browser'. 
 `Workflow Viewer' shows the list of all available tasks on the right side of the window and whenever a task is executed, it shows the task name on a calendar. 
+By default the calendar shows the 'month view' but different level of granularity may be configured, such as: Yearly view, weekly view, hourly view, etc. 
 A task being executed are shown in the `Task Execution Viewer'. Inputs required from the end user are shown in branches and the end user is supposed to select a branch and assign a value to it 
 through the `Lookup Viewer'. The `Lookup Viewer' helps the end user to input information either by showing relevant values from an ontology or by allowing end user to enter information. 
 Once a task is executed, the information are hierarchically displayed in the `NOVA Browser'. %The end user can explore details of a branch from the `NOVA Browser' which helps them to brainstorm while executing a task or afterwords. 
@@ -438,8 +296,10 @@ view information. the details
 Fig.~\ref{fig:visit310} is showing that the user is executing the `Measure BP' task. 
 %The `Workflow Explorer' window shows subnet workflows in tree format; a different color for the subnet workflow in the tree indicates that it contains some enabled tasks. 
 Inside the `Task Execution Viewer' window user provides input to execute the task. 
-This is an alternative way of taking user input instead of using \textit{Forms}. 
-While executing tasks the user has access to historical information, workflow instance; this arrangement provides the user more user-friendly environment to concentrate on care rather than struggling with huge number of \textit{Forms}.
+This is an alternative way of taking user input instead of using \textit{Forms}. This view can also be configured to traditional 'Form view' where the user provides input in 'Form fields' 
+(e.g., text boxes, drop down boxes, etc.). 
+While executing tasks the user has access to historical information, workflow instance; this arrangement provides the user more user-friendly environment to 
+concentrate on care.
 
 
 \begin{figure}
@@ -451,57 +311,20 @@ While executing tasks the user has access to historical information, workflow in
 \end{figure}
 
 The `Lookup Viewer' at the bottom left of Fig.~\ref{fig:visit310} provides options allowing the user to select or enter data. 
-This window is connected to an ontology and shows only relavent terminology from an ontology to help user input information while executing a task. 
+This window is connected to a database and shows only relavent data from the database. 
+This view can also be configured to connect to an ontology and show relevant terminology from an ontology to help user input information while executing a task. 
 Data inserted or selected by the user in the `Lookup Viewer' is reflected in the `Task Execution Viewer' window. 
 When the user is finished entering all input for a task, the task is executed and this updates `NOVA Browser' nodes. 
-Fig.~\ref{fig:visit311} shows how the `NOVA Browser' looks like after executing the `Measure BP' task. 
-
-\begin{figure}
-  \begin{center}
-    \includegraphics[width=\textwidth]{Visit1_1_new.png}
-    \caption{Execution of Measure BP task }
-    \label{fig:visit311}
-  \end{center}
-\end{figure}
-
-
-Information available in the `NOVA Browser' can also be used to annotate as a `cause' for the execution of a task. 
-This is one of the important feature of the proposed user interface design. Most software applications do not capture the cause of executing a task. 
-While executing a task, the user uses his/her domain knowledge, expertise and finds some clue from the available information for a patient's case. 
-This human expertise is crucial for healthcare applications. Recording pre-conditions while executing tasks would help analyzing historical information. 
-Since healthcare professionals have to deal with many cases everyday, it might become very complicated for them to remember exactly under what circumstances they prescribed something or decided 
-to do something for a patient. 
-The way we proposed annotating cause of a task execution should greatly benefit healthcare professionals as they can easily point out and keep records of what motivated/influenced 
-them to make a certain decision. 
-Fig.~\ref{fig:followup} shows the execution of a task from `CBPM' workflow named `Change Threshold'; the patient ``John Smith'' has a chronic kidney disease name `Albuminuria' 
-which is the potential reason for changing the threshold to $130/80$ for subsequent workflow execution. 
 
 
 
-\begin{figure}
-  \begin{center}
-    \includegraphics[width=\textwidth]{visit3_new.png}
-    \caption{Annotating cause for `Change Threshold' Task }
-    \label{fig:followup}
-  \end{center}
-\end{figure}
-
-The reader may have noticed that the `Task Execution Viewer' and the `NOVA Browser' displays data similarly as in mindmap. 
-A mind map is a visual thinking tool that graphically represents ideas and concepts and has been recognized as a brainstorming tool. 
-We designed the windows similarly so that the user may brainstorm with the available information in front of them while executing tasks. 
-
-
-
-
-\section{Integration with other applications}\label{label:phm}
-In this section we present the possibility of integrating DERF workflows with other applications by an example healthcare application. 
-We developed a `Personal health monitor' smart phone application that patients can use at home. 
+We developed a `Personal health monitor' smart phone application for the patients to execute the `SHBPM' (see Fig.~\ref{fig:htnoverall}) from home. 
 The purpose of the application is to assist patients keeping their health record such as blood pressure record, body mass index, hours of exercise, dietary, etc. 
 and monitor their performance with their lifestyle target that was set by the physician from `Hypertension management workflow'. 
-It is required that the `Personal health monitor' application interacts with the `Hypertension management workflow' presented in section~\ref{label:proposal}. 
+It is required that the `Personal health monitor' application interacts with the `Hypertension management workflow'. 
 The integration has been accomplished by a task named `SHBPM' (see Fig.~\ref{fig:htnoverall}) from the `Hypertension management workflow'. 
-We wrote an $action$ method for the task `SHBPM' and that exposed a web-service. 
-Through the web-service it is possible for the `Personal health monitor' smart phone application to invoke the task `SHBMP' and submit the data entered by the patient. 
+
+We have developed several interfaces that give summary data to the patient and doctor by projecting patient's data into graphs and charts. 
 Fig.~\ref{fig:bp_phm} shows two screenshots from the smart phone application that takes blood pressure input from the patient and displays a graph of their recent blood pressure changes. 
 Fig.~\ref{fig:diet_phm} shows another two screenshots that patient can use to monitor their exercise and eating behavior change. 
 This smart phone appliction can also fetch appointment date from the workflow and reminds patient about the next visit date. 
@@ -524,17 +347,20 @@ This smart phone appliction can also fetch appointment date from the workflow an
 \end{figure}
 
 
-\section{Related Work}\label{label:relwork}
 
-In \cite{ClarkM06} the authors introduced the knowledge representation features of a multi-paradigm programming language called Go$!$ that integrates logic, functional, 
-object oriented and imperative programming styles. In that paper the authors described the Go$!$ language and its use for ontology oriented programming, comparing its expressiveness with OWL. 
-This is related to our work since the authors also proposed a language for building executable ontologies.  
-However the syntax proposed for $T_{\Box}$ is simple and abstract and $T_{\Box}$ provides syntax for control flow and UI design. 
 
-In \cite{BakerEtAl2008} Baker et. al., surveyed a large number of existing workflow systems and listed their features considering different problem aspects. 
-But none of them is following ontology based model driven approach as in $T_{\Box}$. 
 
-Several heath applications have been developed recently based on smart phone systems such as \cite{Chunming99} but they are lacking formal foundations such as workflow language, ontology, etc.
+
+
+
+
+%\section{Related Work}\label{label:relwork}
+
+%In \cite{ClarkM06} the authors introduced the knowledge representation features of a multi-paradigm programming language called Go$!$ that integrates logic, functional, object oriented and imperative programming styles. In that paper the authors described the Go$!$ language and its use for ontology oriented programming, comparing its expressiveness with OWL. This is related to our work since the authors also proposed a language for building executable ontologies.  However the syntax proposed for $T_{\Box}$ is simple and abstract and $T_{\Box}$ provides syntax for control flow and UI design. 
+
+%In \cite{BakerEtAl2008} Baker et. al., surveyed a large number of existing workflow systems and listed their features considering different problem aspects. But none of them is following ontology based model driven approach as in $T_{\Box}$. 
+
+%Several heath applications have been developed recently based on smart phone systems such as \cite{Chunming99} but they are lacking formal foundations such as workflow language, ontology, etc.
 
 \section{Conclusion}\label{label:conclusion}
 

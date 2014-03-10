@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.9.17)  3 MAR 2014 15:59
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.9.17)  10 MAR 2014 10:40
 entering extended mode
  %&-line parsing enabled.
 **pahi14.tex
@@ -953,214 +953,93 @@ Missing character: There is no ú in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
- [2]
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ì in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ì in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no î in font cmr10!
- [3]
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ì in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ì in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ì in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ì in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ì in font cmr10!
+ [2] [3]
 
+pdfTeX warning: /usr/bin/pdflatex (file ./resources/multimeta.pdf): PDF inclusi
+on: found PDF version <1.5>, but at most version <1.4> allowed
+<resources/multimeta.pdf, id=94, 227.60031pt x 172.2184pt>
+File: resources/multimeta.pdf Graphic file (type pdf)
 
-pdfTeX warning: /usr/bin/pdflatex (file ./resources/ex_form_workflow_hierarchy.
-pdf): PDF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
-
-<resources/ex_form_workflow_hierarchy.pdf, id=97, 418.72882pt x 355.67223pt>
-File: resources/ex_form_workflow_hierarchy.pdf Graphic file (type pdf)
-
-<use resources/ex_form_workflow_hierarchy.pdf> [4]
+<use resources/multimeta.pdf>
 
 pdfTeX warning: /usr/bin/pdflatex (file ./resources/bp.pdf): PDF inclusion: fou
 nd PDF version <1.5>, but at most version <1.4> allowed
-<resources/bp.pdf, id=113, 312.6932pt x 232.99547pt>
+<resources/bp.pdf, id=102, 312.6932pt x 232.99547pt>
 File: resources/bp.pdf Graphic file (type pdf)
  <use resources/bp.pdf>
-Underfull \vbox (badness 10000) has occurred while \output is active []
+LaTeX Font Info:    Try loading font information for U+euf on input line 233.
 
- [5 <./resources/ex_form_workflow_hierarchy.pdf>]
+(/usr/share/texmf-texlive/tex/latex/amsfonts/ueuf.fd
+File: ueuf.fd 2009/06/22 v3.00 Euler Fraktur
+) [4 <./resources/multimeta.pdf>]
 
 pdfTeX warning: /usr/bin/pdflatex (file ./resources/access.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<resources/access.pdf, id=165, 516.17844pt x 249.05547pt>
+<resources/access.pdf, id=128, 516.17844pt x 236.43332pt>
 File: resources/access.pdf Graphic file (type pdf)
 
 <use resources/access.pdf>
-LaTeX Font Info:    Try loading font information for U+euf on input line 298.
- (/usr/share/texmf-texlive/tex/latex/amsfonts/ueuf.fd
-File: ueuf.fd 2009/06/22 v3.00 Euler Fraktur
-)
-Underfull \hbox (badness 10000) in paragraph at lines 297--305
-
- []
-
-[6 <./resources/bp.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 321--323
-
- []
-
-
-
-pdfTeX warning: /usr/bin/pdflatex (file ./resources/access_comm_example.pdf): P
-DF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
-<resources/access_comm_example.pdf, id=188, 140.96236pt x 95.0366pt>
-File: resources/access_comm_example.pdf Graphic file (type pdf)
-
-<use resources/access_comm_example.pdf> [7 <./resources/access.pdf> <./resource
-s/access_comm_example.pdf>]
 
 pdfTeX warning: /usr/bin/pdflatex (file ./resources/hypertension_uaccess.pdf): 
 PDF inclusion: found PDF version <1.5>, but at most version <1.4> allowed
-<resources/hypertension_uaccess.pdf, id=216, 313.04453pt x 168.63pt>
+<resources/hypertension_uaccess.pdf, id=131, 313.04453pt x 168.63pt>
 File: resources/hypertension_uaccess.pdf Graphic file (type pdf)
 
-<use resources/hypertension_uaccess.pdf>
-Underfull \hbox (badness 10000) in paragraph at lines 356--363
+<use resources/hypertension_uaccess.pdf> [5 <./resources/bp.pdf> <./resources/a
+ccess.pdf>]
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 364--371
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 372--378
-
- []
-
-[8 <./resources/hypertension_uaccess.pdf>]
-
-pdfTeX warning: /usr/bin/pdflatex (file ./resources/ED_comm.pdf): PDF inclusion
+pdfTeX warning: /usr/bin/pdflatex (file ./resources/monitor.pdf): PDF inclusion
 : found PDF version <1.5>, but at most version <1.4> allowed
-<resources/ED_comm.pdf, id=238, 106.73813pt x 98.1099pt>
-File: resources/ED_comm.pdf Graphic file (type pdf)
+<resources/monitor.pdf, id=161, 549.03587pt x 254.32567pt>
+File: resources/monitor.pdf Graphic file (type pdf)
 
-<use resources/ED_comm.pdf>
-Underfull \hbox (badness 10000) in paragraph at lines 387--389
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 392--397
-
- []
-
-
-
-pdfTeX warning: /usr/bin/pdflatex (file ./resources/EDD_morphism.pdf): PDF incl
-usion: found PDF version <1.5>, but at most version <1.4> allowed
-<resources/EDD_morphism.pdf, id=240, 253.8485pt x 94.69409pt>
-File: resources/EDD_morphism.pdf Graphic file (type pdf)
-
-<use resources/EDD_morphism.pdf>
-Underfull \hbox (badness 10000) in paragraph at lines 405--408
-
- []
-
-
-
-pdfTeX warning: /usr/bin/pdflatex (file ./resources/EDD_comp.pdf): PDF inclusio
-n: found PDF version <1.5>, but at most version <1.4> allowed
-<resources/EDD_comp.pdf, id=242, 201.5781pt x 139.30746pt>
-File: resources/EDD_comp.pdf Graphic file (type pdf)
-
-<use resources/EDD_comp.pdf>
-
-pdfTeX warning: /usr/bin/pdflatex (file ./resources/EDD_comp2.pdf): PDF inclusi
-on: found PDF version <1.5>, but at most version <1.4> allowed
-<resources/EDD_comp2.pdf, id=244, 162.70712pt x 98.83238pt>
-File: resources/EDD_comp2.pdf Graphic file (type pdf)
-
-<use resources/EDD_comp2.pdf>
-Underfull \hbox (badness 10000) in paragraph at lines 423--424
-
- []
-
-[9 <./resources/ED_comm.pdf> <./resources/EDD_morphism.pdf>]
-<resources/visit1_new.png, id=273, 1154.81438pt x 648.92438pt>
+<use resources/monitor.pdf> [6 <./resources/hypertension_uaccess.pdf> <./resour
+ces/monitor.pdf>]
+<resources/visit1_new.png, id=206, 1154.81438pt x 648.92438pt>
 File: resources/visit1_new.png Graphic file (type png)
 
 <use resources/visit1_new.png>
-<resources/Visit1_1_new.png, id=277, 1155.56718pt x 394.47375pt>
-File: resources/Visit1_1_new.png Graphic file (type png)
-
-<use resources/Visit1_1_new.png> [10 <./resources/EDD_comp.pdf> <./resources/ED
-D_comp2.pdf>] [11 <./resources/visit1_new.png> <./resources/Visit1_1_new.png>]
-<resources/visit3_new.png, id=309, 1154.06157pt x 395.22656pt>
-File: resources/visit3_new.png Graphic file (type png)
-
-<use resources/visit3_new.png>
-
-LaTeX Warning: Reference `label:proposal' on page 12 undefined on input line 50
-3.
-
-[12 <./resources/visit3_new.png>]
-<resources/bp_phm.png, id=319, 2070.23438pt x 491.58656pt>
+<resources/bp_phm.png, id=209, 2070.23438pt x 491.58656pt>
 File: resources/bp_phm.png Graphic file (type png)
 
-<use resources/bp_phm.png>
-<resources/diet_phm.png, id=320, 2070.23438pt x 493.845pt>
+<use resources/bp_phm.png> [7]
+<resources/diet_phm.png, id=219, 2070.23438pt x 493.845pt>
 File: resources/diet_phm.png Graphic file (type png)
 
-<use resources/diet_phm.png> [13 <./resources/bp_phm.png (PNG copy)> <./resourc
-es/diet_phm.png (PNG copy)>] (./pahi14.bbl [14] [15]) [16] (./pahi14.aux)
-
-LaTeX Warning: There were undefined references.
-
+<use resources/diet_phm.png> [8 <./resources/visit1_new.png> <./resources/bp_ph
+m.png (PNG copy)>] (./pahi14.bbl [9 <./resources/diet_phm.png (PNG copy)>]
+[10]) [11] (./pahi14.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 20265 strings out of 493848
- 336458 string characters out of 1152823
- 492003 words of memory out of 3000000
- 23038 multiletter control sequences out of 15000+50000
- 12034 words of font info for 51 fonts, out of 3000000 for 9000
+ 20112 strings out of 493848
+ 333170 string characters out of 1152823
+ 491126 words of memory out of 3000000
+ 22908 multiletter control sequences out of 15000+50000
+ 11729 words of font info for 50 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 61i,14n,96p,417b,830s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 61i,9n,96p,612b,452s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/sha
 re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-te
 xlive/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texmf-texlive/fonts/
 type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts/type1/publi
-c/amsfonts/cm/cmmi5.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/c
-m/cmmi6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi7.pfb>
-</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/
-texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-texliv
-e/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-texlive/fonts/type1
-/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfo
-nts/cm/cmr7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr9.p
-fb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/sh
-are/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-t
-exlive/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-texlive/fonts
-/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-texlive/fonts/type1/publ
-ic/amsfonts/cm/cmtt10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts
-/cm/cmtt9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/euler/eufm1
-0.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/euler/eufm7.pfb></u
-sr/share/texmf-texlive/fonts/type1/public/amsfonts/latxfont/lasy6.pfb></usr/sha
-re/texmf-texlive/fonts/type1/public/amsfonts/latxfont/lasy7.pfb>
-Output written on pahi14.pdf (16 pages, 885967 bytes).
+c/amsfonts/cm/cmmi6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/c
+m/cmmi7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi9.pfb>
+</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/
+texmf-texlive/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-texlive
+/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-texlive/fonts/type1/
+public/amsfonts/cm/cmr7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfon
+ts/cm/cmr9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.
+pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/s
+hare/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-
+texlive/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/share/texmf-texlive/font
+s/type1/public/amsfonts/euler/eufm10.pfb></usr/share/texmf-texlive/fonts/type1/
+public/amsfonts/latxfont/lasy6.pfb>
+Output written on pahi14.pdf (11 pages, 590537 bytes).
 PDF statistics:
- 445 PDF objects out of 1000 (max. 8388607)
- 65 named destinations out of 1000 (max. 500000)
- 91 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 322 PDF objects out of 1000 (max. 8388607)
+ 49 named destinations out of 1000 (max. 500000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
 
